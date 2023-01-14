@@ -23,5 +23,8 @@ All done! Begin coding all features mentioned above.
 ## Is this an official Custom Command bot extension?
 No, this is an extension developed by `fajfaj#6941` with the consent of the actual bot developers.
 
+## Feedback
+I'd love to hear your opinion on this extension, please leave a honest review at the [visual sudio marketplace](https://marketplace.visualstudio.com/items?itemName=fajfaj.ccbot&ssr=false#review-details). Thanks!
+
 ## Troubleshooting
 If you find any bugs, have questions, or want to suggest a feature, feel free to reach out to `fajfaj#6941` on CC [support server](https://ccommandbot.com/join)
