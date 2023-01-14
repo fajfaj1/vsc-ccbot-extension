@@ -1,0 +1,65 @@
+{
+  "name": "ccbot",
+  "displayName": "Custom Command bot",
+  "description": "Make Visual Studio help you with developing custom command bot commands!",
+  "version": "2.1.0",
+  "publisher": "fajfaj",
+  "icon": "extension.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fajfaj1/ccbot-highlights"
+  },
+  "keywords": [
+    "custom command bot",
+    "syntaxes",
+    "Language",
+    "Grammars",
+    "custom command",
+    "discord",
+    "ccbot",
+    "custom commands"
+  ],
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets",
+    "Programming Languages",
+    "Formatters",
+    "Other"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ccbot",
+        "aliases": [
+          "Custom Command",
+          "ccbot"
+        ],
+        "extensions": [
+          ".ccbot",
+          ".cb",
+          ".customcommand",
+          ".customcommandbot"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ccbot",
+        "scopeName": "source.ccbot",
+        "path": "./syntaxes/ccbot.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ccbot",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules
+*.vsix
+Custom Command-color-theme.json
+package-themed.json
+Snippets generator
+themes

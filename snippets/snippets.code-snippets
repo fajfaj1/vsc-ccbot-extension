@@ -1,0 +1,3762 @@
+{
+    "cacheMember": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$cacheMember",
+        "body": [
+            "\\$cacheMember"
+        ],
+        "description": "This is needed to fetch a Member which is not cached like"
+    },
+    "setServerVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setServerVar",
+        "body": [
+            "\\$setServerVar"
+        ],
+        "description": "Sets server's variable value"
+    },
+    "serverCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverCount",
+        "body": [
+            "\\$serverCount"
+        ],
+        "description": "returns the amount of you server your bot is in"
+    },
+    "ram": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ram",
+        "body": [
+            "\\$ram"
+        ],
+        "description": "returns memory Usage in MB"
+    },
+    "findChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findChannel",
+        "body": [
+            "\\$findChannel"
+        ],
+        "description": "Finds a channel in this server. If last field is set to no, and the function couldn't find any channel, it'll return undefined."
+    },
+    "ping": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ping",
+        "body": [
+            "\\$ping"
+        ],
+        "description": "Returns the Bot websocket ping"
+    },
+    "getUserBadges": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getUserBadges",
+        "body": [
+            "\\$getUserBadges"
+        ],
+        "description": "Returns the user's badges Nitro Classic and Nitro Boosting badges are not 100% guaranteed to be retrieved."
+    },
+    "ban": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ban",
+        "body": [
+            "\\$ban"
+        ],
+        "description": "Bans an user from the server by using their ID."
+    },
+    "disableMentions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableMentions",
+        "body": [
+            "\\$disableMentions"
+        ],
+        "description": "Replaces all the user mentions with their user names"
+    },
+    "authorID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$authorID",
+        "body": [
+            "\\$authorID"
+        ],
+        "description": "Returns the author's ID."
+    },
+    "serverBoostCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverBoostCount",
+        "body": [
+            "\\$serverBoostCount"
+        ],
+        "description": "Returns the amount of boosts this server has"
+    },
+    "cooldown": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$cooldown",
+        "body": [
+            "\\$cooldown"
+        ],
+        "description": "Sets a server user cooldown"
+    },
+    "truncate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$truncate",
+        "body": [
+            "\\$truncate"
+        ],
+        "description": "Truncates the number to 0 decimals."
+    },
+    "parseDate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$parseDate",
+        "body": [
+            "\\$parseDate"
+        ],
+        "description": "Parses given ms to date or time"
+    },
+    "customEmoji": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$customEmoji",
+        "body": [
+            "\\$customEmoji"
+        ],
+        "description": "Returns a custom emoji"
+    },
+    "createChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$createChannel",
+        "body": [
+            "\\$createChannel"
+        ],
+        "description": "Creates a channel with given type and name. If 3rd field is set to 'yes', the function will return the newly created channel ID. If categoryID field is present, the channel will be created under the category with given ID"
+    },
+    "deleteChannels": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteChannels",
+        "body": [
+            "\\$deleteChannels"
+        ],
+        "description": "Delete a channel or channels by using their IDs."
+    },
+    "dateStamp": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$dateStamp",
+        "body": [
+            "\\$dateStamp"
+        ],
+        "description": "Returns the curren$t date since 1970 in ms."
+    },
+    "timeStamp": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$timeStamp",
+        "body": [
+            "\\$timeStamp"
+        ],
+        "description": "Returns the current date since 1970 in ms (UTC)."
+    },
+    "thumbnail": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$thumbnail",
+        "body": [
+            "\\$thumbnail"
+        ],
+        "description": "Sets a thumbnail to the embed"
+    },
+    "systemChannelID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$systemChannelID",
+        "body": [
+            "\\$systemChannelID"
+        ],
+        "description": "Returns the system channel ID of this server (if any)"
+    },
+    "serverVerificationLevel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverVerificationLevel",
+        "body": [
+            "\\$serverVerificationLevel"
+        ],
+        "description": "Returns the server verification level of this guild"
+    },
+    "mention": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mention",
+        "body": [
+            "\\$mention"
+        ],
+        "description": "Returns the mention of the author"
+    },
+    "round": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$round",
+        "body": [
+            "\\$round"
+        ],
+        "description": "Rounds the number to the unit"
+    },
+    "roleName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roleName",
+        "body": [
+            "\\$roleName"
+        ],
+        "description": "Returns a Role name using their ID"
+    },
+    "roleCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roleCount",
+        "body": [
+            "\\$roleCount"
+        ],
+        "description": "Returns the amount of roles in this guild"
+    },
+    "channelCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelCount",
+        "body": [
+            "\\$channelCount"
+        ],
+        "description": "Returns the amount of channels in this guild"
+    },
+    "channelSendMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelSendMessage",
+        "body": [
+            "\\$channelSendMessage"
+        ],
+        "description": "Sends a message to given channel ID If last field is set to yes, it'll return the newly sent message ID"
+    },
+    "kick": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$kick",
+        "body": [
+            "\\$kick"
+        ],
+        "description": "Kicks an user from the server by using their ID"
+    },
+    "serverCooldown": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverCooldown",
+        "body": [
+            "\\$serverCooldown"
+        ],
+        "description": "Sets a Server cooldown"
+    },
+    "hasPerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hasPerms",
+        "body": [
+            "\\$hasPerms"
+        ],
+        "description": "Check if given user ID has the provided perms"
+    },
+    "mentionedRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mentionedRoles",
+        "body": [
+            "\\$mentionedRoles"
+        ],
+        "description": "Returns the roles that were mentioned by the user"
+    },
+    "joinSplitText": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$joinSplitText",
+        "body": [
+            "\\$joinSplitText"
+        ],
+        "description": "Joins the $textSplit indexes by"
+    },
+    "isNumber": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isNumber",
+        "body": [
+            "\\$isNumber"
+        ],
+        "description": "Checks if given input is a number or not"
+    },
+    "textSplit": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$textSplit",
+        "body": [
+            "\\$textSplit"
+        ],
+        "description": "Splits a text by , and store it in array name default array name is `default`"
+    },
+    "serverIcon": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverIcon",
+        "body": [
+            "\\$serverIcon"
+        ],
+        "description": "Returns the Server Icon"
+    },
+    "giveRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$giveRoles",
+        "body": [
+            "\\$giveRoles"
+        ],
+        "description": "Gives a role or roles to given user ID"
+    },
+    "findMember": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findMember",
+        "body": [
+            "\\$findMember"
+        ],
+        "description": "Finds a member in this guild, returns the user ID, or author ID if last field is set to 'yes' (defaults to yes), or else it'll return undefined."
+    },
+    "addEmoji": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addEmoji",
+        "body": [
+            "\\$addEmoji"
+        ],
+        "description": "Adds an emoji to this guild. If role IDs are given, the emoji will only be usable by users with one of provided role IDs"
+    },
+    "splitText": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$splitText",
+        "body": [
+            "\\$splitText"
+        ],
+        "description": "Gets a value from $textSplit"
+    },
+    "botCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botCount",
+        "body": [
+            "\\$botCount"
+        ],
+        "description": "Returns the amount of bots in this server"
+    },
+    "onlyForIDs": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyForIDs",
+        "body": [
+            "\\$onlyForIDs"
+        ],
+        "description": "Only given user IDs will be able to execute this command"
+    },
+    "noEscapingMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$noEscapingMessage",
+        "body": [
+            "\\$noEscapingMessage"
+        ],
+        "description": "Special characters won't be replaced"
+    },
+    "message": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$message",
+        "body": [
+            "\\$message"
+        ],
+        "description": "Returns the user's If this function is called on a slash command, it will contain the value of either given option index or all the option values"
+    },
+    "channelNSFW": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelNSFW",
+        "body": [
+            "\\$channelNSFW"
+        ],
+        "description": "Returns whether the channel is nsfw or not"
+    },
+    "takeRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$takeRoles",
+        "body": [
+            "\\$takeRoles"
+        ],
+        "description": "Takes a role or roles from given user ID"
+    },
+    "membersCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$membersCount",
+        "body": [
+            "\\$membersCount"
+        ],
+        "description": "Returns the amount of users in this server If without bots specified, it will detect only the cached bots"
+    },
+    "channelName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelName",
+        "body": [
+            "\\$channelName"
+        ],
+        "description": "Returns the Channel Name"
+    },
+    "userID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userID",
+        "body": [
+            "\\$userID"
+        ],
+        "description": "Returns an user ID with given user name"
+    },
+    "addTimestamp": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addTimestamp",
+        "body": [
+            "\\$addTimestamp"
+        ],
+        "description": "Sets a timestamp to the embed"
+    },
+    "username": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$username",
+        "body": [
+            "\\$username"
+        ],
+        "description": "Returns the user's username"
+    },
+    "clear[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$clear[",
+        "body": [
+            "\\$clear["
+        ],
+        "description": "Clears an amount of messages from given channel ID and from specfic person or everyone"
+    },
+    "sendMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sendMessage",
+        "body": [
+            "\\$sendMessage"
+        ],
+        "description": "Sends a message to this channel"
+    },
+    "description": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$description",
+        "body": [
+            "\\$description"
+        ],
+        "description": "Sets an embed description"
+    },
+    "userAvatar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userAvatar",
+        "body": [
+            "\\$userAvatar"
+        ],
+        "description": "Returns the user's avatar"
+    },
+    "image": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$image",
+        "body": [
+            "\\$image"
+        ],
+        "description": "Sets an image to the embed"
+    },
+    "guildRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$guildRoles",
+        "body": [
+            "\\$guildRoles"
+        ],
+        "description": "Returns all the roles of this guild"
+    },
+    "title": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$title",
+        "body": [
+            "\\$title"
+        ],
+        "description": "Sets an embed title"
+    },
+    "sum": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sum",
+        "body": [
+            "\\$sum"
+        ],
+        "description": "Sum up the given args"
+    },
+    "editMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editMessage",
+        "body": [
+            "\\$editMessage"
+        ],
+        "description": "Edits a message with given message ID"
+    },
+    "wait": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$wait",
+        "body": [
+            "\\$wait"
+        ],
+        "description": "Stops the code execution for given time"
+    },
+    "roleID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roleID",
+        "body": [
+            "\\$roleID"
+        ],
+        "description": "returns the role ID of given role name"
+    },
+    "commandCode": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$commandCode",
+        "body": [
+            "\\$commandCode"
+        ],
+        "description": "Returns the command code"
+    },
+    "sub": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sub",
+        "body": [
+            "\\$sub"
+        ],
+        "description": "Subtracts a number"
+    },
+    "numberSeparator": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$numberSeparator",
+        "body": [
+            "\\$numberSeparator"
+        ],
+        "description": "Separates a number in thousands"
+    },
+    "hasRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hasRoles",
+        "body": [
+            "\\$hasRoles"
+        ],
+        "description": "Checks if given user ID has the provided roles"
+    },
+    "channelType": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelType",
+        "body": [
+            "\\$channelType"
+        ],
+        "description": "Returns the channel type"
+    },
+    "allMembersCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$allMembersCount",
+        "body": [
+            "\\$allMembersCount"
+        ],
+        "description": "Returns the total user count of the bot"
+    },
+    "serverContentFilter": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverContentFilter",
+        "body": [
+            "\\$serverContentFilter"
+        ],
+        "description": "Returns the content filter level of this guild"
+    },
+    "roleExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roleExists",
+        "body": [
+            "\\$roleExists"
+        ],
+        "description": "Checks if given role ID exists"
+    },
+    "channelExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelExists",
+        "body": [
+            "\\$channelExists"
+        ],
+        "description": "Checks if given channel ID exists"
+    },
+    "random[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$random[",
+        "body": [
+            "\\$random["
+        ],
+        "description": "Returns a random number from X-Y"
+    },
+    "userExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userExists",
+        "body": [
+            "\\$userExists"
+        ],
+        "description": "Checks if the given user ID exists"
+    },
+    "multi": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$multi",
+        "body": [
+            "\\$multi"
+        ],
+        "description": "Multiplicates X by Y"
+    },
+    "unban": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$unban",
+        "body": [
+            "\\$unban"
+        ],
+        "description": "Unbans a user from the server by using their ID or username"
+    },
+    "randomText": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomText",
+        "body": [
+            "\\$randomText"
+        ],
+        "description": "Returns a random text from given texts"
+    },
+    "userLeaderboard": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userLeaderboard",
+        "body": [
+            "\\$userLeaderboard"
+        ],
+        "description": "Creates an user leaderboard"
+    },
+    "noMentionMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$noMentionMessage",
+        "body": [
+            "\\$noMentionMessage"
+        ],
+        "description": "User's message without mentions"
+    },
+    "replaceText": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$replaceText",
+        "body": [
+            "\\$replaceText"
+        ],
+        "description": "Replaces A to X in TEXT"
+    },
+    "divide": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$divide",
+        "body": [
+            "\\$divide"
+        ],
+        "description": "Divides a number by X"
+    },
+    "getUserVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getUserVar",
+        "body": [
+            "\\$getUserVar"
+        ],
+        "description": "Gets an user variable value"
+    },
+    "color[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$color[",
+        "body": [
+            "\\$color["
+        ],
+        "description": "Sets a embed color"
+    },
+    "addField": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addField",
+        "body": [
+            "\\$addField"
+        ],
+        "description": "Adds a field to the embed"
+    },
+    "changeNickname": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$changeNickname",
+        "body": [
+            "\\$changeNickname"
+        ],
+        "description": "Changes the nickname of given user ID"
+    },
+    "setUserVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setUserVar",
+        "body": [
+            "\\$setUserVar"
+        ],
+        "description": "Sets a user variable value"
+    },
+    "addCmdReactions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addCmdReactions",
+        "body": [
+            "\\$addCmdReactions"
+        ],
+        "description": "Adds reactions to the user's message"
+    },
+    "discriminator": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$discriminator",
+        "body": [
+            "\\$discriminator"
+        ],
+        "description": "Returns the user's discriminator"
+    },
+    "awaitMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$awaitMessage",
+        "body": [
+            "\\$awaitMessage"
+        ],
+        "description": "Awaits a message from given user ID or everyone in this channel, and return it"
+    },
+    "getServerVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getServerVar",
+        "body": [
+            "\\$getServerVar"
+        ],
+        "description": "Gets a server variable value"
+    },
+    "mentioned[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mentioned[",
+        "body": [
+            "\\$mentioned["
+        ],
+        "description": "Returns the ID of the mentioned user"
+    },
+    "addReactions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addReactions",
+        "body": [
+            "\\$addReactions"
+        ],
+        "description": "adds reactions to the bot's response"
+    },
+    "nickname": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$nickname",
+        "body": [
+            "\\$nickname"
+        ],
+        "description": "returns the nickname of the user in this guild (if any)"
+    },
+    "footer": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$footer",
+        "body": [
+            "\\$footer"
+        ],
+        "description": "sets an embed footer"
+    },
+    "editIn": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editIn",
+        "body": [
+            "\\$editIn"
+        ],
+        "description": "edits the bot's message after given time"
+    },
+    "useChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$useChannel",
+        "body": [
+            "\\$useChannel"
+        ],
+        "description": "command will be sent to given channel ID"
+    },
+    "isBoosting": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isBoosting",
+        "body": [
+            "\\$isBoosting"
+        ],
+        "description": "checks if the user is boosting this server"
+    },
+    "mentionedChannels": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mentionedChannels",
+        "body": [
+            "\\$mentionedChannels"
+        ],
+        "description": "returns the mentioned channel ID"
+    },
+    "author": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$author",
+        "body": [
+            "\\$author"
+        ],
+        "description": "sets an embed author, third determines whether the author should contain a hyperlink."
+    },
+    "toLocaleUppercase": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$toLocaleUppercase",
+        "body": [
+            "\\$toLocaleUppercase"
+        ],
+        "description": "capitalizes the first letter of all the given words"
+    },
+    "onlyIf[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyIf[",
+        "body": [
+            "\\$onlyIf["
+        ],
+        "description": "checks if a condition is true"
+    },
+    "toUppercase": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$toUppercase",
+        "body": [
+            "\\$toUppercase"
+        ],
+        "description": "makes all the letters uppercase"
+    },
+    "toLowercase": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$toLowercase",
+        "body": [
+            "\\$toLowercase"
+        ],
+        "description": "makes all the letters lowercase"
+    },
+    "channelID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelID",
+        "body": [
+            "\\$channelID"
+        ],
+        "description": "returns the channel ID of this channel"
+    },
+    "userTag": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userTag",
+        "body": [
+            "\\$userTag"
+        ],
+        "description": "returns the user name and discriminator"
+    },
+    "jsonRequest": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$jsonRequest",
+        "body": [
+            "\\$jsonRequest"
+        ],
+        "description": "makes a json request (GET method) and returns a property from it"
+    },
+    "ownerID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ownerID",
+        "body": [
+            "\\$ownerID"
+        ],
+        "description": "returns the server owner id"
+    },
+    "serverFeatures": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverFeatures",
+        "body": [
+            "\\$serverFeatures"
+        ],
+        "description": "returns the guild's features"
+    },
+    "highestRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$highestRole",
+        "body": [
+            "\\$highestRole"
+        ],
+        "description": "returns the user's highest role in this guild"
+    },
+    "randomString": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomString",
+        "body": [
+            "\\$randomString"
+        ],
+        "description": "generates a random string"
+    },
+    "getServerInvite": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getServerInvite",
+        "body": [
+            "\\$getServerInvite"
+        ],
+        "description": "creates an invite link to this server"
+    },
+    "getChannelVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getChannelVar",
+        "body": [
+            "\\$getChannelVar"
+        ],
+        "description": "gets a channel variable value"
+    },
+    "setChannelVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setChannelVar",
+        "body": [
+            "\\$setChannelVar"
+        ],
+        "description": "sets a channel variable value"
+    },
+    "checkContains": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$checkContains",
+        "body": [
+            "\\$checkContains"
+        ],
+        "description": "checks if given message contains any of the texts"
+    },
+    "deleteRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteRoles",
+        "body": [
+            "\\$deleteRoles"
+        ],
+        "description": "deletes a role or roles"
+    },
+    "rolePosition": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$rolePosition",
+        "body": [
+            "\\$rolePosition"
+        ],
+        "description": "returns the role position of this role"
+    },
+    "deletecommand": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deletecommand",
+        "body": [
+            "\\$deletecommand"
+        ],
+        "description": "deletes the user's message"
+    },
+    "attachment": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$attachment",
+        "body": [
+            "\\$attachment"
+        ],
+        "description": "adds an attachment. If name field is given, you must specify the extension for the attachment (png, webp, or gif)"
+    },
+    "isValidInvite": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isValidInvite",
+        "body": [
+            "\\$isValidInvite"
+        ],
+        "description": "checks if an invite url is valid"
+    },
+    "isBot": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isBot",
+        "body": [
+            "\\$isBot"
+        ],
+        "description": "Returns if the user is a bot or not."
+    },
+    "emojiName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emojiName",
+        "body": [
+            "\\$emojiName"
+        ],
+        "description": "Returns the emoji name the user reacted with"
+    },
+    "getTextSplitLength": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getTextSplitLength",
+        "body": [
+            "\\$getTextSplitLength"
+        ],
+        "description": "gets the length of the $textSplit"
+    },
+    "createRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$createRole",
+        "body": [
+            "\\$createRole"
+        ],
+        "description": "creates a role in this guild"
+    },
+    "serverName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverName",
+        "body": [
+            "\\$serverName"
+        ],
+        "description": "Returns the Current Guild or ID of Guild"
+    },
+    "onlyPerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyPerms",
+        "body": [
+            "\\$onlyPerms"
+        ],
+        "description": "checks if the author has the provided permissions."
+    },
+    "checkCondition": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$checkCondition",
+        "body": [
+            "\\$checkCondition"
+        ],
+        "description": "Checks if given expression is true or false."
+    },
+    "clientID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$clientID",
+        "body": [
+            "\\$clientID"
+        ],
+        "description": "Returns the Bot ID"
+    },
+    "blackListRoleIDs": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$blackListRoleIDs",
+        "body": [
+            "\\$blackListRoleIDs"
+        ],
+        "description": "Blacklist roles from using this command by using their IDs."
+    },
+    "blackListIDs": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$blackListIDs",
+        "body": [
+            "\\$blackListIDs"
+        ],
+        "description": "Blacklist users from using this command by using their IDs."
+    },
+    "emojiID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emojiID",
+        "body": [
+            "\\$emojiID"
+        ],
+        "description": "Returns the emoji ID of the emoji the user reacted with"
+    },
+    "editTextSplitElement": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editTextSplitElement",
+        "body": [
+            "\\$editTextSplitElement"
+        ],
+        "description": "Edits the value from given index."
+    },
+    "removeTextSplitElement": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeTextSplitElement",
+        "body": [
+            "\\$removeTextSplitElement"
+        ],
+        "description": "Removes an element from $textSplit by using its index."
+    },
+    "findTextSplitIndex": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findTextSplitIndex",
+        "body": [
+            "\\$findTextSplitIndex"
+        ],
+        "description": "Finds the index of a splitted value in $textSplit"
+    },
+    "emojiToString": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emojiToString",
+        "body": [
+            "\\$emojiToString"
+        ],
+        "description": "Returns the emoji the user reacted with"
+    },
+    "authorAvatar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$authorAvatar",
+        "body": [
+            "\\$authorAvatar"
+        ],
+        "description": "Returns the author's avatar."
+    },
+    "creationDate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$creationDate",
+        "body": [
+            "\\$creationDate"
+        ],
+        "description": "Returns the creation date of given channel, guild, emoji, user or role ID. Date Accept [this format](https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)"
+    },
+    "userRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userRoles",
+        "body": [
+            "\\$userRoles"
+        ],
+        "description": "Returns the user roles."
+    },
+    "status": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$status",
+        "body": [
+            "\\$status"
+        ],
+        "description": "Returns the user's presence status. (Presence intent needs to be enabled on Discord Dev Portal)"
+    },
+    "charCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$charCount",
+        "body": [
+            "\\$charCount"
+        ],
+        "description": "Counts character of a text, or the user's message."
+    },
+    "getMessageVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getMessageVar",
+        "body": [
+            "\\$getMessageVar"
+        ],
+        "description": "Gets a message variable value"
+    },
+    "memberJoinedDate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$memberJoinedDate",
+        "body": [
+            "\\$memberJoinedDate"
+        ],
+        "description": "Returns the date the user joined this server"
+    },
+    "argsCheck": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$argsCheck",
+        "body": [
+            "\\$argsCheck"
+        ],
+        "description": "Checks for user arguments."
+    },
+    "setMessageVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setMessageVar",
+        "body": [
+            "\\$setMessageVar"
+        ],
+        "description": "Sets a message variable value"
+    },
+    "suppressErrors": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$suppressErrors",
+        "body": [
+            "\\$suppressErrors"
+        ],
+        "description": "Suppress all the errors and sends a custom one. {error} will contain the error that was thrown."
+    },
+    "filterMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$filterMessage",
+        "body": [
+            "\\$filterMessage"
+        ],
+        "description": "Removes letters or numbers from given text"
+    },
+    "onlyNSFW": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyNSFW",
+        "body": [
+            "\\$onlyNSFW"
+        ],
+        "description": "Makes this command only executable in nsfw channels."
+    },
+    "getRoleColor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getRoleColor",
+        "body": [
+            "\\$getRoleColor"
+        ],
+        "description": "Gets the color of given role ID"
+    },
+    "getBotInvite": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getBotInvite",
+        "body": [
+            "\\$getBotInvite"
+        ],
+        "description": "Returns the bot's invite."
+    },
+    "getEmbed": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getEmbed",
+        "body": [
+            "\\$getEmbed"
+        ],
+        "description": "Gets information of an embed"
+    },
+    "messageAttachment": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageAttachment",
+        "body": [
+            "\\$messageAttachment"
+        ],
+        "description": "Returns the first attachment url of this message. (if any)"
+    },
+    "onlyBotPerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyBotPerms",
+        "body": [
+            "\\$onlyBotPerms"
+        ],
+        "description": "Checks for bot permissions in this guild"
+    },
+    "cloneChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$cloneChannel",
+        "body": [
+            "\\$cloneChannel"
+        ],
+        "description": "Clones a channel with permissions."
+    },
+    "setGuildName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setGuildName",
+        "body": [
+            "\\$setGuildName"
+        ],
+        "description": "Sets a new Name for this guild."
+    },
+    "setGuildIcon": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setGuildIcon",
+        "body": [
+            "\\$setGuildIcon"
+        ],
+        "description": "Sets a new Icon for this guild."
+    },
+    "deleteIn": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteIn",
+        "body": [
+            "\\$deleteIn"
+        ],
+        "description": "Deletes the bot's response after given time"
+    },
+    "userPerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userPerms",
+        "body": [
+            "\\$userPerms"
+        ],
+        "description": "Returns the user's key permissions."
+    },
+    "rolePerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$rolePerms",
+        "body": [
+            "\\$rolePerms"
+        ],
+        "description": "Returns the role key permissions."
+    },
+    "onlyForRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyForRoles",
+        "body": [
+            "\\$onlyForRoles"
+        ],
+        "description": "The command will be only executed if the user has any of these role IDs / Names."
+    },
+    "botTyping": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botTyping",
+        "body": [
+            "\\$botTyping"
+        ],
+        "description": "Shows that the bot is currently typing for few seconds in the channel"
+    },
+    "uptime": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$uptime",
+        "body": [
+            "\\$uptime"
+        ],
+        "description": "Uptime of the bot"
+    },
+    "hasRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hasRole",
+        "body": [
+            "\\$hasRole"
+        ],
+        "description": "Checks if the user has the given role."
+    },
+    "channelUsed": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelUsed",
+        "body": [
+            "\\$channelUsed"
+        ],
+        "description": "Returns the channelUsed if no argument provided Set channel Used if provided (Only for new interperter)"
+    },
+    "findServerChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findServerChannel",
+        "body": [
+            "\\$findServerChannel"
+        ],
+        "description": "Returns a channel ID in this server, or the channel ID this command was ran in only if last field is set to 'yes' (defaults to yes), or else it'll return undefined."
+    },
+    "messageSlice": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageSlice",
+        "body": [
+            "\\$messageSlice"
+        ],
+        "description": "Slices this message from X to Y (or just X)."
+    },
+    "usersWithRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$usersWithRole",
+        "body": [
+            "\\$usersWithRole"
+        ],
+        "description": "Returns a list of users with given role (members are given from the cache.)"
+    },
+    "resetUserVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$resetUserVar",
+        "body": [
+            "\\$resetUserVar"
+        ],
+        "description": "Resets user variables values"
+    },
+    "repeatMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$repeatMessage",
+        "body": [
+            "\\$repeatMessage"
+        ],
+        "description": "Repeats a message for X times."
+    },
+    "randomUserID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomUserID",
+        "body": [
+            "\\$randomUserID"
+        ],
+        "description": "Returns a random user ID from this server."
+    },
+    "addObjectProperty": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addObjectProperty",
+        "body": [
+            "\\$addObjectProperty"
+        ],
+        "description": "Adds a key with a value to the existing object."
+    },
+    "createObject": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$createObject",
+        "body": [
+            "\\$createObject"
+        ],
+        "description": "Creates an object that can be used later."
+    },
+    "getObjectProperty": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getObjectProperty",
+        "body": [
+            "\\$getObjectProperty"
+        ],
+        "description": "Gets a property value from given key."
+    },
+    "randomChannelID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomChannelID",
+        "body": [
+            "\\$randomChannelID"
+        ],
+        "description": "Returns a random text channel ID."
+    },
+    "randomMention": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomMention",
+        "body": [
+            "\\$randomMention"
+        ],
+        "description": "Mentions a random user of this server."
+    },
+    "roundTenth": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roundTenth",
+        "body": [
+            "\\$roundTenth"
+        ],
+        "description": "Rounds a number to given unit."
+    },
+    "getMessage[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getMessage[",
+        "body": [
+            "\\$getMessage["
+        ],
+        "description": "Gets information of given message ID."
+    },
+    "colorRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$colorRole",
+        "body": [
+            "\\$colorRole"
+        ],
+        "description": "Changes the color of given role ID."
+    },
+    "isValidObject": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isValidObject",
+        "body": [
+            "\\$isValidObject"
+        ],
+        "description": "Checks if given string is a valid object."
+    },
+    "onlyIfMessageContains": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyIfMessageContains",
+        "body": [
+            "\\$onlyIfMessageContains"
+        ],
+        "description": "Checks if 'text' contains all the provided words."
+    },
+    "removeSplitTextElement": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeSplitTextElement",
+        "body": [
+            "\\$removeSplitTextElement"
+        ],
+        "description": "Removes an element or elements from $textSplit by using their indexes."
+    },
+    "usersInChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$usersInChannel",
+        "body": [
+            "\\$usersInChannel"
+        ],
+        "description": "Returns the users that are connected to this voice channel."
+    },
+    "slowmode": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$slowmode",
+        "body": [
+            "\\$slowmode"
+        ],
+        "description": "Sets a channel slowmode (or removes it by using 0)."
+    },
+    "usersBanned": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$usersBanned",
+        "body": [
+            "\\$usersBanned"
+        ],
+        "description": "Returns a list of users that are banned from this guild."
+    },
+    "isBanned": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isBanned",
+        "body": [
+            "\\$isBanned"
+        ],
+        "description": "Checks whether given user ID is banned from a guild."
+    },
+    "modifyChannelPerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modifyChannelPerms",
+        "body": [
+            "\\$modifyChannelPerms"
+        ],
+        "description": "Modifies the permissions of a channel for given user or role ID."
+    },
+    "deleteEmojis": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteEmojis",
+        "body": [
+            "\\$deleteEmojis"
+        ],
+        "description": "Delete a custom emoji(s) from the server."
+    },
+    "serverEmojis": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverEmojis",
+        "body": [
+            "\\$serverEmojis"
+        ],
+        "description": "Returns the emojis of this guild."
+    },
+    "emojiCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emojiCount",
+        "body": [
+            "\\$emojiCount"
+        ],
+        "description": "Returns the amount of emojis in this server"
+    },
+    "randomRoleID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomRoleID",
+        "body": [
+            "\\$randomRoleID"
+        ],
+        "description": "Returns a random role ID from this guild."
+    },
+    "findRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findRole",
+        "body": [
+            "\\$findRole"
+        ],
+        "description": "Returns a role ID if the query matches an option."
+    },
+    "isMuted": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isMuted",
+        "body": [
+            "\\$isMuted"
+        ],
+        "description": "Checks if the user is self-muted."
+    },
+    "argsCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$argsCount",
+        "body": [
+            "\\$argsCount"
+        ],
+        "description": "Returns the amount of user arguments."
+    },
+    "messageExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageExists",
+        "body": [
+            "\\$messageExists"
+        ],
+        "description": "Checks if a message exists by using its ID"
+    },
+    "hasEmbeds": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hasEmbeds",
+        "body": [
+            "\\$hasEmbeds"
+        ],
+        "description": "Checks if given message ID contains an embed. returns true or false"
+    },
+    "clearReaction[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$clearReaction[",
+        "body": [
+            "\\$clearReaction["
+        ],
+        "description": "Removes a reaction from given user ID."
+    },
+    "clearReactions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$clearReactions",
+        "body": [
+            "\\$clearReactions"
+        ],
+        "description": "Clears all the user reactions assigned to one emoji or all the reactions of this message."
+    },
+    "getReactions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getReactions",
+        "body": [
+            "\\$getReactions"
+        ],
+        "description": "Returns a list of users that reacted to this reaction."
+    },
+    "onlyForCategories": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyForCategories",
+        "body": [
+            "\\$onlyForCategories"
+        ],
+        "description": "The command will only be executable in channels under one of these category IDs."
+    },
+    "onlyForChannels": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$onlyForChannels",
+        "body": [
+            "\\$onlyForChannels"
+        ],
+        "description": "The command will only be executable in the provided channel IDs."
+    },
+    "serverRegion": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverRegion",
+        "body": [
+            "\\$serverRegion"
+        ],
+        "description": "Return the Guild region"
+    },
+    "messageType": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageType",
+        "body": [
+            "\\$messageType"
+        ],
+        "description": "Returns the type of this message."
+    },
+    "modulo": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modulo",
+        "body": [
+            "\\$modulo"
+        ],
+        "description": "Returns the remainder of a division."
+    },
+    "cpu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$cpu",
+        "body": [
+            "\\$cpu"
+        ],
+        "description": "Returns the cpu usage."
+    },
+    "maxRam": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$maxRam",
+        "body": [
+            "\\$maxRam"
+        ],
+        "description": "Total memory for this process."
+    },
+    "channelTopic": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelTopic",
+        "body": [
+            "\\$channelTopic"
+        ],
+        "description": "Returns the channel topic."
+    },
+    "serverBanner": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverBanner",
+        "body": [
+            "\\$serverBanner"
+        ],
+        "description": "Returns the Server Banner."
+    },
+    "serverBoostLevel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverBoostLevel",
+        "body": [
+            "\\$serverBoostLevel"
+        ],
+        "description": "Return the Level of Server Count:$serverBoostLevel"
+    },
+    "newTicket": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$newTicket",
+        "body": [
+            "\\$newTicket"
+        ],
+        "description": "Creates a ticket with given options"
+    },
+    "closeTicket": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$closeTicket",
+        "body": [
+            "\\$closeTicket"
+        ],
+        "description": "Closes a ticket with given options"
+    },
+    "isMentioned": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isMentioned",
+        "body": [
+            "\\$isMentioned"
+        ],
+        "description": "Checks if the role or channel or user was mentioned / everyone"
+    },
+    "createWebhook": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$createWebhook",
+        "body": [
+            "\\$createWebhook"
+        ],
+        "description": "Creates a webhook for this channel, bot has to have manage webhooks permission"
+    },
+    "sendWebhook": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sendWebhook",
+        "body": [
+            "\\$sendWebhook"
+        ],
+        "description": "Sends a message through a webhook by using its ID and token"
+    },
+    "referenceChannelID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$referenceChannelID",
+        "body": [
+            "\\$referenceChannelID"
+        ],
+        "description": "The ID of the channel where this user replied in"
+    },
+    "referenceMessageID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$referenceMessageID",
+        "body": [
+            "\\$referenceMessageID"
+        ],
+        "description": "The ID of the message that the user replied to"
+    },
+    "setChannelTopic": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setChannelTopic",
+        "body": [
+            "\\$setChannelTopic"
+        ],
+        "description": "Sets the topic of a channel with given ID"
+    },
+    "deleteWebhook": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteWebhook",
+        "body": [
+            "\\$deleteWebhook"
+        ],
+        "description": "Deletes a webhook by using its token and ID"
+    },
+    "pinMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$pinMessage",
+        "body": [
+            "\\$pinMessage"
+        ],
+        "description": "Pins the user's message or other message using its channel id and message id"
+    },
+    "unpinMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$unpinMessage",
+        "body": [
+            "\\$unpinMessage"
+        ],
+        "description": "Unpins the user's message or other message by using its message and channel id"
+    },
+    "getInviteInfo": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getInviteInfo",
+        "body": [
+            "\\$getInviteInfo"
+        ],
+        "description": "Gets invite info from given invite code"
+    },
+    "channelCategoryID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelCategoryID",
+        "body": [
+            "\\$channelCategoryID"
+        ],
+        "description": "Returns the ID of the category this channel belongs to"
+    },
+    "isUserDMEnabled": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isUserDMEnabled",
+        "body": [
+            "\\$isUserDMEnabled"
+        ],
+        "description": "Checks if the user has DMs open, returns true or false"
+    },
+    "addMessageReactions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addMessageReactions",
+        "body": [
+            "\\$addMessageReactions"
+        ],
+        "description": "Add reactions to a message by using its channel and message ID"
+    },
+    "advancedTextSplit": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$advancedTextSplit",
+        "body": [
+            "\\$advancedTextSplit"
+        ],
+        "description": "First field is the message we want to split and get indexes from second field would be the split used in the text and the next field would get the value of the index, setting this index value as the new text. Next fields work as splitter and new index.||//in this example we will use a discord message link, we will get the message ID from this link."
+    },
+    "isMentionable": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isMentionable",
+        "body": [
+            "\\$isMentionable"
+        ],
+        "description": "Checks whether the role is mentionable or not"
+    },
+    "isHoisted": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isHoisted",
+        "body": [
+            "\\$isHoisted"
+        ],
+        "description": "Checks if the role is hoisted above all the other roles"
+    },
+    "isManaged": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isManaged",
+        "body": [
+            "\\$isManaged"
+        ],
+        "description": "Checks if this role is managed by discord or not"
+    },
+    "isValidHex": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isValidHex",
+        "body": [
+            "\\$isValidHex"
+        ],
+        "description": "Checks if given hex code or int is valid"
+    },
+    "webhookExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$webhookExists",
+        "body": [
+            "\\$webhookExists"
+        ],
+        "description": "Checks if a webhook exists by using its ID and token"
+    },
+    "modifyWebhook": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modifyWebhook",
+        "body": [
+            "\\$modifyWebhook"
+        ],
+        "description": "Modifies a webhook by using its token and ID"
+    },
+    "isValidLink": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isValidLink",
+        "body": [
+            "\\$isValidLink"
+        ],
+        "description": "Checks if given link is valid or not (might not be accurate)"
+    },
+    "isDeafened": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isDeafened",
+        "body": [
+            "\\$isDeafened"
+        ],
+        "description": "Checks if the user is self-deafened."
+    },
+    "serverSplash": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverSplash",
+        "body": [
+            "\\$serverSplash"
+        ],
+        "description": "Returns Server Invite Splash"
+    },
+    "sendCrosspostingMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sendCrosspostingMessage",
+        "body": [
+            "\\$sendCrosspostingMessage"
+        ],
+        "description": "Sends a message to multiple channels"
+    },
+    "botPing": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botPing",
+        "body": [
+            "\\$botPing"
+        ],
+        "description": "Returns the Bot Message ping"
+    },
+    "messageID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageID",
+        "body": [
+            "\\$messageID"
+        ],
+        "description": "Returns the user's message ID"
+    },
+    "error": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$error",
+        "body": [
+            "\\$error"
+        ],
+        "description": "Returns the error the interpreter threw"
+    },
+    "executionTime": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$executionTime",
+        "body": [
+            "\\$executionTime"
+        ],
+        "description": "Returns the time the interpreter took to execute every function in the code (in milliseconds) This function won't work in embeds"
+    },
+    "if": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$if",
+        "body": [
+            "\\$if"
+        ],
+        "description": "checks the expression and executes code inside it if true you can use $elseIf to check other conditions if previous one is false you can use $else to execute code block if nothing is true"
+    },
+    "elseif": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$elseif",
+        "body": [
+            "\\$elseif"
+        ],
+        "description": "will be checked if $if was false, should be ended with $endelseif"
+    },
+    "endelseif": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$endelseif",
+        "body": [
+            "\\$endelseif"
+        ],
+        "description": "is used to close $elseIf"
+    },
+    "else": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$else",
+        "body": [
+            "\\$else"
+        ],
+        "description": "is used in case $if and $elseIf is not true"
+    },
+    "endIf": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$endIf",
+        "body": [
+            "\\$endIf"
+        ],
+        "description": "is used to end the whole $if block"
+    },
+    "replaceTextWithRegex": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$replaceTextWithRegex",
+        "body": [
+            "\\$replaceTextWithRegex"
+        ],
+        "description": "Uses a regular expression to replace matching queries"
+    },
+    "getObject": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getObject",
+        "body": [
+            "\\$getObject"
+        ],
+        "description": "Returns a JSON of created/modified $createObject"
+    },
+    "findNumbers": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findNumbers",
+        "body": [
+            "\\$findNumbers"
+        ],
+        "description": "Takes every number from given string and returns them alone"
+    },
+    "findSpecialChars": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findSpecialChars",
+        "body": [
+            "\\$findSpecialChars"
+        ],
+        "description": "Takes all the non number/letter from given string and returns the alone"
+    },
+    "findChars": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$findChars",
+        "body": [
+            "\\$findChars"
+        ],
+        "description": "Takes all the letters from given string and returns them alone"
+    },
+    "year": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$year",
+        "body": [
+            "\\$year"
+        ],
+        "description": "Returns current year"
+    },
+    "day": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$day",
+        "body": [
+            "\\$day"
+        ],
+        "description": "Returns current day or date"
+    },
+    "month": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$month",
+        "body": [
+            "\\$month"
+        ],
+        "description": "Returns current month"
+    },
+    "second": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$second",
+        "body": [
+            "\\$second"
+        ],
+        "description": "Returns current second"
+    },
+    "hour": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hour",
+        "body": [
+            "\\$hour"
+        ],
+        "description": "Returns current hour"
+    },
+    "minute": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$minute",
+        "body": [
+            "\\$minute"
+        ],
+        "description": "Returns current minute"
+    },
+    "botOwnerID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botOwnerID",
+        "body": [
+            "\\$botOwnerID"
+        ],
+        "description": "Returns the ID of the bot owner If the bot belongs to a team, it'll return multiple IDs Optionally, and if there is more than one owner (team), you can input a separator."
+    },
+    "stringStartsWith": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$stringStartsWith",
+        "body": [
+            "\\$stringStartsWith"
+        ],
+        "description": "Determines whether given message starts by another message or not"
+    },
+    "deleteMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteMessage",
+        "body": [
+            "\\$deleteMessage"
+        ],
+        "description": "Deletes a message using its ID, if no channel ID is present it'll use the default channel"
+    },
+    "messageWebhookID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageWebhookID",
+        "body": [
+            "\\$messageWebhookID"
+        ],
+        "description": "Returns the ID of the webhook that sent this message"
+    },
+    "messageFlags": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageFlags",
+        "body": [
+            "\\$messageFlags"
+        ],
+        "description": "Returns the message flags for this message"
+    },
+    "math": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$math",
+        "body": [
+            "\\$math"
+        ],
+        "description": "Calculate an expression"
+    },
+    "channelCooldown": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelCooldown",
+        "body": [
+            "\\$channelCooldown"
+        ],
+        "description": "Sets a cooldown to current channel for current command"
+    },
+    "timezone": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$timezone",
+        "body": [
+            "\\$timezone"
+        ],
+        "description": "Set or return current timezone"
+    },
+    "editChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editChannel",
+        "body": [
+            "\\$editChannel"
+        ],
+        "description": "Edit a guild channel data"
+    },
+    "setRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setRoles",
+        "body": [
+            "\\$setRoles"
+        ],
+        "description": "Set some roles into guild member"
+    },
+    "emojisFromMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emojisFromMessage",
+        "body": [
+            "\\$emojisFromMessage"
+        ],
+        "description": "Returns all the unicode and custom emojis from user arguments or given text"
+    },
+    "highestServerRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$highestServerRole",
+        "body": [
+            "\\$highestServerRole"
+        ],
+        "description": "Returns the ID of the highest role in this server"
+    },
+    "lowestServerRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$lowestServerRole",
+        "body": [
+            "\\$lowestServerRole"
+        ],
+        "description": "Returns the ID of the lowest role in this server"
+    },
+    "lowestRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$lowestRole",
+        "body": [
+            "\\$lowestRole"
+        ],
+        "description": "Returns the user's lowest role ID in this server"
+    },
+    "serverDescription": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverDescription",
+        "body": [
+            "\\$serverDescription"
+        ],
+        "description": "Returns the server's description"
+    },
+    "userRoleColor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userRoleColor",
+        "body": [
+            "\\$userRoleColor"
+        ],
+        "description": "Returns the user's highest role color hex"
+    },
+    "channelPermissionsFor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channelPermissionsFor",
+        "body": [
+            "\\$channelPermissionsFor"
+        ],
+        "description": "Returns the permissions for this user/role in a channel"
+    },
+    "usersTyping": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$usersTyping",
+        "body": [
+            "\\$usersTyping"
+        ],
+        "description": "Returns the users that are currently typing in a channel"
+    },
+    "hasAnyPerm": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hasAnyPerm",
+        "body": [
+            "\\$hasAnyPerm"
+        ],
+        "description": "Checks if an user or author has one of the provided permissions"
+    },
+    "messagePublish": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messagePublish",
+        "body": [
+            "\\$messagePublish"
+        ],
+        "description": "Announces given message to all the channels that follow this channel Messages can only be announced / published if they come from a news channel"
+    },
+    "hasAnyRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hasAnyRole",
+        "body": [
+            "\\$hasAnyRole"
+        ],
+        "description": "Checks if the author or user have at least one of the provided role IDs"
+    },
+    "isTicket": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isTicket",
+        "body": [
+            "\\$isTicket"
+        ],
+        "description": "Checks if a channel is a ticket or not"
+    },
+    "roleMembersCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roleMembersCount",
+        "body": [
+            "\\$roleMembersCount"
+        ],
+        "description": "Returns the amount of users with given role ID. This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached."
+    },
+    "getChannelSlowmode": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getChannelSlowmode",
+        "body": [
+            "\\$getChannelSlowmode"
+        ],
+        "description": "Get the slowmode duration of a channel(returns 0 if none)."
+    },
+    "emojiExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emojiExists",
+        "body": [
+            "\\$emojiExists"
+        ],
+        "description": "Checks if given emoji ID is available to the bot."
+    },
+    "spliceTextJoin": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$spliceTextJoin",
+        "body": [
+            "\\$spliceTextJoin"
+        ],
+        "description": "Splits a text by given separator1 and then splits it every X amount of times to then join each splitted array with given separator2 which is then joined with separator3||//Separating user roles in this format:"
+    },
+    "removeContains": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeContains",
+        "body": [
+            "\\$removeContains"
+        ],
+        "description": "Deletes every message that includes given words in a channel."
+    },
+    "stringEndsWith": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$stringEndsWith",
+        "body": [
+            "\\$stringEndsWith"
+        ],
+        "description": "Checks if given message ends with given text"
+    },
+    "userReacted": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userReacted",
+        "body": [
+            "\\$userReacted"
+        ],
+        "description": "Checks if an user has reacted to a message."
+    },
+    "disableRoleMentions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableRoleMentions",
+        "body": [
+            "\\$disableRoleMentions"
+        ],
+        "description": "Disables all role mentions in the bot's message"
+    },
+    "boostingSince": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$boostingSince",
+        "body": [
+            "\\$boostingSince"
+        ],
+        "description": "Returns data when given user started boosting this server."
+    },
+    "disableChannelMentions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableChannelMentions",
+        "body": [
+            "\\$disableChannelMentions"
+        ],
+        "description": "Disables all channel mentions in this code"
+    },
+    "disableEveryoneMentions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableEveryoneMentions",
+        "body": [
+            "\\$disableEveryoneMentions"
+        ],
+        "description": "Disables all mentions with @everyone Role."
+    },
+    "enableEveryoneMentions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$enableEveryoneMentions",
+        "body": [
+            "\\$enableEveryoneMentions"
+        ],
+        "description": "enable mention on @everyone."
+    },
+    "abbreviate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$abbreviate",
+        "body": [
+            "\\$abbreviate"
+        ],
+        "description": "Abbreviate the provided numbers."
+    },
+    "channel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$channel",
+        "body": [
+            "\\$channel"
+        ],
+        "description": "A compact function with 18 different functionalities!"
+    },
+    "emoji": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$emoji",
+        "body": [
+            "\\$emoji"
+        ],
+        "description": "A compact function with 11 different functionalities!"
+    },
+    "guild": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$guild",
+        "body": [
+            "\\$guild"
+        ],
+        "description": "A compact function with 21 different functionalities!"
+    },
+    "msg": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$msg",
+        "body": [
+            "\\$msg"
+        ],
+        "description": "A compact function with more than [20 different functionalities](https://doc.ccommandbot.com/Message/msg.html#usage-msg-channelid-messageid-property)"
+    },
+    "role": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$role",
+        "body": [
+            "\\$role"
+        ],
+        "description": "A compact function with 16 different functionalities"
+    },
+    "user": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$user",
+        "body": [
+            "\\$user"
+        ],
+        "description": "A compact function with 12 different functionalities"
+    },
+    "ordinal": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ordinal",
+        "body": [
+            "\\$ordinal"
+        ],
+        "description": "Returns the given number as an ordinal number."
+    },
+    "isEmoji": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isEmoji",
+        "body": [
+            "\\$isEmoji"
+        ],
+        "description": "Returns true if the content is a default emoji. Returns false otherwise."
+    },
+    "let": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$let",
+        "body": [
+            "\\$let"
+        ],
+        "description": "Assigns data to a temporary variable that can be changed and retrieved later in the command"
+    },
+    "get": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$get",
+        "body": [
+            "\\$get"
+        ],
+        "description": "return variable value that was saved using `$let` or $variable_name"
+    },
+    "formatDate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$formatDate",
+        "body": [
+            "\\$formatDate"
+        ],
+        "description": "Formats a Date in Milliseconds / Stringed Date / ISO String to default/given format. Almost a full coverage of moment npm format date, syntax of formats can be found in https://momentjs.com/docs/#/parsing/string-format/"
+    },
+    "humanizeMS": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$humanizeMS",
+        "body": [
+            "\\$humanizeMS"
+        ],
+        "description": "Converts Milliseconds into a Readable durations"
+    },
+    "resolveEmojiID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$resolveEmojiID",
+        "body": [
+            "\\$resolveEmojiID"
+        ],
+        "description": "Resolves a full emoji / id / name into its ID."
+    },
+    "filterMessageWords": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$filterMessageWords",
+        "body": [
+            "\\$filterMessageWords"
+        ],
+        "description": "Removed words from the message."
+    },
+    "concatTextSplit": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$concatTextSplit",
+        "body": [
+            "\\$concatTextSplit"
+        ],
+        "description": "Adds elements to the current textSplit elements."
+    },
+    "indexOf": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$indexOf",
+        "body": [
+            "\\$indexOf"
+        ],
+        "description": "Returns the position of in . Returns 0 if there's no char in text."
+    },
+    "textSlice": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$textSlice",
+        "body": [
+            "\\$textSlice"
+        ],
+        "description": "Returns after given position or text in between X and Y"
+    },
+    "textTrim": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$textTrim",
+        "body": [
+            "\\$textTrim"
+        ],
+        "description": "Removes useless spaces from given text."
+    },
+    "mentionType": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mentionType",
+        "body": [
+            "\\$mentionType"
+        ],
+        "description": "Uses an argument to determine the type of the mention (role, user, channel or none)."
+    },
+    "initVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$initVar",
+        "body": [
+            "\\$initVar"
+        ],
+        "description": "initalizes a Var with a default value if the var is undefined or does not exist"
+    },
+    "deleteUserVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteUserVar",
+        "body": [
+            "\\$deleteUserVar"
+        ],
+        "description": "Delete a local user var from database."
+    },
+    "deleteServerVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteServerVar",
+        "body": [
+            "\\$deleteServerVar"
+        ],
+        "description": "Delete a server var from database."
+    },
+    "deleteChannelVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteChannelVar",
+        "body": [
+            "\\$deleteChannelVar"
+        ],
+        "description": "Delete a channel var from database."
+    },
+    "deleteMessageVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteMessageVar",
+        "body": [
+            "\\$deleteMessageVar"
+        ],
+        "description": "Delete a message var from database."
+    },
+    "uri": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$uri",
+        "body": [
+            "\\$uri"
+        ],
+        "description": "Decodes or Encodes a url Example when you encode a url 'hello world' = 'hello%20world'"
+    },
+    "regexMatch": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$regexMatch",
+        "body": [
+            "\\$regexMatch"
+        ],
+        "description": "To match a text with regex expression"
+    },
+    "stop": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$stop",
+        "body": [
+            "\\$stop"
+        ],
+        "description": "It will cause the interpreter to stop the execution"
+    },
+    "setTimeout": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setTimeout",
+        "body": [
+            "\\$setTimeout"
+        ],
+        "description": "Will execute the code inside it after certain time"
+    },
+    "endTimeout": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$endTimeout",
+        "body": [
+            "\\$endTimeout"
+        ],
+        "description": "To close $setTimeout"
+    },
+    "parseTime": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$parseTime",
+        "body": [
+            "\\$parseTime"
+        ],
+        "description": "Parse human readable time into milliseconds"
+    },
+    "button": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$button",
+        "body": [
+            "\\$button"
+        ],
+        "description": "Creates a Discord Button with a label ,color ,id/link"
+    },
+    "buttonID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buttonID",
+        "body": [
+            "\\$buttonID"
+        ],
+        "description": "return the button ID, return undefined if not found"
+    },
+    "buttonEmoji": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buttonEmoji",
+        "body": [
+            "\\$buttonEmoji"
+        ],
+        "description": "return the clicked button emoji in Button trigger, return undefined if not found"
+    },
+    "buttonLabel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buttonLabel",
+        "body": [
+            "\\$buttonLabel"
+        ],
+        "description": "return the clicked button label in Button trigger, return undefined if not found"
+    },
+    "buttonURL": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buttonURL",
+        "body": [
+            "\\$buttonURL"
+        ],
+        "description": "return the clicked button URL in Button trigger if exists , return undefined if not found"
+    },
+    "buttonStyle": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buttonStyle",
+        "body": [
+            "\\$buttonStyle"
+        ],
+        "description": "return the clicked button style like blurple/red/url in Button trigger, return undefined if not found"
+    },
+    "buttonIsDisabled": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buttonIsDisabled",
+        "body": [
+            "\\$buttonIsDisabled"
+        ],
+        "description": "return true if button is disabled, false otherwise, return undefined if not found"
+    },
+    "forEach": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$forEach",
+        "body": [
+            "\\$forEach"
+        ],
+        "description": "Will loop over a list and every loop it will take an item and assign in inside varname accessible b"
+    },
+    "endForEach": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$endForEach",
+        "body": [
+            "\\$endForEach"
+        ],
+        "description": "its used as closer for $forEach"
+    },
+    "seq": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$seq",
+        "body": [
+            "\\$seq"
+        ],
+        "description": "return sequence of Numbers decided by a starting (inclusive) number and stop at ending (inclusive) number with step Max of 1k number"
+    },
+    "addButton": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addButton",
+        "body": [
+            "\\$addButton"
+        ],
+        "description": "Adding a button to a message"
+    },
+    "removeButton": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeButton",
+        "body": [
+            "\\$removeButton"
+        ],
+        "description": "Remove a button from a message by (label/emoji/url/id)"
+    },
+    "getObjectKeys": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getObjectKeys",
+        "body": [
+            "\\$getObjectKeys"
+        ],
+        "description": "Return the object keys with seperator (default is space if not provided)"
+    },
+    "function": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$function",
+        "body": [
+            "\\$function"
+        ],
+        "description": "Create a user-defined function that can be called b"
+    },
+    "endFunction": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$endFunction",
+        "body": [
+            "\\$endFunction"
+        ],
+        "description": "To close $function"
+    },
+    "callFunction": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$callFunction",
+        "body": [
+            "\\$callFunction"
+        ],
+        "description": "To call a user-defined function created by $function"
+    },
+    "return": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$return",
+        "body": [
+            "\\$return"
+        ],
+        "description": "Can only be used inside user-defined function created by $function It has no effect outside the user-defined function"
+    },
+    "dm": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$dm",
+        "body": [
+            "\\$dm"
+        ],
+        "description": "Redirects the output to a user dm"
+    },
+    "sendDM": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sendDM",
+        "body": [
+            "\\$sendDM"
+        ],
+        "description": "Sends a dm message to given user ID."
+    },
+    "moveUser": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$moveUser",
+        "body": [
+            "\\$moveUser"
+        ],
+        "description": "Move an user from a voice channel or disconnect them if optional params are not provided"
+    },
+    "modifyRole": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modifyRole",
+        "body": [
+            "\\$modifyRole"
+        ],
+        "description": "Modifies the role by using their ID."
+    },
+    "muteUser": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$muteUser",
+        "body": [
+            "\\$muteUser"
+        ],
+        "description": "(Un)Mute an user in voice channel"
+    },
+    "disableButton": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableButton",
+        "body": [
+            "\\$disableButton"
+        ],
+        "description": "Disables a button from a message by (label/emoji/url/id)"
+    },
+    "editButton": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editButton",
+        "body": [
+            "\\$editButton"
+        ],
+        "description": "To edit a button given by message id and a query if there's multiple buttons in that message"
+    },
+    "voiceChannelID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$voiceChannelID",
+        "body": [
+            "\\$voiceChannelID"
+        ],
+        "description": "To return the voice channel id where the user join/left in voice trigger in situation of moving from channel to channel, this function will return the new channel This function is **deprecated**, please use `$vcBefore, $vcAfter` instead"
+    },
+    "resetRandom": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$resetRandom",
+        "body": [
+            "\\$resetRandom"
+        ],
+        "description": "To reset the randoms like $random functions, to return a new randomzied value"
+    },
+    "botTier": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botTier",
+        "body": [
+            "\\$botTier"
+        ],
+        "description": "Return the bot tier"
+    },
+    "modifyRolePerms": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modifyRolePerms",
+        "body": [
+            "\\$modifyRolePerms"
+        ],
+        "description": "Modifying role permissions"
+    },
+    "void": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$void",
+        "body": [
+            "\\$void"
+        ],
+        "description": "A function that eats input but return nothing!"
+    },
+    "transcriptChannel": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$transcriptChannel",
+        "body": [
+            "\\$transcriptChannel"
+        ],
+        "description": "To compile latest messages of messages in html file"
+    },
+    "redirectErrors": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$redirectErrors",
+        "body": [
+            "\\$redirectErrors"
+        ],
+        "description": "To redirect any kind of errors to specific channel, by default errors will appear in execution channel"
+    },
+    "spread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$spread",
+        "body": [
+            "\\$spread"
+        ],
+        "description": "To spread data as arguments inside another function"
+    },
+    "toggleRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$toggleRoles",
+        "body": [
+            "\\$toggleRoles"
+        ],
+        "description": "To remove roles from a user if found, or add these roles if are not found"
+    },
+    "awaitButton": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$awaitButton",
+        "body": [
+            "\\$awaitButton"
+        ],
+        "description": "To wait button to be clicked and return that button id In case of no button clicked, it return undefined"
+    },
+    "reply": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$reply",
+        "body": [
+            "\\$reply"
+        ],
+        "description": "to make the bot reply to specific message"
+    },
+    "eventChannelID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$eventChannelID",
+        "body": [
+            "\\$eventChannelID"
+        ],
+        "description": "To return the channel/thread ID which was created/deleted **Useful** only inside channel trigger"
+    },
+    "eventChannelParent": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$eventChannelParent",
+        "body": [
+            "\\$eventChannelParent"
+        ],
+        "description": "To return the channel/thread parent ID which was created/deleted **Useful** only inside channel trigger"
+    },
+    "createThread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$createThread",
+        "body": [
+            "\\$createThread"
+        ],
+        "description": "To create thread of message in a channel"
+    },
+    "thread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$thread",
+        "body": [
+            "\\$thread"
+        ],
+        "description": "To get the informations of a thread"
+    },
+    "getThreads": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getThreads",
+        "body": [
+            "\\$getThreads"
+        ],
+        "description": "To return threads list by channel parent or category or owner ID"
+    },
+    "editThread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editThread",
+        "body": [
+            "\\$editThread"
+        ],
+        "description": "To edit an existing thread settings"
+    },
+    "deleteThreads": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteThreads",
+        "body": [
+            "\\$deleteThreads"
+        ],
+        "description": "To delete an existing threads in a channel"
+    },
+    "interactionReply": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$interactionReply",
+        "body": [
+            "\\$interactionReply"
+        ],
+        "description": "replys to Interaction as ephemeral(a message ,which can only get viewed by the author) or normal message like for Button Interactions"
+    },
+    "selectMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$selectMenu",
+        "body": [
+            "\\$selectMenu"
+        ],
+        "description": "creates a select menu with options"
+    },
+    "arrayMap": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayMap",
+        "body": [
+            "\\$arrayMap"
+        ],
+        "description": "To replace array values to another value **Note:** Only zero-cooldown functions allowed in CODE{"
+    },
+    "arrayFilter": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayFilter",
+        "body": [
+            "\\$arrayFilter"
+        ],
+        "description": "To filter an array depend on a value of CODE, if `false` then remove that element from the array **Note:** Only zero-cooldown functions allowed in CODE{"
+    },
+    "interactionEdit": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$interactionEdit",
+        "body": [
+            "\\$interactionEdit"
+        ],
+        "description": "To edit a previously sent interaction with $interactionReply"
+    },
+    "interactionDelete": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$interactionDelete",
+        "body": [
+            "\\$interactionDelete"
+        ],
+        "description": "To delete a previously sent interaction with $interactionReply"
+    },
+    "eventSelected": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$eventSelected",
+        "body": [
+            "\\$eventSelected"
+        ],
+        "description": "returns selected values of selectMenus"
+    },
+    "arrayJoin": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayJoin",
+        "body": [
+            "\\$arrayJoin"
+        ],
+        "description": "To join the array with specific seperator"
+    },
+    "arrayPop": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayPop",
+        "body": [
+            "\\$arrayPop"
+        ],
+        "description": "To remove and return the last element in the array"
+    },
+    "arrayPush": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayPush",
+        "body": [
+            "\\$arrayPush"
+        ],
+        "description": "To add an element to the array (from the last)"
+    },
+    "arrayShift": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayShift",
+        "body": [
+            "\\$arrayShift"
+        ],
+        "description": "To remove and return the first element in the array"
+    },
+    "arraySlice": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arraySlice",
+        "body": [
+            "\\$arraySlice"
+        ],
+        "description": "To keep only a part of the array"
+    },
+    "arrayUnshift": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayUnshift",
+        "body": [
+            "\\$arrayUnshift"
+        ],
+        "description": "To add an element to the array (from the first)"
+    },
+    "arrayLength": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayLength",
+        "body": [
+            "\\$arrayLength"
+        ],
+        "description": "return the elements number in array"
+    },
+    "arrayCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayCount",
+        "body": [
+            "\\$arrayCount"
+        ],
+        "description": "alias for `$arrayLength`"
+    },
+    "arrayGet": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayGet",
+        "body": [
+            "\\$arrayGet"
+        ],
+        "description": "return the element value at specific position in array"
+    },
+    "arraySet": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arraySet",
+        "body": [
+            "\\$arraySet"
+        ],
+        "description": "set element value at specific position in array"
+    },
+    "joinThreads": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$joinThreads",
+        "body": [
+            "\\$joinThreads"
+        ],
+        "description": "To join thread channel"
+    },
+    "leaveThreads": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$leaveThreads",
+        "body": [
+            "\\$leaveThreads"
+        ],
+        "description": "To leave thread channel"
+    },
+    "arraySearch": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arraySearch",
+        "body": [
+            "\\$arraySearch"
+        ],
+        "description": "To check search of a value in the array"
+    },
+    "arrayRemove": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayRemove",
+        "body": [
+            "\\$arrayRemove"
+        ],
+        "description": "To remove an index in the array return nothing array name must be non-number"
+    },
+    "arrayInclude": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayInclude",
+        "body": [
+            "\\$arrayInclude"
+        ],
+        "description": "To check if a value exists in the array return true if exists otherwise false"
+    },
+    "ObjectGet": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectGet",
+        "body": [
+            "\\$ObjectGet"
+        ],
+        "description": "To return Key value if exists return key value if exists otherwise undefined"
+    },
+    "ObjectSet": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectSet",
+        "body": [
+            "\\$ObjectSet"
+        ],
+        "description": "To set key value If key doesnt exist, will set new one"
+    },
+    "ObjectCreate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectCreate",
+        "body": [
+            "\\$ObjectCreate"
+        ],
+        "description": "To create object from JSON input"
+    },
+    "ObjectValues": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectValues",
+        "body": [
+            "\\$ObjectValues"
+        ],
+        "description": "Return the Object values with seperator between each value"
+    },
+    "ObjectKeys": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectKeys",
+        "body": [
+            "\\$ObjectKeys"
+        ],
+        "description": "Return the Object Keys with seperator between each key"
+    },
+    "interactionId": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$interactionId",
+        "body": [
+            "\\$interactionId"
+        ],
+        "description": "Return the interaction custom id , works for button and menu.."
+    },
+    "removeButtons": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeButtons",
+        "body": [
+            "\\$removeButtons"
+        ],
+        "description": "Remove multiple buttons from a message"
+    },
+    "arrayShuffle": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayShuffle",
+        "body": [
+            "\\$arrayShuffle"
+        ],
+        "description": "To shuffle an existing array"
+    },
+    "arraySort": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arraySort",
+        "body": [
+            "\\$arraySort"
+        ],
+        "description": "sort the array from `$textsplit` depends if you want to sort numerically or alphabetically or occurrences"
+    },
+    "getCommandOption": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getCommandOption",
+        "body": [
+            "\\$getCommandOption"
+        ],
+        "description": "To get the command option return the option value"
+    },
+    "commandName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$commandName",
+        "body": [
+            "\\$commandName"
+        ],
+        "description": "To get the slash command name return the command name"
+    },
+    "ObjectRemove": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectRemove",
+        "body": [
+            "\\$ObjectRemove"
+        ],
+        "description": "To remove a key from the object"
+    },
+    "awaitMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$awaitMenu",
+        "body": [
+            "\\$awaitMenu"
+        ],
+        "description": "To wait for a menu option to be selected and return the selected options values In case of no option selected, it return **undefined** In case of multiple values selected, all of them will return with `,` as seperator"
+    },
+    "getCooldownTime": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getCooldownTime",
+        "body": [
+            "\\$getCooldownTime"
+        ],
+        "description": "To get the cooldown time left set by $cooldown functions in millisecond. Type can be: user, channel, server"
+    },
+    "categoryChannels": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$categoryChannels",
+        "body": [
+            "\\$categoryChannels"
+        ],
+        "description": "To get the channels inside category"
+    },
+    "botVersion": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botVersion",
+        "body": [
+            "\\$botVersion"
+        ],
+        "description": "Return the current CC bot version"
+    },
+    "disableMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableMenu",
+        "body": [
+            "\\$disableMenu"
+        ],
+        "description": "Disable a menu(s) in given message, not providing Menu ID will disable every menu in the message"
+    },
+    "enableMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$enableMenu",
+        "body": [
+            "\\$enableMenu"
+        ],
+        "description": "enable a menu(s) in given message, not providing Menu ID will enable every menu in the message"
+    },
+    "removeMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeMenu",
+        "body": [
+            "\\$removeMenu"
+        ],
+        "description": "remove a menu(s) in given message, not providing Menu ID will remove every menu in the message"
+    },
+    "editMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editMenu",
+        "body": [
+            "\\$editMenu"
+        ],
+        "description": "edit a menu in given message type can be: `id/disabled/max/min/placeholder/ph/options"
+    },
+    "editEmbed": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editEmbed",
+        "body": [
+            "\\$editEmbed"
+        ],
+        "description": "edit embed in given message"
+    },
+    "userSetTimeout": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userSetTimeout",
+        "body": [
+            "\\$userSetTimeout"
+        ],
+        "description": "Set timeout user so he can't chat or communicate for specified period"
+    },
+    "userRemoveTimeout": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userRemoveTimeout",
+        "body": [
+            "\\$userRemoveTimeout"
+        ],
+        "description": "Remove timeout on a user, so he can talk"
+    },
+    "userGetTimeout": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userGetTimeout",
+        "body": [
+            "\\$userGetTimeout"
+        ],
+        "description": "Return timeleft for timeout expiry in milliseconds If user is not timeout, it will return 0"
+    },
+    "getTrigger": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getTrigger",
+        "body": [
+            "\\$getTrigger"
+        ],
+        "description": "Return the command trigger information like `name` or `type` Valid InfoType: name, token, guild, code, runonlyin, ignorerole, type, typename, trigger, createdby, minperms, channelused"
+    },
+    "editTrigger": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editTrigger",
+        "body": [
+            "\\$editTrigger"
+        ],
+        "description": "Edit a command information like `name` or `type` Editable types: name, runonlyin, ignorerole, type, trigger, channelused, minperms"
+    },
+    "deleteTrigger": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteTrigger",
+        "body": [
+            "\\$deleteTrigger"
+        ],
+        "description": "delete a command with token, **empty token = delete current command**"
+    },
+    "dateToTime": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$dateToTime",
+        "body": [
+            "\\$dateToTime"
+        ],
+        "description": "Convert date to Time (Date Timezone will use $timeZone value)"
+    },
+    "timeToDate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$timeToDate",
+        "body": [
+            "\\$timeToDate"
+        ],
+        "description": "Convert timestamp (since 1970 in ms) to formatted Date (Timezone will respec(https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)"
+    },
+    "buffer": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$buffer",
+        "body": [
+            "\\$buffer"
+        ],
+        "description": "It return the input (useful for some rare cases)"
+    },
+    "roleIcon": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$roleIcon",
+        "body": [
+            "\\$roleIcon"
+        ],
+        "description": "Sets or return Role Icon in a guild"
+    },
+    "serverChannels": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverChannels",
+        "body": [
+            "\\$serverChannels"
+        ],
+        "description": "Return all the channels inside the guild info can be: name, id"
+    },
+    "clearCoolDown": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$clearCoolDown",
+        "body": [
+            "\\$clearCoolDown"
+        ],
+        "description": "Clear cooldown set by $cooldown functions Type can be: user, channel, server"
+    },
+    "membersWithStatus": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$membersWithStatus",
+        "body": [
+            "\\$membersWithStatus"
+        ],
+        "description": "Forcible fetch members with those status, and return the ids separated by `,`"
+    },
+    "textShuffle": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$textShuffle",
+        "body": [
+            "\\$textShuffle"
+        ],
+        "description": "Shuffle a text **Return**: the shuffled text"
+    },
+    "userBanner": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userBanner",
+        "body": [
+            "\\$userBanner"
+        ],
+        "description": "Get user banner **Return**: `undefined` (in case of no banner) or banner URL"
+    },
+    "editWebhookMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editWebhookMessage",
+        "body": [
+            "\\$editWebhookMessage"
+        ],
+        "description": "Edits a message sent by a webhook"
+    },
+    "deleteWebhookMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteWebhookMessage",
+        "body": [
+            "\\$deleteWebhookMessage"
+        ],
+        "description": "deletes a message sent by a webhook"
+    },
+    "userVarRank": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$userVarRank",
+        "body": [
+            "\\$userVarRank"
+        ],
+        "description": "Return user var rank returned by $userleaderboard for a single user"
+    },
+    "getMessageReactions": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getMessageReactions",
+        "body": [
+            "\\$getMessageReactions"
+        ],
+        "description": "Return the reactions in a given message"
+    },
+    "getReactionCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getReactionCount",
+        "body": [
+            "\\$getReactionCount"
+        ],
+        "description": "Return the reaction count in a given message"
+    },
+    "vcBefore": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$vcBefore",
+        "body": [
+            "\\$vcBefore"
+        ],
+        "description": "Return the voice channel id that user just left in voice trigger"
+    },
+    "vcAfter": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$vcAfter",
+        "body": [
+            "\\$vcAfter"
+        ],
+        "description": "Return the voice channel id that user just join in voice trigger"
+    },
+    "menuId": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$menuId",
+        "body": [
+            "\\$menuId"
+        ],
+        "description": "Return the menu id of the menu in Select Menu Trigger"
+    },
+    "timeoutBy": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$timeoutBy",
+        "body": [
+            "\\$timeoutBy"
+        ],
+        "description": "Return the user id of the admin/mod that timeout the user in Timeout trigger"
+    },
+    "timeoutReason": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$timeoutReason",
+        "body": [
+            "\\$timeoutReason"
+        ],
+        "description": "Return the reason of timeout in Timeout trigger"
+    },
+    "timeoutAction": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$timeoutAction",
+        "body": [
+            "\\$timeoutAction"
+        ],
+        "description": "Return `add` in case of timeout user, `remove` in case of timeout got removed by someone in Timeout trigger"
+    },
+    "disableButtons": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$disableButtons",
+        "body": [
+            "\\$disableButtons"
+        ],
+        "description": "Disable buttons in a message, not providing button id will disable every button in the message"
+    },
+    "enableButtons": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$enableButtons",
+        "body": [
+            "\\$enableButtons"
+        ],
+        "description": "Enable buttons in a message, not providing button id will enable every button in the message"
+    },
+    "abs": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$abs",
+        "body": [
+            "\\$abs"
+        ],
+        "description": "Return the absolute of a number"
+    },
+    "mathMin": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mathMin",
+        "body": [
+            "\\$mathMin"
+        ],
+        "description": "Return the lowest number from a list of numbers"
+    },
+    "mathMax": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$mathMax",
+        "body": [
+            "\\$mathMax"
+        ],
+        "description": "Return the highest number from a list of numbers"
+    },
+    "ceil": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ceil",
+        "body": [
+            "\\$ceil"
+        ],
+        "description": "rounds a number up to the next largest integer"
+    },
+    "floor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$floor",
+        "body": [
+            "\\$floor"
+        ],
+        "description": "return the largest integer less than or equal to a given number"
+    },
+    "arrayReverse": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayReverse",
+        "body": [
+            "\\$arrayReverse"
+        ],
+        "description": "To reverse the array"
+    },
+    "ignoreErrors": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ignoreErrors",
+        "body": [
+            "\\$ignoreErrors"
+        ],
+        "description": "It will tell the interpreter to ignore the errors and in case of error, the function will return the placeholder you specified"
+    },
+    "modal": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modal",
+        "body": [
+            "\\$modal"
+        ],
+        "description": "Send a modal, it will only work in interaction-related triggers **Note**: You can only use this within 2 seconds of execution"
+    },
+    "modalID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modalID",
+        "body": [
+            "\\$modalID"
+        ],
+        "description": "To get the modal id that triggered the custom command"
+    },
+    "modalAnswer": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modalAnswer",
+        "body": [
+            "\\$modalAnswer"
+        ],
+        "description": "To get the modal submitted answer by user, by id or index"
+    },
+    "getChannelMessages": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getChannelMessages",
+        "body": [
+            "\\$getChannelMessages"
+        ],
+        "description": "To return list of messages ids"
+    },
+    "arrayUnique": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayUnique",
+        "body": [
+            "\\$arrayUnique"
+        ],
+        "description": "Return the unique elements in the array glued with the separator"
+    },
+    "eventOldNickname": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$eventOldNickname",
+        "body": [
+            "\\$eventOldNickname"
+        ],
+        "description": "Return the old nickname in Nickname trigger"
+    },
+    "eventNewNickname": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$eventNewNickname",
+        "body": [
+            "\\$eventNewNickname"
+        ],
+        "description": "Return the new nickname in Nickname trigger"
+    },
+    "modifyUserRoles": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$modifyUserRoles",
+        "body": [
+            "\\$modifyUserRoles"
+        ],
+        "description": "To modify user roles, you can add/remove/toggle roles in same time **op** can be: `+` for add `-` for remove `~` for toggle"
+    },
+    "messageStickers": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$messageStickers",
+        "body": [
+            "\\$messageStickers"
+        ],
+        "description": "To return the user message stickers (id) **Index**: starts with 1, leaving it empty return all stickers ids separated by `, `"
+    },
+    "sticker": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sticker",
+        "body": [
+            "\\$sticker"
+        ],
+        "description": "To return an information about a sticker using ID **Info** can be: name,desc,url,tags,time"
+    },
+    "deleteSticker": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteSticker",
+        "body": [
+            "\\$deleteSticker"
+        ],
+        "description": "To delete a sticker inside the server"
+    },
+    "editSticker": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$editSticker",
+        "body": [
+            "\\$editSticker"
+        ],
+        "description": "To edit a sticker inside the server **Info** can be: name,desc,emoji"
+    },
+    "serverStickers": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$serverStickers",
+        "body": [
+            "\\$serverStickers"
+        ],
+        "description": "To return all server stickers's id"
+    },
+    "arrayLoop": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayLoop",
+        "body": [
+            "\\$arrayLoop"
+        ],
+        "description": "To loop over the array **Note:** Only zero-cooldown functions allowed in CODE{"
+    },
+    "includeLibrary": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$includeLibrary",
+        "body": [
+            "\\$includeLibrary"
+        ],
+        "description": "To include code created in Library trigger"
+    },
+    "guildEvents": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$guildEvents",
+        "body": [
+            "\\$guildEvents"
+        ],
+        "description": "to get the guild events info type can be : id/name filter can be: active,scheduled"
+    },
+    "getEventInfo": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getEventInfo",
+        "body": [
+            "\\$getEventInfo"
+        ],
+        "description": "to get an information about an event in the guild info type can be: id, name, owner, channel, desc, description, start_time, end_time, status, type, location, cover, users_count, url, privacy"
+    },
+    "getEventUsers": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getEventUsers",
+        "body": [
+            "\\$getEventUsers"
+        ],
+        "description": "to get the users interested in an event"
+    },
+    "eventExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$eventExists",
+        "body": [
+            "\\$eventExists"
+        ],
+        "description": "to check if an event exists or not"
+    },
+    "deleteEvent": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$deleteEvent",
+        "body": [
+            "\\$deleteEvent"
+        ],
+        "description": "to delete an already existed event"
+    },
+    "arrayClear": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayClear",
+        "body": [
+            "\\$arrayClear"
+        ],
+        "description": "empty the array"
+    },
+    "randomTextBiased": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$randomTextBiased",
+        "body": [
+            "\\$randomTextBiased"
+        ],
+        "description": "same as $randomText but with biased random"
+    },
+    "triggerExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$triggerExists",
+        "body": [
+            "\\$triggerExists"
+        ],
+        "description": "Check if a trigger with token exists or not"
+    },
+    "addUsersToThread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addUsersToThread",
+        "body": [
+            "\\$addUsersToThread"
+        ],
+        "description": "Add users to a thread"
+    },
+    "removeUsersFromThread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$removeUsersFromThread",
+        "body": [
+            "\\$removeUsersFromThread"
+        ],
+        "description": "remove users from a thread"
+    },
+    "lockThread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$lockThread",
+        "body": [
+            "\\$lockThread"
+        ],
+        "description": "lock/unlock a thread"
+    },
+    "archiveThread": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$archiveThread",
+        "body": [
+            "\\$archiveThread"
+        ],
+        "description": "archive/unarchive a thread"
+    },
+    "getOption": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getOption",
+        "body": [
+            "\\$getOption"
+        ],
+        "description": "get the user input for specific option"
+    },
+    "hyperlink": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$hyperlink",
+        "body": [
+            "\\$hyperlink"
+        ],
+        "description": "helps you construct hyper link that works inside embeds"
+    },
+    "botVerified": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$botVerified",
+        "body": [
+            "\\$botVerified"
+        ],
+        "description": "checks if a bot is verified or not"
+    },
+    "createSticker": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$createSticker",
+        "body": [
+            "\\$createSticker"
+        ],
+        "description": "create a new sticker in the server"
+    },
+    "setBotActivity": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$setBotActivity",
+        "body": [
+            "\\$setBotActivity"
+        ],
+        "description": "set a custom bot activity like `Watching ?help`"
+    },
+    "getBotActivity": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$getBotActivity",
+        "body": [
+            "\\$getBotActivity"
+        ],
+        "description": "get a custom bot activity"
+    },
+    "arrayCreate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayCreate",
+        "body": [
+            "\\$arrayCreate"
+        ],
+        "description": "Creates an array from a list"
+    }
+}
