@@ -1765,7 +1765,7 @@
         "body": [
             "\\$advancedTextSplit"
         ],
-        "description": "First field is the message we want to split and get indexes from second field would be the split used in the text and the next field would get the value of the index, setting this index value as the new text. Next fields work as splitter and new index.||//in this example we will use a discord message link, we will get the message ID from this link."
+        "description": "First field is the message we want to split and get indexes from second field would be the split used in the text and the next field would get the value of the index, setting this index value as the new text. Next fields work as splitter and new index."
     },
     "isMentionable": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2213,7 +2213,7 @@
         "body": [
             "\\$spliceTextJoin"
         ],
-        "description": "Splits a text by given separator1 and then splits it every X amount of times to then join each splitted array with given separator2 which is then joined with separator3||//Separating user roles in this format:"
+        "description": "Splits a text by given separator1 and then splits it every X amount of times to then join each splitted array with given separator2 which is then joined with separator3"
     },
     "removeContains": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2365,7 +2365,7 @@
         "body": [
             "\\$get"
         ],
-        "description": "return variable value that was saved using `$let` or $variable_name"
+        "description": "return variable value that was saved using `$let`"
     },
     "formatDate": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2589,7 +2589,7 @@
         "body": [
             "\\$forEach"
         ],
-        "description": "Will loop over a list and every loop it will take an item and assign in inside varname accessible b"
+        "description": "Will loop over a list and every loop it will take an item and assign in inside varname accessible by $get[varname]"
     },
     "endForEach": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2637,7 +2637,7 @@
         "body": [
             "\\$function"
         ],
-        "description": "Create a user-defined function that can be called b"
+        "description": "Create a user-defined function that can be called by $callFunction or $functionName (see !!func $callFunction) **Note:** function name cant start with number, and must be within [A-Z or a-z or _ or 0-9]"
     },
     "endFunction": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2885,7 +2885,7 @@
         "body": [
             "\\$arrayMap"
         ],
-        "description": "To replace array values to another value **Note:** Only zero-cooldown functions allowed in CODE{"
+        "description": "To replace array values to another value **Note:** Only zero-cooldown functions allowed in CODE"
     },
     "arrayFilter": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2893,7 +2893,7 @@
         "body": [
             "\\$arrayFilter"
         ],
-        "description": "To filter an array depend on a value of CODE, if `false` then remove that element from the array **Note:** Only zero-cooldown functions allowed in CODE{"
+        "description": "To filter an array depend on a value of CODE, if `false` then remove that element from the array **Note:** Only zero-cooldown functions allowed in CODE"
     },
     "interactionEdit": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -3269,7 +3269,7 @@
         "body": [
             "\\$timeToDate"
         ],
-        "description": "Convert timestamp (since 1970 in ms) to formatted Date (Timezone will respec(https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)"
+        "description": "Convert timestamp (since 1970 in ms) to formatted Date (Timezone will respect $timeZone value) Accept [this format](https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)"
     },
     "buffer": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -3597,7 +3597,7 @@
         "body": [
             "\\$arrayLoop"
         ],
-        "description": "To loop over the array **Note:** Only zero-cooldown functions allowed in CODE{"
+        "description": "To loop over the array **Note:** Only zero-cooldown functions allowed in CODE"
     },
     "includeLibrary": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
