@@ -11,7 +11,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$cacheMember[",
         "body": [
-            "$cacheMember[userid]"
+            "\\$cacheMember[userid]"
         ],
         "description": "This is needed to fetch a Member which is not cached like"
     },
@@ -27,7 +27,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setServerVar[",
         "body": [
-            "$setServerVar[variable;value]"
+            "\\$setServerVar[variable;value]"
         ],
         "description": "Sets server's variable value"
     },
@@ -75,7 +75,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findChannel[",
         "body": [
-            "$findChannel[ID/mention/name;returnCurrentChannel (yes/no) (optional)]"
+            "\\$findChannel[ID/mention/name;returnCurrentChannel (yes/no) (optional)]"
         ],
         "description": "Finds a channel in this server. If last field is set to no, and the function couldn't find any channel, it'll return undefined."
     },
@@ -107,7 +107,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getUserBadges[",
         "body": [
-            "$getUserBadges or $getUserBadges[userID]"
+            "\\$getUserBadges or $getUserBadges[userID]"
         ],
         "description": "Returns the user's badges Nitro Classic and Nitro Boosting badges are not 100% guaranteed to be retrieved."
     },
@@ -123,7 +123,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ban[",
         "body": [
-            "$ban[userID;reason;messages to delete (days)]"
+            "\\$ban[userID;reason;messages to delete (days)]"
         ],
         "description": "Bans an user from the server by using their ID."
     },
@@ -187,7 +187,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$cooldown[",
         "body": [
-            "$cooldown[time (default 5s);error message]"
+            "\\$cooldown[time (default 5s);error message]"
         ],
         "description": "Sets a server user cooldown"
     },
@@ -203,7 +203,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$truncate[",
         "body": [
-            "$truncate[number]"
+            "\\$truncate[number]"
         ],
         "description": "Truncates the number to 0 decimals."
     },
@@ -219,7 +219,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$parseDate[",
         "body": [
-            "$parseDate[ms;date/time]"
+            "\\$parseDate[ms;date/time]"
         ],
         "description": "Parses given ms to date or time"
     },
@@ -235,7 +235,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$customEmoji[",
         "body": [
-            "$customEmoji[name or id]"
+            "\\$customEmoji[name or id]"
         ],
         "description": "Returns a custom emoji"
     },
@@ -251,7 +251,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$createChannel[",
         "body": [
-            "$createChannel[name;type;return ID (yes/no);categoryID (optional);topic;nfsw (yes/no);bitrate (i.e 64000);position;Slowdown duration;User limit for voice channels]"
+            "\\$createChannel[name;type;return ID (yes/no);categoryID (optional);topic;nfsw (yes/no);bitrate (i.e 64000);position;Slowdown duration;User limit for voice channels]"
         ],
         "description": "Creates a channel with given type and name. If 3rd field is set to 'yes', the function will return the newly created channel ID. If categoryID field is present, the channel will be created under the category with given ID"
     },
@@ -267,7 +267,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteChannels[",
         "body": [
-            "$deleteChannels[channelID;channelID;...]"
+            "\\$deleteChannels[channelID;channelID;...]"
         ],
         "description": "Delete a channel or channels by using their IDs."
     },
@@ -315,7 +315,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$thumbnail[",
         "body": [
-            "$thumbnail[url]"
+            "\\$thumbnail[url]"
         ],
         "description": "Sets a thumbnail to the embed"
     },
@@ -331,7 +331,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$systemChannelID[",
         "body": [
-            "$systemChannelID or $systemChannelID[guildID]"
+            "\\$systemChannelID or $systemChannelID[guildID]"
         ],
         "description": "Returns the system channel ID of this server (if any)"
     },
@@ -379,7 +379,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$round[",
         "body": [
-            "$round[number]"
+            "\\$round[number]"
         ],
         "description": "Rounds the number to the unit"
     },
@@ -395,7 +395,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roleName[",
         "body": [
-            "$roleName[roleID]"
+            "\\$roleName[roleID]"
         ],
         "description": "Returns a Role name using their ID"
     },
@@ -427,7 +427,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelCount[",
         "body": [
-            "$channelCount or $channelCount[type]"
+            "\\$channelCount or $channelCount[type]"
         ],
         "description": "Returns the amount of channels in this guild"
     },
@@ -443,7 +443,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelSendMessage[",
         "body": [
-            "$channelSendMessage[channelID;message;return message ID (yes/no) (optional)]"
+            "\\$channelSendMessage[channelID;message;return message ID (yes/no) (optional)]"
         ],
         "description": "Sends a message to given channel ID If last field is set to yes, it'll return the newly sent message ID"
     },
@@ -459,7 +459,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$kick[",
         "body": [
-            "$kick[userID;reason (optional)]"
+            "\\$kick[userID;reason (optional)]"
         ],
         "description": "Kicks an user from the server by using their ID"
     },
@@ -475,7 +475,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverCooldown[",
         "body": [
-            "$serverCooldown[time (default 5s);error message]"
+            "\\$serverCooldown[time (default 5s);error message]"
         ],
         "description": "Sets a Server cooldown"
     },
@@ -491,7 +491,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasPerms[",
         "body": [
-            "$hasPerms[userID;perm1;perm2;...]"
+            "\\$hasPerms[userID;perm1;perm2;...]"
         ],
         "description": "Check if given user ID has the provided perms"
     },
@@ -507,7 +507,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mentionedRoles[",
         "body": [
-            "$mentionedRoles[mention number]"
+            "\\$mentionedRoles[mention number]"
         ],
         "description": "Returns the roles that were mentioned by the user"
     },
@@ -523,7 +523,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$joinSplitText[",
         "body": [
-            "$joinSplitText[separator]||$joinSplitText[ | ]"
+            "\\$joinSplitText[separator]||$joinSplitText[ | ]"
         ],
         "description": "Joins the $textSplit indexes by"
     },
@@ -539,7 +539,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isNumber[",
         "body": [
-            "$isNumber[value]"
+            "\\$isNumber[value]"
         ],
         "description": "Checks if given input is a number or not"
     },
@@ -555,7 +555,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$textSplit[",
         "body": [
-            "$textSplit[text;separator;array name (optional)]"
+            "\\$textSplit[text;separator;array name (optional)]"
         ],
         "description": "Splits a text by , and store it in array name default array name is `default`"
     },
@@ -571,7 +571,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverIcon[",
         "body": [
-            "$serverIcon or $serverIcon[guildID;size (optional);dynamic (yes/no)(optional)]"
+            "\\$serverIcon or $serverIcon[guildID;size (optional);dynamic (yes/no)(optional)]"
         ],
         "description": "Returns the Server Icon"
     },
@@ -587,7 +587,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$giveRoles[",
         "body": [
-            "$giveRoles[userID;roleID;roleID;...]"
+            "\\$giveRoles[userID;roleID;roleID;...]"
         ],
         "description": "Gives a role or roles to given user ID"
     },
@@ -603,7 +603,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findMember[",
         "body": [
-            "$findMember[nickname/ID/mention/username/username#dicriminator;returnCurrentUser (yes/no) (optional)]"
+            "\\$findMember[nickname/ID/mention/username/username#dicriminator;returnCurrentUser (yes/no) (optional)]"
         ],
         "description": "Finds a member in this guild, returns the user ID, or author ID if last field is set to 'yes' (defaults to yes), or else it'll return undefined."
     },
@@ -619,7 +619,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addEmoji[",
         "body": [
-            "$addEmoji[url;name;returnEmoji (yes/no)(optional);roleID1;roleID2;...]"
+            "\\$addEmoji[url;name;returnEmoji (yes/no)(optional);roleID1;roleID2;...]"
         ],
         "description": "Adds an emoji to this guild. If role IDs are given, the emoji will only be usable by users with one of provided role IDs"
     },
@@ -635,7 +635,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$splitText[",
         "body": [
-            "$splitText[index]"
+            "\\$splitText[index]"
         ],
         "description": "Gets a value from $textSplit"
     },
@@ -667,7 +667,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyForIDs[",
         "body": [
-            "$onlyForIDs[userID;userID;...;error message]"
+            "\\$onlyForIDs[userID;userID;...;error message]"
         ],
         "description": "Only given user IDs will be able to execute this command"
     },
@@ -683,7 +683,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$noEscapingMessage[",
         "body": [
-            "$noEscapingMessage or $noEscapingMessage[arg number]"
+            "\\$noEscapingMessage or $noEscapingMessage[arg number]"
         ],
         "description": "Special characters won't be replaced"
     },
@@ -699,7 +699,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$message[",
         "body": [
-            "$message or $message[arg number]"
+            "\\$message or $message[arg number]"
         ],
         "description": "Returns the user's If this function is called on a slash command, it will contain the value of either given option index or all the option values"
     },
@@ -715,7 +715,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelNSFW[",
         "body": [
-            "$channelNSFW or $channelNSFW[channelID]"
+            "\\$channelNSFW or $channelNSFW[channelID]"
         ],
         "description": "Returns whether the channel is nsfw or not"
     },
@@ -731,7 +731,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$takeRoles[",
         "body": [
-            "$takeRoles[userID;roleID;roleID;...]"
+            "\\$takeRoles[userID;roleID;roleID;...]"
         ],
         "description": "Takes a role or roles from given user ID"
     },
@@ -747,7 +747,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$membersCount[",
         "body": [
-            "$membersCount[with bots (yes/no, default is yes)"
+            "\\$membersCount[with bots (yes/no, default is yes)"
         ],
         "description": "Returns the amount of users in this server If without bots specified, it will detect only the cached bots"
     },
@@ -763,7 +763,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelName[",
         "body": [
-            "$channelName or $channelName[channelID]"
+            "\\$channelName or $channelName[channelID]"
         ],
         "description": "Returns the Channel Name"
     },
@@ -779,7 +779,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userID[",
         "body": [
-            "$userID[username]"
+            "\\$userID[username]"
         ],
         "description": "Returns an user ID with given user name"
     },
@@ -795,7 +795,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addTimestamp[",
         "body": [
-            "$addTimestamp or $addTimestamp[ms]"
+            "\\$addTimestamp or $addTimestamp[ms]"
         ],
         "description": "Sets a timestamp to the embed"
     },
@@ -811,7 +811,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$username[",
         "body": [
-            "$username of $username[userID]"
+            "\\$username of $username[userID]"
         ],
         "description": "Returns the user's username"
     },
@@ -827,7 +827,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$clear[",
         "body": [
-            "$clear[amount;userid or everyone(optional);channelID (optional)]"
+            "\\$clear[amount;userid or everyone(optional);channelID (optional)]"
         ],
         "description": "Clears an amount of messages from given channel ID and from specfic person or everyone"
     },
@@ -843,7 +843,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sendMessage[",
         "body": [
-            "$sendMessage[message;return message ID (yes/no)(optional)]"
+            "\\$sendMessage[message;return message ID (yes/no)(optional)]"
         ],
         "description": "Sends a message to this channel"
     },
@@ -859,7 +859,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$description[",
         "body": [
-            "$description[text]"
+            "\\$description[text]"
         ],
         "description": "Sets an embed description"
     },
@@ -875,7 +875,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userAvatar[",
         "body": [
-            "$userAvatar or $userAvatar[userID;size (optional);dynamic (optional)]"
+            "\\$userAvatar or $userAvatar[userID;size (optional);dynamic (optional)]"
         ],
         "description": "Returns the user's avatar"
     },
@@ -891,7 +891,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$image[",
         "body": [
-            "$image[url]"
+            "\\$image[url]"
         ],
         "description": "Sets an image to the embed"
     },
@@ -907,7 +907,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$guildRoles[",
         "body": [
-            "$guildRoles $guildRoles[id/name/mention;amount to return]"
+            "\\$guildRoles $guildRoles[id/name/mention;amount to return]"
         ],
         "description": "Returns all the roles of this guild"
     },
@@ -923,7 +923,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$title[",
         "body": [
-            "$title[text;url (optional)]"
+            "\\$title[text;url (optional)]"
         ],
         "description": "Sets an embed title"
     },
@@ -939,7 +939,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sum[",
         "body": [
-            "$sum[1;3;...]"
+            "\\$sum[1;3;...]"
         ],
         "description": "Sum up the given args"
     },
@@ -955,7 +955,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editMessage[",
         "body": [
-            "$editMessage[messageID;new message;channelID (optional)]"
+            "\\$editMessage[messageID;new message;channelID (optional)]"
         ],
         "description": "Edits a message with given message ID"
     },
@@ -971,7 +971,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$wait[",
         "body": [
-            "$wait[time]"
+            "\\$wait[time]"
         ],
         "description": "Stops the code execution for given time"
     },
@@ -987,7 +987,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roleID[",
         "body": [
-            "$roleID[role name]"
+            "\\$roleID[role name]"
         ],
         "description": "returns the role ID of given role name"
     },
@@ -1019,7 +1019,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sub[",
         "body": [
-            "$sub[1;2;...]"
+            "\\$sub[1;2;...]"
         ],
         "description": "Subtracts a number"
     },
@@ -1035,7 +1035,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$numberSeparator[",
         "body": [
-            "$numberSeparator[number;separator (optional)]"
+            "\\$numberSeparator[number;separator (optional)]"
         ],
         "description": "Separates a number in thousands"
     },
@@ -1051,7 +1051,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasRoles[",
         "body": [
-            "$hasRoles[userID;roleID;roleID;...]"
+            "\\$hasRoles[userID;roleID;roleID;...]"
         ],
         "description": "Checks if given user ID has the provided roles"
     },
@@ -1067,7 +1067,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelType[",
         "body": [
-            "$channelType or $channelType[channelID]"
+            "\\$channelType or $channelType[channelID]"
         ],
         "description": "Returns the channel type"
     },
@@ -1115,7 +1115,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roleExists[",
         "body": [
-            "$roleExists[roleID]"
+            "\\$roleExists[roleID]"
         ],
         "description": "Checks if given role ID exists"
     },
@@ -1131,7 +1131,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelExists[",
         "body": [
-            "$channelExists[channelID]"
+            "\\$channelExists[channelID]"
         ],
         "description": "Checks if given channel ID exists"
     },
@@ -1147,7 +1147,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$random[",
         "body": [
-            "$random[min;max;allow decimals (yes/no)]"
+            "\\$random[min;max;allow decimals (yes/no)]"
         ],
         "description": "Returns a random number from X-Y"
     },
@@ -1163,7 +1163,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userExists[",
         "body": [
-            "$userExists[userID]"
+            "\\$userExists[userID]"
         ],
         "description": "Checks if the given user ID exists"
     },
@@ -1179,7 +1179,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$multi[",
         "body": [
-            "$multi[1;4;...]"
+            "\\$multi[1;4;...]"
         ],
         "description": "Multiplicates X by Y"
     },
@@ -1195,7 +1195,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$unban[",
         "body": [
-            "$unban[userID/username;reason (optional)]"
+            "\\$unban[userID/username;reason (optional)]"
         ],
         "description": "Unbans a user from the server by using their ID or username"
     },
@@ -1211,7 +1211,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomText[",
         "body": [
-            "$randomText[some;random;text;...]"
+            "\\$randomText[some;random;text;...]"
         ],
         "description": "Returns a random text from given texts"
     },
@@ -1227,7 +1227,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userLeaderboard[",
         "body": [
-            "$userLeaderboard[variable;asc/desc (optional);{rank}.- {username} - {value};list (optional, max=40);page (optional)]"
+            "\\$userLeaderboard[variable;asc/desc (optional);{rank}.- {username} - {value};list (optional, max=40);page (optional)]"
         ],
         "description": "Creates an user leaderboard"
     },
@@ -1243,7 +1243,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$noMentionMessage[",
         "body": [
-            "$noMentionMessage or $noMentionMessage[arg number]"
+            "\\$noMentionMessage or $noMentionMessage[arg number]"
         ],
         "description": "User's message without mentions"
     },
@@ -1259,7 +1259,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$replaceText[",
         "body": [
-            "$replaceText[some text;sample;new]"
+            "\\$replaceText[some text;sample;new]"
         ],
         "description": "Replaces A to X in TEXT"
     },
@@ -1275,7 +1275,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$divide[",
         "body": [
-            "$divide[5;2]"
+            "\\$divide[5;2]"
         ],
         "description": "Divides a number by X"
     },
@@ -1291,7 +1291,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getUserVar[",
         "body": [
-            "$getUserVar[variable;userID (optional);guildID (optional)]"
+            "\\$getUserVar[variable;userID (optional);guildID (optional)]"
         ],
         "description": "Gets an user variable value"
     },
@@ -1307,7 +1307,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$color[",
         "body": [
-            "$color[hex or number]"
+            "\\$color[hex or number]"
         ],
         "description": "Sets a embed color"
     },
@@ -1323,7 +1323,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addField[",
         "body": [
-            "$addField[name;value;inline (yes/no)(optional)]"
+            "\\$addField[name;value;inline (yes/no)(optional)]"
         ],
         "description": "Adds a field to the embed"
     },
@@ -1339,7 +1339,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$changeNickname[",
         "body": [
-            "$changeNickname[userID;nickname]"
+            "\\$changeNickname[userID;nickname]"
         ],
         "description": "Changes the nickname of given user ID"
     },
@@ -1355,7 +1355,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setUserVar[",
         "body": [
-            "$setUserVar[variable;value;userID (optional);guildID (optional)]"
+            "\\$setUserVar[variable;value;userID (optional);guildID (optional)]"
         ],
         "description": "Sets a user variable value"
     },
@@ -1371,7 +1371,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addCmdReactions[",
         "body": [
-            "$addCmdReactions[??;??]"
+            "\\$addCmdReactions[??;??]"
         ],
         "description": "Adds reactions to the user's message"
     },
@@ -1387,7 +1387,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$discriminator[",
         "body": [
-            "$discriminator or $discriminator[userID]"
+            "\\$discriminator or $discriminator[userID]"
         ],
         "description": "Returns the user's discriminator"
     },
@@ -1403,7 +1403,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$awaitMessage[",
         "body": [
-            "$awaitMessage[MESSAGE (Optional);userid / everyone (optional, default everyone);timeout after (default and max:(60 x bot tier) seconds); return message id instead of content (yes/no)]"
+            "\\$awaitMessage[MESSAGE (Optional);userid / everyone (optional, default everyone);timeout after (default and max:(60 x bot tier) seconds); return message id instead of content (yes/no)]"
         ],
         "description": "Awaits a message from given user ID or everyone in this channel, and return it"
     },
@@ -1419,7 +1419,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getServerVar[",
         "body": [
-            "$getServerVar[variable]"
+            "\\$getServerVar[variable]"
         ],
         "description": "Gets a server variable value"
     },
@@ -1435,7 +1435,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mentioned[",
         "body": [
-            "$mentioned[mention number;return author ID (yes/no)(optional)]"
+            "\\$mentioned[mention number;return author ID (yes/no)(optional)]"
         ],
         "description": "Returns the ID of the mentioned user"
     },
@@ -1451,7 +1451,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addReactions[",
         "body": [
-            "$addReactions[??;??]"
+            "\\$addReactions[??;??]"
         ],
         "description": "adds reactions to the bot's response"
     },
@@ -1467,7 +1467,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$nickname[",
         "body": [
-            "$nickname or $nickname[userID]"
+            "\\$nickname or $nickname[userID]"
         ],
         "description": "returns the nickname of the user in this guild (if any)"
     },
@@ -1483,7 +1483,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$footer[",
         "body": [
-            "$footer[text;url]"
+            "\\$footer[text;url]"
         ],
         "description": "sets an embed footer"
     },
@@ -1499,7 +1499,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editIn[",
         "body": [
-            "$editIn[time;new message]"
+            "\\$editIn[time;new message]"
         ],
         "description": "edits the bot's message after given time"
     },
@@ -1515,7 +1515,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$useChannel[",
         "body": [
-            "$useChannel[channelID]"
+            "\\$useChannel[channelID]"
         ],
         "description": "command will be sent to given channel ID"
     },
@@ -1531,7 +1531,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isBoosting[",
         "body": [
-            "$isBoosting or $isBoosting[userID]"
+            "\\$isBoosting or $isBoosting[userID]"
         ],
         "description": "checks if the user is boosting this server"
     },
@@ -1547,7 +1547,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mentionedChannels[",
         "body": [
-            "$mentionedChannels[mention number;return current channel ID (yes/no)(optional)]"
+            "\\$mentionedChannels[mention number;return current channel ID (yes/no)(optional)]"
         ],
         "description": "returns the mentioned channel ID"
     },
@@ -1563,7 +1563,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$author[",
         "body": [
-            "$author[text;url;link]"
+            "\\$author[text;url;link]"
         ],
         "description": "sets an embed author, third determines whether the author should contain a hyperlink."
     },
@@ -1579,7 +1579,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$toLocaleUppercase[",
         "body": [
-            "$toLocaleUpperCase[some words here]"
+            "\\$toLocaleUpperCase[some words here]"
         ],
         "description": "capitalizes the first letter of all the given words"
     },
@@ -1595,7 +1595,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyIf[",
         "body": [
-            "$onlyIf[value(!=/==/>=/<=/>/<)value2;error message]"
+            "\\$onlyIf[value(!=/==/>=/<=/>/<)value2;error message]"
         ],
         "description": "checks if a condition is true"
     },
@@ -1611,7 +1611,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$toUppercase[",
         "body": [
-            "$toUpperCase[text]"
+            "\\$toUpperCase[text]"
         ],
         "description": "makes all the letters uppercase"
     },
@@ -1627,7 +1627,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$toLowercase[",
         "body": [
-            "$toLowerCase[text]"
+            "\\$toLowerCase[text]"
         ],
         "description": "makes all the letters lowercase"
     },
@@ -1643,7 +1643,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelID[",
         "body": [
-            "$channelID or $channelID[channel name]"
+            "\\$channelID or $channelID[channel name]"
         ],
         "description": "returns the channel ID of this channel"
     },
@@ -1659,7 +1659,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userTag[",
         "body": [
-            "$userTag or $userTag[userID]"
+            "\\$userTag or $userTag[userID]"
         ],
         "description": "returns the user name and discriminator"
     },
@@ -1675,7 +1675,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$jsonRequest[",
         "body": [
-            "$jsonRequest[url;property;error message;headerName:headerValue;headerName:headerValue;...]"
+            "\\$jsonRequest[url;property;error message;headerName:headerValue;headerName:headerValue;...]"
         ],
         "description": "makes a json request (GET method) and returns a property from it"
     },
@@ -1691,7 +1691,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ownerID[",
         "body": [
-            "$ownerID or $ownerID[guildID]"
+            "\\$ownerID or $ownerID[guildID]"
         ],
         "description": "returns the server owner id"
     },
@@ -1707,7 +1707,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverFeatures[",
         "body": [
-            "$serverFeatures or $serverFeatures[guildID]"
+            "\\$serverFeatures or $serverFeatures[guildID]"
         ],
         "description": "returns the guild's features"
     },
@@ -1723,7 +1723,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$highestRole[",
         "body": [
-            "$highestRole or $highestRole[userID]"
+            "\\$highestRole or $highestRole[userID]"
         ],
         "description": "returns the user's highest role in this guild"
     },
@@ -1739,7 +1739,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomString[",
         "body": [
-            "$randomString[length]"
+            "\\$randomString[length]"
         ],
         "description": "generates a random string"
     },
@@ -1755,7 +1755,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getServerInvite[",
         "body": [
-            "$getServerInvite"
+            "\\$getServerInvite"
         ],
         "description": "creates an invite link to this server"
     },
@@ -1771,7 +1771,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getChannelVar[",
         "body": [
-            "$getChannelVar[variable;channelID (optional)]"
+            "\\$getChannelVar[variable;channelID (optional)]"
         ],
         "description": "gets a channel variable value"
     },
@@ -1787,7 +1787,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setChannelVar[",
         "body": [
-            "$setChannelVar[variable;value;channelID (optional)]"
+            "\\$setChannelVar[variable;value;channelID (optional)]"
         ],
         "description": "sets a channel variable value"
     },
@@ -1803,7 +1803,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$checkContains[",
         "body": [
-            "$checkContains[message;text1;text2;...]"
+            "\\$checkContains[message;text1;text2;...]"
         ],
         "description": "checks if given message contains any of the texts"
     },
@@ -1819,7 +1819,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteRoles[",
         "body": [
-            "$deleteRoles[roleID;roleID;...]"
+            "\\$deleteRoles[roleID;roleID;...]"
         ],
         "description": "deletes a role or roles"
     },
@@ -1835,7 +1835,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$rolePosition[",
         "body": [
-            "$rolePosition[roleID]"
+            "\\$rolePosition[roleID]"
         ],
         "description": "returns the role position of this role"
     },
@@ -1867,7 +1867,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$attachment[",
         "body": [
-            "$attachment[data;name (optional);type (url or buffer) (optional);spoiler (yes/no, default is no) (optional)]"
+            "\\$attachment[data;name (optional);type (url or buffer) (optional);spoiler (yes/no, default is no) (optional)]"
         ],
         "description": "adds an attachment. If name field is given, you must specify the extension for the attachment (png, webp, or gif)"
     },
@@ -1883,7 +1883,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isValidInvite[",
         "body": [
-            "$isValidInvite[invite code]"
+            "\\$isValidInvite[invite code]"
         ],
         "description": "checks if an invite url is valid"
     },
@@ -1899,7 +1899,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isBot[",
         "body": [
-            "$isBot or $isBot[userID]"
+            "\\$isBot or $isBot[userID]"
         ],
         "description": "Returns if the user is a bot or not."
     },
@@ -1947,7 +1947,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$createRole[",
         "body": [
-            "$createRole[name;color (optional);mentionable (optional);hoisted (optional);position (optional);permission;permission;...;return role id (yes/no, default no, optional)]"
+            "\\$createRole[name;color (optional);mentionable (optional);hoisted (optional);position (optional);permission;permission;...;return role id (yes/no, default no, optional)]"
         ],
         "description": "creates a role in this guild"
     },
@@ -1963,7 +1963,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverName[",
         "body": [
-            "$serverName or $serverName[guildID]"
+            "\\$serverName or $serverName[guildID]"
         ],
         "description": "Returns the Current Guild or ID of Guild"
     },
@@ -1979,7 +1979,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyPerms[",
         "body": [
-            "$onlyPerms[perm1;perm2;...;error message]"
+            "\\$onlyPerms[perm1;perm2;...;error message]"
         ],
         "description": "checks if the author has the provided permissions."
     },
@@ -1995,7 +1995,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$checkCondition[",
         "body": [
-            "$checkCondition[Expression]"
+            "\\$checkCondition[Expression]"
         ],
         "description": "Checks if given expression is true or false."
     },
@@ -2027,7 +2027,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$blackListRoleIDs[",
         "body": [
-            "$blackListRoleIDs[roleID;roleID;...;error message]"
+            "\\$blackListRoleIDs[roleID;roleID;...;error message]"
         ],
         "description": "Blacklist roles from using this command by using their IDs."
     },
@@ -2043,7 +2043,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$blackListIDs[",
         "body": [
-            "$blackListIDs[userID;userID;...;error message]"
+            "\\$blackListIDs[userID;userID;...;error message]"
         ],
         "description": "Blacklist users from using this command by using their IDs."
     },
@@ -2075,7 +2075,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editTextSplitElement[",
         "body": [
-            "$editTextSplitElement[index;new value]"
+            "\\$editTextSplitElement[index;new value]"
         ],
         "description": "Edits the value from given index."
     },
@@ -2091,7 +2091,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeTextSplitElement[",
         "body": [
-            "$removeTextSplitElement[index]"
+            "\\$removeTextSplitElement[index]"
         ],
         "description": "Removes an element from $textSplit by using its index."
     },
@@ -2107,7 +2107,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findTextSplitIndex[",
         "body": [
-            "$findTextSplitIndex[value]"
+            "\\$findTextSplitIndex[value]"
         ],
         "description": "Finds the index of a splitted value in $textSplit"
     },
@@ -2155,7 +2155,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$creationDate[",
         "body": [
-            "$creationDate[emojiID/userID/roleID/channelID/guildID;date/time/ms (optional);Date format]"
+            "\\$creationDate[emojiID/userID/roleID/channelID/guildID;date/time/ms (optional);Date format]"
         ],
         "description": "Returns the creation date of given channel, guild, emoji, user or role ID. Date Accept [this format](https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)"
     },
@@ -2171,7 +2171,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userRoles[",
         "body": [
-            "$userRoles or $userRoles[userID;ids/mentions/names (optional);separator (optional)]"
+            "\\$userRoles or $userRoles[userID;ids/mentions/names (optional);separator (optional)]"
         ],
         "description": "Returns the user roles."
     },
@@ -2187,7 +2187,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$status[",
         "body": [
-            "$status or $status[userID]"
+            "\\$status or $status[userID]"
         ],
         "description": "Returns the user's presence status. (Presence intent needs to be enabled on Discord Dev Portal)"
     },
@@ -2203,7 +2203,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$charCount[",
         "body": [
-            "$charCount or $charCount[text]"
+            "\\$charCount or $charCount[text]"
         ],
         "description": "Counts character of a text, or the user's message."
     },
@@ -2219,7 +2219,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getMessageVar[",
         "body": [
-            "$getMessageVar[variable;messageID (optional)]"
+            "\\$getMessageVar[variable;messageID (optional)]"
         ],
         "description": "Gets a message variable value"
     },
@@ -2235,7 +2235,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$memberJoinedDate[",
         "body": [
-            "$memberJoinedDate or $memberJoinedDate[userID;date/time/ms (optional)]"
+            "\\$memberJoinedDate or $memberJoinedDate[userID;date/time/ms (optional)]"
         ],
         "description": "Returns the date the user joined this server"
     },
@@ -2251,7 +2251,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$argsCheck[",
         "body": [
-            "$argsCheck[(>/"
+            "\\$argsCheck[(>/"
         ],
         "description": "Checks for user arguments."
     },
@@ -2267,7 +2267,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setMessageVar[",
         "body": [
-            "$setMessageVar[variable;value;messageID (optional)]"
+            "\\$setMessageVar[variable;value;messageID (optional)]"
         ],
         "description": "Sets a message variable value"
     },
@@ -2283,7 +2283,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$suppressErrors[",
         "body": [
-            "$suppressErrors or $suppressErrors[message]"
+            "\\$suppressErrors or $suppressErrors[message]"
         ],
         "description": "Suppress all the errors and sends a custom one. {error} will contain the error that was thrown."
     },
@@ -2299,7 +2299,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$filterMessage[",
         "body": [
-            "$filterMessage[message;letterOrSymbols]"
+            "\\$filterMessage[message;letterOrSymbols]"
         ],
         "description": "Removes letters or numbers from given text"
     },
@@ -2315,7 +2315,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyNSFW[",
         "body": [
-            "$onlyNSFW[error message]"
+            "\\$onlyNSFW[error message]"
         ],
         "description": "Makes this command only executable in nsfw channels."
     },
@@ -2331,7 +2331,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getRoleColor[",
         "body": [
-            "$getRoleColor[roleID]"
+            "\\$getRoleColor[roleID]"
         ],
         "description": "Gets the color of given role ID"
     },
@@ -2347,7 +2347,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getBotInvite[",
         "body": [
-            "$getBotInvite[permission;permission;permission...]"
+            "\\$getBotInvite[permission;permission;permission...]"
         ],
         "description": "Returns the bot's invite."
     },
@@ -2363,7 +2363,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getEmbed[",
         "body": [
-            "$getEmbed[Channel ID (optional);Message ID (optional);Info (optional, default is description);Embed Number (optional, default is 1)]"
+            "\\$getEmbed[Channel ID (optional);Message ID (optional);Info (optional, default is description);Embed Number (optional, default is 1)]"
         ],
         "description": "Gets information of an embed"
     },
@@ -2395,7 +2395,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyBotPerms[",
         "body": [
-            "$onlyBotPerms[perm1;perm2;...;error message]"
+            "\\$onlyBotPerms[perm1;perm2;...;error message]"
         ],
         "description": "Checks for bot permissions in this guild"
     },
@@ -2411,7 +2411,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$cloneChannel[",
         "body": [
-            "$cloneChannel[Channel ID]"
+            "\\$cloneChannel[Channel ID]"
         ],
         "description": "Clones a channel with permissions."
     },
@@ -2427,7 +2427,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setGuildName[",
         "body": [
-            "$setGuildName[name]"
+            "\\$setGuildName[name]"
         ],
         "description": "Sets a new Name for this guild."
     },
@@ -2443,7 +2443,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setGuildIcon[",
         "body": [
-            "$setGuildIcon[url]"
+            "\\$setGuildIcon[url]"
         ],
         "description": "Sets a new Icon for this guild."
     },
@@ -2459,7 +2459,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteIn[",
         "body": [
-            "$deleteIn[time]"
+            "\\$deleteIn[time]"
         ],
         "description": "Deletes the bot's response after given time"
     },
@@ -2475,7 +2475,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userPerms[",
         "body": [
-            "$userPerms or $userPerms[userID;separator (optional)]"
+            "\\$userPerms or $userPerms[userID;separator (optional)]"
         ],
         "description": "Returns the user's key permissions."
     },
@@ -2491,7 +2491,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$rolePerms[",
         "body": [
-            "$rolePerms[roleID;separator (optional)]"
+            "\\$rolePerms[roleID;separator (optional)]"
         ],
         "description": "Returns the role key permissions."
     },
@@ -2507,7 +2507,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyForRoles[",
         "body": [
-            "$onlyForRoles[roleID/Name;roleID/Name;...;error message]"
+            "\\$onlyForRoles[roleID/Name;roleID/Name;...;error message]"
         ],
         "description": "The command will be only executed if the user has any of these role IDs / Names."
     },
@@ -2523,7 +2523,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botTyping[",
         "body": [
-            "$botTyping"
+            "\\$botTyping"
         ],
         "description": "Shows that the bot is currently typing for few seconds in the channel"
     },
@@ -2555,7 +2555,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasRole[",
         "body": [
-            "$hasRole[userID;roleID;guildID (optional)]"
+            "\\$hasRole[userID;roleID;guildID (optional)]"
         ],
         "description": "Checks if the user has the given role."
     },
@@ -2571,7 +2571,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelUsed[",
         "body": [
-            "$channelUsed or $channelUsed[CHANNEL ID]"
+            "\\$channelUsed or $channelUsed[CHANNEL ID]"
         ],
         "description": "Returns the channelUsed if no argument provided Set channel Used if provided (Only for new interperter)"
     },
@@ -2587,7 +2587,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findServerChannel[",
         "body": [
-            "$findServerChannel[name/mention/id;returnCurrentChannel (yes/no) (optional)]"
+            "\\$findServerChannel[name/mention/id;returnCurrentChannel (yes/no) (optional)]"
         ],
         "description": "Returns a channel ID in this server, or the channel ID this command was ran in only if last field is set to 'yes' (defaults to yes), or else it'll return undefined."
     },
@@ -2603,7 +2603,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageSlice[",
         "body": [
-            "$messageSlice[from;to (optional)]"
+            "\\$messageSlice[from;to (optional)]"
         ],
         "description": "Slices this message from X to Y (or just X)."
     },
@@ -2619,7 +2619,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$usersWithRole[",
         "body": [
-            "$usersWithRole[roleID;separator (optional, default space);id/username/tag/mention (optional, default tag)]"
+            "\\$usersWithRole[roleID;separator (optional, default space);id/username/tag/mention (optional, default tag)]"
         ],
         "description": "Returns a list of users with given role (members are given from the cache.)"
     },
@@ -2635,7 +2635,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$resetUserVar[",
         "body": [
-            "$resetUserVar[variable]"
+            "\\$resetUserVar[variable]"
         ],
         "description": "Resets user variables values"
     },
@@ -2651,7 +2651,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$repeatMessage[",
         "body": [
-            "$repeatMessage[times;message]"
+            "\\$repeatMessage[times;message]"
         ],
         "description": "Repeats a message for X times."
     },
@@ -2683,7 +2683,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addObjectProperty[",
         "body": [
-            "$addObjectProperty[key;value]"
+            "\\$addObjectProperty[key;value]"
         ],
         "description": "Adds a key with a value to the existing object."
     },
@@ -2699,7 +2699,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$createObject[",
         "body": [
-            "$createObject[object string]"
+            "\\$createObject[object string]"
         ],
         "description": "Creates an object that can be used later."
     },
@@ -2715,7 +2715,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getObjectProperty[",
         "body": [
-            "$getObjectProperty[key]"
+            "\\$getObjectProperty[key]"
         ],
         "description": "Gets a property value from given key."
     },
@@ -2763,7 +2763,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roundTenth[",
         "body": [
-            "$roundTenth[number;round]"
+            "\\$roundTenth[number;round]"
         ],
         "description": "Rounds a number to given unit."
     },
@@ -2779,7 +2779,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getMessage[",
         "body": [
-            "$getMessage[channelID;messageID;userID/content/description]"
+            "\\$getMessage[channelID;messageID;userID/content/description]"
         ],
         "description": "Gets information of given message ID."
     },
@@ -2795,7 +2795,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$colorRole[",
         "body": [
-            "$colorRole[roleID;hex or int color]"
+            "\\$colorRole[roleID;hex or int color]"
         ],
         "description": "Changes the color of given role ID."
     },
@@ -2811,7 +2811,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isValidObject[",
         "body": [
-            "$isValidObject[string {}]"
+            "\\$isValidObject[string {}]"
         ],
         "description": "Checks if given string is a valid object."
     },
@@ -2827,7 +2827,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyIfMessageContains[",
         "body": [
-            "$onlyIfMessageContains[text;word1;word2;...;error message]"
+            "\\$onlyIfMessageContains[text;word1;word2;...;error message]"
         ],
         "description": "Checks if 'text' contains all the provided words."
     },
@@ -2843,7 +2843,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeSplitTextElement[",
         "body": [
-            "$removeSplitTextElement[index;index2;...]"
+            "\\$removeSplitTextElement[index;index2;...]"
         ],
         "description": "Removes an element or elements from $textSplit by using their indexes."
     },
@@ -2859,7 +2859,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$usersInChannel[",
         "body": [
-            "$usersInChannel[channelID;id/mention/username (optional);separator (optional)]"
+            "\\$usersInChannel[channelID;id/mention/username (optional);separator (optional)]"
         ],
         "description": "Returns the users that are connected to this voice channel."
     },
@@ -2875,7 +2875,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$slowmode[",
         "body": [
-            "$slowmode[channelID;time]"
+            "\\$slowmode[channelID;time]"
         ],
         "description": "Sets a channel slowmode (or removes it by using 0)."
     },
@@ -2891,7 +2891,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$usersBanned[",
         "body": [
-            "$usersBanned or $usersBanned[id/mention/username;separator (optional)]"
+            "\\$usersBanned or $usersBanned[id/mention/username;separator (optional)]"
         ],
         "description": "Returns a list of users that are banned from this guild."
     },
@@ -2907,7 +2907,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isBanned[",
         "body": [
-            "$isBanned[userID;guildID (optional)]"
+            "\\$isBanned[userID;guildID (optional)]"
         ],
         "description": "Checks whether given user ID is banned from a guild."
     },
@@ -2923,7 +2923,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modifyChannelPerms[",
         "body": [
-            "$modifyChannelPerms[channelID;+perm1;-perm2;/perm3;+perm4;...;roleID/userID]"
+            "\\$modifyChannelPerms[channelID;+perm1;-perm2;/perm3;+perm4;...;roleID/userID]"
         ],
         "description": "Modifies the permissions of a channel for given user or role ID."
     },
@@ -2939,7 +2939,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteEmojis[",
         "body": [
-            "$deleteEmojis[emoji1;emoji2;...]"
+            "\\$deleteEmojis[emoji1;emoji2;...]"
         ],
         "description": "Delete a custom emoji(s) from the server."
     },
@@ -3003,7 +3003,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findRole[",
         "body": [
-            "$findRole[id/name/mention]"
+            "\\$findRole[id/name/mention]"
         ],
         "description": "Returns a role ID if the query matches an option."
     },
@@ -3019,7 +3019,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isMuted[",
         "body": [
-            "$isMuted[userID]"
+            "\\$isMuted[userID]"
         ],
         "description": "Checks if the user is self-muted."
     },
@@ -3051,7 +3051,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageExists[",
         "body": [
-            "$messageExists[channelID;messageID]"
+            "\\$messageExists[channelID;messageID]"
         ],
         "description": "Checks if a message exists by using its ID"
     },
@@ -3067,7 +3067,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasEmbeds[",
         "body": [
-            "$hasEmbeds[channelID;messageID]"
+            "\\$hasEmbeds[channelID;messageID]"
         ],
         "description": "Checks if given message ID contains an embed. returns true or false"
     },
@@ -3083,7 +3083,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$clearReaction[",
         "body": [
-            "$clearReaction[channelID;messageID;userID;emoji]"
+            "\\$clearReaction[channelID;messageID;userID;emoji]"
         ],
         "description": "Removes a reaction from given user ID."
     },
@@ -3099,7 +3099,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$clearReactions[",
         "body": [
-            "$clearReactions[channelID;messageID;all/emoji]"
+            "\\$clearReactions[channelID;messageID;all/emoji]"
         ],
         "description": "Clears all the user reactions assigned to one emoji or all the reactions of this message."
     },
@@ -3115,7 +3115,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getReactions[",
         "body": [
-            "$getReactions[channelID;messageID;emoji;mention/username/id]"
+            "\\$getReactions[channelID;messageID;emoji;mention/username/id]"
         ],
         "description": "Returns a list of users that reacted to this reaction."
     },
@@ -3131,7 +3131,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyForCategories[",
         "body": [
-            "$onlyForCategories[categoryID;categoryID2;...;error message]"
+            "\\$onlyForCategories[categoryID;categoryID2;...;error message]"
         ],
         "description": "The command will only be executable in channels under one of these category IDs."
     },
@@ -3147,7 +3147,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$onlyForChannels[",
         "body": [
-            "$onlyForChannels[channelID;channelID2;...;error message]"
+            "\\$onlyForChannels[channelID;channelID2;...;error message]"
         ],
         "description": "The command will only be executable in the provided channel IDs."
     },
@@ -3195,7 +3195,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modulo[",
         "body": [
-            "$modulo[5;2]"
+            "\\$modulo[5;2]"
         ],
         "description": "Returns the remainder of a division."
     },
@@ -3243,7 +3243,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelTopic[",
         "body": [
-            "$channelTopic or $channelTopic[channelID]"
+            "\\$channelTopic or $channelTopic[channelID]"
         ],
         "description": "Returns the channel topic."
     },
@@ -3259,7 +3259,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverBanner[",
         "body": [
-            "$serverBanner or $serverBanner[guildID;size (optional);dynamic (yes/no)(optional)]"
+            "\\$serverBanner or $serverBanner[guildID;size (optional);dynamic (yes/no)(optional)]"
         ],
         "description": "Returns the Server Banner."
     },
@@ -3291,7 +3291,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$newTicket[",
         "body": [
-            "$newTicket[ticket name;ticket message;categoryID;return ticket ID;error message]"
+            "\\$newTicket[ticket name;ticket message;categoryID;return ticket ID;error message]"
         ],
         "description": "Creates a ticket with given options"
     },
@@ -3307,7 +3307,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$closeTicket[",
         "body": [
-            "$closeTicket[error message (optional)]"
+            "\\$closeTicket[error message (optional)]"
         ],
         "description": "Closes a ticket with given options"
     },
@@ -3323,7 +3323,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isMentioned[",
         "body": [
-            "$isMentioned[userID/roleID/channelID/everyone]"
+            "\\$isMentioned[userID/roleID/channelID/everyone]"
         ],
         "description": "Checks if the role or channel or user was mentioned / everyone"
     },
@@ -3339,7 +3339,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$createWebhook[",
         "body": [
-            "$createWebhook[channelID;name;avatar;returnWebhookID&Token (yes/no);separator]"
+            "\\$createWebhook[channelID;name;avatar;returnWebhookID&Token (yes/no);separator]"
         ],
         "description": "Creates a webhook for this channel, bot has to have manage webhooks permission"
     },
@@ -3355,7 +3355,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sendWebhook[",
         "body": [
-            "$sendWebhook[webhookID;webhookToken;message;return message id (yes/no) optional;username (optional);avatar (optional);thread (optional)]"
+            "\\$sendWebhook[webhookID;webhookToken;message;return message id (yes/no) optional;username (optional);avatar (optional);thread (optional)]"
         ],
         "description": "Sends a message through a webhook by using its ID and token"
     },
@@ -3403,7 +3403,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setChannelTopic[",
         "body": [
-            "$setChannelTopic[channelID;topic]"
+            "\\$setChannelTopic[channelID;topic]"
         ],
         "description": "Sets the topic of a channel with given ID"
     },
@@ -3419,7 +3419,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteWebhook[",
         "body": [
-            "$deleteWebhook[webhookID;webhookToken]"
+            "\\$deleteWebhook[webhookID;webhookToken]"
         ],
         "description": "Deletes a webhook by using its token and ID"
     },
@@ -3435,7 +3435,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$pinMessage[",
         "body": [
-            "$pinMessage or $pinMessage[channelID;messageID]"
+            "\\$pinMessage or $pinMessage[channelID;messageID]"
         ],
         "description": "Pins the user's message or other message using its channel id and message id"
     },
@@ -3451,7 +3451,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$unpinMessage[",
         "body": [
-            "$unpinMessage or $unpinMessage[channelID;messageID]"
+            "\\$unpinMessage or $unpinMessage[channelID;messageID]"
         ],
         "description": "Unpins the user's message or other message by using its message and channel id"
     },
@@ -3467,7 +3467,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getInviteInfo[",
         "body": [
-            "$getInviteInfo[code/url;maxUses/uses/channelID/guildID/userID/isTemporary/expiresAt/createdAt/url]"
+            "\\$getInviteInfo[code/url;maxUses/uses/channelID/guildID/userID/isTemporary/expiresAt/createdAt/url]"
         ],
         "description": "Gets invite info from given invite code"
     },
@@ -3483,7 +3483,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelCategoryID[",
         "body": [
-            "$channelCategoryID or $channelCategoryID[channelID]"
+            "\\$channelCategoryID or $channelCategoryID[channelID]"
         ],
         "description": "Returns the ID of the category this channel belongs to"
     },
@@ -3499,7 +3499,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isUserDMEnabled[",
         "body": [
-            "$isUserDMEnabled or $isUserDMEnabled[userID]"
+            "\\$isUserDMEnabled or $isUserDMEnabled[userID]"
         ],
         "description": "Checks if the user has DMs open, returns true or false"
     },
@@ -3515,7 +3515,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addMessageReactions[",
         "body": [
-            "$addMessageReactions[channelID;messageID;reaction1;reaction2;...]"
+            "\\$addMessageReactions[channelID;messageID;reaction1;reaction2;...]"
         ],
         "description": "Add reactions to a message by using its channel and message ID"
     },
@@ -3531,7 +3531,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$advancedTextSplit[",
         "body": [
-            "$advancedTextSplit[text;split;index;split;index;...]||//in this example we will use a discord message link, we will get the message ID from this link."
+            "\\$advancedTextSplit[text;split;index;split;index;...]||//in this example we will use a discord message link, we will get the message ID from this link."
         ],
         "description": "First field is the message we want to split and get indexes from second field would be the split used in the text and the next field would get the value of the index, setting this index value as the new text. Next fields work as splitter and new index."
     },
@@ -3547,7 +3547,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isMentionable[",
         "body": [
-            "$isMentionable[roleID]"
+            "\\$isMentionable[roleID]"
         ],
         "description": "Checks whether the role is mentionable or not"
     },
@@ -3563,7 +3563,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isHoisted[",
         "body": [
-            "$isHoisted[roleID]"
+            "\\$isHoisted[roleID]"
         ],
         "description": "Checks if the role is hoisted above all the other roles"
     },
@@ -3579,7 +3579,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isManaged[",
         "body": [
-            "$isManaged[roleID]"
+            "\\$isManaged[roleID]"
         ],
         "description": "Checks if this role is managed by discord or not"
     },
@@ -3595,7 +3595,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isValidHex[",
         "body": [
-            "$isValidHex[int or hex]"
+            "\\$isValidHex[int or hex]"
         ],
         "description": "Checks if given hex code or int is valid"
     },
@@ -3611,7 +3611,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$webhookExists[",
         "body": [
-            "$webhookExists[webhookID;webhookToken]"
+            "\\$webhookExists[webhookID;webhookToken]"
         ],
         "description": "Checks if a webhook exists by using its ID and token"
     },
@@ -3627,7 +3627,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modifyWebhook[",
         "body": [
-            "$modifyWebhook[webhookID;webhookToken;name;avatar (optional)]"
+            "\\$modifyWebhook[webhookID;webhookToken;name;avatar (optional)]"
         ],
         "description": "Modifies a webhook by using its token and ID"
     },
@@ -3643,7 +3643,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isValidLink[",
         "body": [
-            "$isValidLink[link or url]"
+            "\\$isValidLink[link or url]"
         ],
         "description": "Checks if given link is valid or not (might not be accurate)"
     },
@@ -3659,7 +3659,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isDeafened[",
         "body": [
-            "$isDeafened[userID"
+            "\\$isDeafened[userID"
         ],
         "description": "Checks if the user is self-deafened."
     },
@@ -3675,7 +3675,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverSplash[",
         "body": [
-            "$serverSplash or $serverSplash[guildID;size (optional)]"
+            "\\$serverSplash or $serverSplash[guildID;size (optional)]"
         ],
         "description": "Returns Server Invite Splash"
     },
@@ -3691,7 +3691,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sendCrosspostingMessage[",
         "body": [
-            "$sendCrosspostingMessage[message;channelID;channelID;...]"
+            "\\$sendCrosspostingMessage[message;channelID;channelID;...]"
         ],
         "description": "Sends a message to multiple channels"
     },
@@ -3739,7 +3739,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$error[",
         "body": [
-            "$error"
+            "\\$error"
         ],
         "description": "Returns the error the interpreter threw"
     },
@@ -3771,7 +3771,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$if[",
         "body": [
-            "$if[EXPRESSION]"
+            "\\$if[EXPRESSION]"
         ],
         "description": "checks the expression and executes code inside it if true you can use $elseIf to check other conditions if previous one is false you can use $else to execute code block if nothing is true"
     },
@@ -3787,7 +3787,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$elseif[",
         "body": [
-            "$elseIf[EXPRESSION]"
+            "\\$elseIf[EXPRESSION]"
         ],
         "description": "will be checked if $if was false, should be ended with $endelseif"
     },
@@ -3803,7 +3803,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$endelseif[",
         "body": [
-            "$elseIf[EXPR]"
+            "\\$elseIf[EXPR]"
         ],
         "description": "is used to close $elseIf"
     },
@@ -3819,7 +3819,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$else[",
         "body": [
-            "$if[1==2]"
+            "\\$if[1==2]"
         ],
         "description": "is used in case $if and $elseIf is not true"
     },
@@ -3835,7 +3835,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$endIf[",
         "body": [
-            "$if[EXPRESSION]"
+            "\\$if[EXPRESSION]"
         ],
         "description": "is used to end the whole $if block"
     },
@@ -3851,7 +3851,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$replaceTextWithRegex[",
         "body": [
-            "$replaceTextWithRegex[text;regex;flags;new text]"
+            "\\$replaceTextWithRegex[text;regex;flags;new text]"
         ],
         "description": "Uses a regular expression to replace matching queries"
     },
@@ -3867,7 +3867,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getObject[",
         "body": [
-            "$getObject or $getObject[spaces]"
+            "\\$getObject or $getObject[spaces]"
         ],
         "description": "Returns a JSON of created/modified $createObject"
     },
@@ -3883,7 +3883,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findNumbers[",
         "body": [
-            "$findNumbers[string]"
+            "\\$findNumbers[string]"
         ],
         "description": "Takes every number from given string and returns them alone"
     },
@@ -3899,7 +3899,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findSpecialChars[",
         "body": [
-            "$findSpecialChars[string]"
+            "\\$findSpecialChars[string]"
         ],
         "description": "Takes all the non number/letter from given string and returns the alone"
     },
@@ -3915,7 +3915,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$findChars[",
         "body": [
-            "$findChars[string]"
+            "\\$findChars[string]"
         ],
         "description": "Takes all the letters from given string and returns them alone"
     },
@@ -3947,7 +3947,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$day[",
         "body": [
-            "$day[Return day of the week (yes/no)]"
+            "\\$day[Return day of the week (yes/no)]"
         ],
         "description": "Returns current day or date"
     },
@@ -3963,7 +3963,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$month[",
         "body": [
-            "$month[Month name (yes/no) (optional)]"
+            "\\$month[Month name (yes/no) (optional)]"
         ],
         "description": "Returns current month"
     },
@@ -4027,7 +4027,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botOwnerID[",
         "body": [
-            "$botOwnerID or $botOwnerID[separator]"
+            "\\$botOwnerID or $botOwnerID[separator]"
         ],
         "description": "Returns the ID of the bot owner If the bot belongs to a team, it'll return multiple IDs Optionally, and if there is more than one owner (team), you can input a separator."
     },
@@ -4043,7 +4043,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$stringStartsWith[",
         "body": [
-            "$stringStartsWith[message;text]"
+            "\\$stringStartsWith[message;text]"
         ],
         "description": "Determines whether given message starts by another message or not"
     },
@@ -4059,7 +4059,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteMessage[",
         "body": [
-            "$deleteMessage[messageID] or $deleteMessage[channelID;messageID]"
+            "\\$deleteMessage[messageID] or $deleteMessage[channelID;messageID]"
         ],
         "description": "Deletes a message using its ID, if no channel ID is present it'll use the default channel"
     },
@@ -4107,7 +4107,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$math[",
         "body": [
-            "$math[Expression;X;Y;Z]"
+            "\\$math[Expression;X;Y;Z]"
         ],
         "description": "Calculate an expression"
     },
@@ -4123,7 +4123,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelCooldown[",
         "body": [
-            "$channelCooldown[time (default 5s);error message]"
+            "\\$channelCooldown[time (default 5s);error message]"
         ],
         "description": "Sets a cooldown to current channel for current command"
     },
@@ -4139,7 +4139,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$timezone[",
         "body": [
-            "$timezone or $timezone[timezone]"
+            "\\$timezone or $timezone[timezone]"
         ],
         "description": "Set or return current timezone"
     },
@@ -4155,7 +4155,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editChannel[",
         "body": [
-            "$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission (yes/no);reason (optional)]"
+            "\\$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission (yes/no);reason (optional)]"
         ],
         "description": "Edit a guild channel data"
     },
@@ -4171,7 +4171,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setRoles[",
         "body": [
-            "$setRoles[userID;roleID;roleID;...]"
+            "\\$setRoles[userID;roleID;roleID;...]"
         ],
         "description": "Set some roles into guild member"
     },
@@ -4187,7 +4187,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emojisFromMessage[",
         "body": [
-            "$emojisFromMessage or $emojisFromMessage[text;separator (optional)]"
+            "\\$emojisFromMessage or $emojisFromMessage[text;separator (optional)]"
         ],
         "description": "Returns all the unicode and custom emojis from user arguments or given text"
     },
@@ -4235,7 +4235,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$lowestRole[",
         "body": [
-            "$lowestRole or $lowestRole[userID]"
+            "\\$lowestRole or $lowestRole[userID]"
         ],
         "description": "Returns the user's lowest role ID in this server"
     },
@@ -4267,7 +4267,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userRoleColor[",
         "body": [
-            "$userRoleColor or $userRoleColor[userID]"
+            "\\$userRoleColor or $userRoleColor[userID]"
         ],
         "description": "Returns the user's highest role color hex"
     },
@@ -4283,7 +4283,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channelPermissionsFor[",
         "body": [
-            "$channelPermissionsFor[userID/role id] or $channelPermissionsFor[channelID;userID/role id]"
+            "\\$channelPermissionsFor[userID/role id] or $channelPermissionsFor[channelID;userID/role id]"
         ],
         "description": "Returns the permissions for this user/role in a channel"
     },
@@ -4299,7 +4299,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$usersTyping[",
         "body": [
-            "$usersTyping or $usersTyping[channelID;mention/tag/username (optional);separator (optional)]"
+            "\\$usersTyping or $usersTyping[channelID;mention/tag/username (optional);separator (optional)]"
         ],
         "description": "Returns the users that are currently typing in a channel"
     },
@@ -4315,7 +4315,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasAnyPerm[",
         "body": [
-            "$hasAnyPerm[permission1;permission2;...] or $hasAnyPerm[userID;permission1;permission2;...]"
+            "\\$hasAnyPerm[permission1;permission2;...] or $hasAnyPerm[userID;permission1;permission2;...]"
         ],
         "description": "Checks if an user or author has one of the provided permissions"
     },
@@ -4331,7 +4331,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messagePublish[",
         "body": [
-            "$messagePublish or $messagePublish[messageID] or $messagePublish[channelID;messageID]"
+            "\\$messagePublish or $messagePublish[messageID] or $messagePublish[channelID;messageID]"
         ],
         "description": "Announces given message to all the channels that follow this channel Messages can only be announced / published if they come from a news channel"
     },
@@ -4347,7 +4347,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasAnyRole[",
         "body": [
-            "$hasAnyRole[roleID1;roleID2;...] or $hasAnyRole[userID;roleID1;roleID2;...]"
+            "\\$hasAnyRole[roleID1;roleID2;...] or $hasAnyRole[userID;roleID1;roleID2;...]"
         ],
         "description": "Checks if the author or user have at least one of the provided role IDs"
     },
@@ -4363,7 +4363,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isTicket[",
         "body": [
-            "$isTicket or $isTicket[channelID]"
+            "\\$isTicket or $isTicket[channelID]"
         ],
         "description": "Checks if a channel is a ticket or not"
     },
@@ -4379,7 +4379,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roleMembersCount[",
         "body": [
-            "$roleMembersCount[roleID]"
+            "\\$roleMembersCount[roleID]"
         ],
         "description": "Returns the amount of users with given role ID. This data comes from the cache, not the api, therefore it may not be precise unless all the guild members are cached."
     },
@@ -4395,7 +4395,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getChannelSlowmode[",
         "body": [
-            "$getChannelSlowmode or $getChannelSlowmode[channelID]"
+            "\\$getChannelSlowmode or $getChannelSlowmode[channelID]"
         ],
         "description": "Get the slowmode duration of a channel(returns 0 if none)."
     },
@@ -4411,7 +4411,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emojiExists[",
         "body": [
-            "$emojiExists[emojiID]"
+            "\\$emojiExists[emojiID]"
         ],
         "description": "Checks if given emoji ID is available to the bot."
     },
@@ -4427,7 +4427,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$spliceTextJoin[",
         "body": [
-            "$spliceTextJoin[text;separator1;separator2;separator3;every]||//Separating user roles in this format:"
+            "\\$spliceTextJoin[text;separator1;separator2;separator3;every]||//Separating user roles in this format:"
         ],
         "description": "Splits a text by given separator1 and then splits it every X amount of times to then join each splitted array with given separator2 which is then joined with separator3"
     },
@@ -4443,7 +4443,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeContains[",
         "body": [
-            "$removeContains[channelID;limit;word1;word2;...]"
+            "\\$removeContains[channelID;limit;word1;word2;...]"
         ],
         "description": "Deletes every message that includes given words in a channel."
     },
@@ -4459,7 +4459,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$stringEndsWith[",
         "body": [
-            "$stringEndsWith[message;text]"
+            "\\$stringEndsWith[message;text]"
         ],
         "description": "Checks if given message ends with given text"
     },
@@ -4475,7 +4475,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userReacted[",
         "body": [
-            "$userReacted[messageID;userID;emoji] or $userReacted[channelID;messageID;userID;emoji]"
+            "\\$userReacted[messageID;userID;emoji] or $userReacted[channelID;messageID;userID;emoji]"
         ],
         "description": "Checks if an user has reacted to a message."
     },
@@ -4491,7 +4491,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableRoleMentions[",
         "body": [
-            "$disableRoleMentions"
+            "\\$disableRoleMentions"
         ],
         "description": "Disables all role mentions in the bot's message"
     },
@@ -4507,7 +4507,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$boostingSince[",
         "body": [
-            "$boostingSince or $boostingSince[userID;date/ms (optional)]"
+            "\\$boostingSince or $boostingSince[userID;date/ms (optional)]"
         ],
         "description": "Returns data when given user started boosting this server."
     },
@@ -4571,7 +4571,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$abbreviate[",
         "body": [
-            "$abbreviate[number]"
+            "\\$abbreviate[number]"
         ],
         "description": "Abbreviate the provided numbers."
     },
@@ -4587,7 +4587,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$channel[",
         "body": [
-            "$channel[channelID;option]"
+            "\\$channel[channelID;option]"
         ],
         "description": "A compact function with 18 different functionalities!"
     },
@@ -4603,7 +4603,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emoji[",
         "body": [
-            "$emoji[emojiID;option]"
+            "\\$emoji[emojiID;option]"
         ],
         "description": "A compact function with 11 different functionalities!"
     },
@@ -4619,7 +4619,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$guild[",
         "body": [
-            "$guild[option]"
+            "\\$guild[option]"
         ],
         "description": "A compact function with 21 different functionalities!"
     },
@@ -4635,7 +4635,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$msg[",
         "body": [
-            "$msg[channelID;messageID;option;additional 1 (optional);additional 2 (optional)]"
+            "\\$msg[channelID;messageID;option;additional 1 (optional);additional 2 (optional)]"
         ],
         "description": "A compact function with more than [20 different functionalities](https://doc.ccommandbot.com/Message/msg.html#usage-msg-channelid-messageid-property)"
     },
@@ -4651,7 +4651,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$role[",
         "body": [
-            "$role[roleID;option]"
+            "\\$role[roleID;option]"
         ],
         "description": "A compact function with 16 different functionalities"
     },
@@ -4667,7 +4667,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$user[",
         "body": [
-            "$user[userID;option]"
+            "\\$user[userID;option]"
         ],
         "description": "A compact function with 12 different functionalities"
     },
@@ -4715,7 +4715,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$let[",
         "body": [
-            "$let[variable name;variable value;remain after execution (yes/no , default no) (optional)]"
+            "\\$let[variable name;variable value;remain after execution (yes/no , default no) (optional)]"
         ],
         "description": "Assigns data to a temporary variable that can be changed and retrieved later in the command"
     },
@@ -4731,7 +4731,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$get[",
         "body": [
-            "$get[variable_name] or $variable_name"
+            "\\$get[variable_name] or $variable_name"
         ],
         "description": "return variable value that was saved using `$let`"
     },
@@ -4747,7 +4747,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$formatDate[",
         "body": [
-            "$formatDate[date in ms / string / iso string / javascript convertable date;format]"
+            "\\$formatDate[date in ms / string / iso string / javascript convertable date;format]"
         ],
         "description": "Formats a Date in Milliseconds / Stringed Date / ISO String to default/given format. Almost a full coverage of moment npm format date, syntax of formats can be found in https://momentjs.com/docs/#/parsing/string-format/"
     },
@@ -4763,7 +4763,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$humanizeMS[",
         "body": [
-            "$humanizeMS[MS;limit (Number) (optional), separator (optional)]"
+            "\\$humanizeMS[MS;limit (Number) (optional), separator (optional)]"
         ],
         "description": "Converts Milliseconds into a Readable durations"
     },
@@ -4779,7 +4779,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$resolveEmojiID[",
         "body": [
-            "$resolveEmojiID[emoji string/name/id]"
+            "\\$resolveEmojiID[emoji string/name/id]"
         ],
         "description": "Resolves a full emoji / id / name into its ID."
     },
@@ -4795,7 +4795,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$filterMessageWords[",
         "body": [
-            "$filterMessageWords[text;caseSensitive (yes/no);...words]"
+            "\\$filterMessageWords[text;caseSensitive (yes/no);...words]"
         ],
         "description": "Removed words from the message."
     },
@@ -4811,7 +4811,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$concatTextSplit[",
         "body": [
-            "$concatTextSplit[text;separator]"
+            "\\$concatTextSplit[text;separator]"
         ],
         "description": "Adds elements to the current textSplit elements."
     },
@@ -4827,7 +4827,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$indexOf[",
         "body": [
-            "$indexOf[text;char]"
+            "\\$indexOf[text;char]"
         ],
         "description": "Returns the position of in . Returns 0 if there's no char in text."
     },
@@ -4843,7 +4843,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$textSlice[",
         "body": [
-            "$textSlice[text;x;y (optional)]"
+            "\\$textSlice[text;x;y (optional)]"
         ],
         "description": "Returns after given position or text in between X and Y"
     },
@@ -4859,7 +4859,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$textTrim[",
         "body": [
-            "$textTrim[text]"
+            "\\$textTrim[text]"
         ],
         "description": "Removes useless spaces from given text."
     },
@@ -4875,7 +4875,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mentionType[",
         "body": [
-            "$mentionType[mention argument]"
+            "\\$mentionType[mention argument]"
         ],
         "description": "Uses an argument to determine the type of the mention (role, user, channel or none)."
     },
@@ -4891,7 +4891,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$initVar[",
         "body": [
-            "$initVar[server/message/channel/user;varname;Defaultvalue;id(optional)]"
+            "\\$initVar[server/message/channel/user;varname;Defaultvalue;id(optional)]"
         ],
         "description": "initalizes a Var with a default value if the var is undefined or does not exist"
     },
@@ -4907,7 +4907,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteUserVar[",
         "body": [
-            "$deleteUserVar[variable;userID (optional);guildID (optional)]"
+            "\\$deleteUserVar[variable;userID (optional);guildID (optional)]"
         ],
         "description": "Delete a local user var from database."
     },
@@ -4923,7 +4923,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteServerVar[",
         "body": [
-            "$deleteServerVar[variable;guildID (optional)]"
+            "\\$deleteServerVar[variable;guildID (optional)]"
         ],
         "description": "Delete a server var from database."
     },
@@ -4939,7 +4939,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteChannelVar[",
         "body": [
-            "$deleteChannelVar[variable;channelID (optional)]"
+            "\\$deleteChannelVar[variable;channelID (optional)]"
         ],
         "description": "Delete a channel var from database."
     },
@@ -4955,7 +4955,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteMessageVar[",
         "body": [
-            "$deleteMessageVar[variable;messageID (optional)]"
+            "\\$deleteMessageVar[variable;messageID (optional)]"
         ],
         "description": "Delete a message var from database."
     },
@@ -4971,7 +4971,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$uri[",
         "body": [
-            "$uri[decode/encode;text]"
+            "\\$uri[decode/encode;text]"
         ],
         "description": "Decodes or Encodes a url Example when you encode a url 'hello world' = 'hello%20world'"
     },
@@ -4987,7 +4987,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$regexMatch[",
         "body": [
-            "$regexMatch[text;Regex;Regex Flag like g (optional);group index (optional, default 0)]"
+            "\\$regexMatch[text;Regex;Regex Flag like g (optional);group index (optional, default 0)]"
         ],
         "description": "To match a text with regex expression"
     },
@@ -5003,7 +5003,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$stop[",
         "body": [
-            "$stop[Message (optional)]"
+            "\\$stop[Message (optional)]"
         ],
         "description": "It will cause the interpreter to stop the execution"
     },
@@ -5019,7 +5019,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setTimeout[",
         "body": [
-            "$setTimeout[time (like 5s, default=10s);name (optional);user id (optional);return token (yes/no) (optional, default no)]"
+            "\\$setTimeout[time (like 5s, default=10s);name (optional);user id (optional);return token (yes/no) (optional, default no)]"
         ],
         "description": "Will execute the code inside it after certain time"
     },
@@ -5035,7 +5035,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$endTimeout[",
         "body": [
-            "$endTimeout"
+            "\\$endTimeout"
         ],
         "description": "To close $setTimeout"
     },
@@ -5051,7 +5051,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$parseTime[",
         "body": [
-            "$parseTime[time]"
+            "\\$parseTime[time]"
         ],
         "description": "Parse human readable time into milliseconds"
     },
@@ -5067,7 +5067,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$button[",
         "body": [
-            "$button[label;style/url;link/id;emoji(optional);disabled (yes/no, optional)]"
+            "\\$button[label;style/url;link/id;emoji(optional);disabled (yes/no, optional)]"
         ],
         "description": "Creates a Discord Button with a label ,color ,id/link"
     },
@@ -5179,7 +5179,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$forEach[",
         "body": [
-            "$forEach[varname;LIST (ex: mido rake azz);Seperator (Optional, default is space)]"
+            "\\$forEach[varname;LIST (ex: mido rake azz);Seperator (Optional, default is space)]"
         ],
         "description": "Will loop over a list and every loop it will take an item and assign in inside varname accessible by $get[varname]"
     },
@@ -5211,7 +5211,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$seq[",
         "body": [
-            "$seq[Start;End;Step (optional, default=1)]"
+            "\\$seq[Start;End;Step (optional, default=1)]"
         ],
         "description": "return sequence of Numbers decided by a starting (inclusive) number and stop at ending (inclusive) number with step Max of 1k number"
     },
@@ -5227,7 +5227,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addButton[",
         "body": [
-            "$addButton[Message ID;Label;style/url;link/id;emoji(optional);Adding in new row (yes/no, optional); disabled (yes/no, optional)]"
+            "\\$addButton[Message ID;Label;style/url;link/id;emoji(optional);Adding in new row (yes/no, optional); disabled (yes/no, optional)]"
         ],
         "description": "Adding a button to a message"
     },
@@ -5243,7 +5243,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeButton[",
         "body": [
-            "$removeButton[Message ID;Label/Emoji/URL/ID (optional, empty means removing the last button)]"
+            "\\$removeButton[Message ID;Label/Emoji/URL/ID (optional, empty means removing the last button)]"
         ],
         "description": "Remove a button from a message by (label/emoji/url/id)"
     },
@@ -5259,7 +5259,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getObjectKeys[",
         "body": [
-            "$getObjectKeys or $getObjectKeys[Seperator (optional)]"
+            "\\$getObjectKeys or $getObjectKeys[Seperator (optional)]"
         ],
         "description": "Return the object keys with seperator (default is space if not provided)"
     },
@@ -5275,7 +5275,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$function[",
         "body": [
-            "$function[Function name;Param 1 (optional);Param 2...(optional)]"
+            "\\$function[Function name;Param 1 (optional);Param 2...(optional)]"
         ],
         "description": "Create a user-defined function that can be called by $callFunction or $functionName (see !!func $callFunction) **Note:** function name cant start with number, and must be within [A-Z or a-z or _ or 0-9]"
     },
@@ -5291,7 +5291,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$endFunction[",
         "body": [
-            "$endFunction"
+            "\\$endFunction"
         ],
         "description": "To close $function"
     },
@@ -5307,7 +5307,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$callFunction[",
         "body": [
-            "$callFunction[Function Name;Argument 1 (optional);Argument 2....(optional)]"
+            "\\$callFunction[Function Name;Argument 1 (optional);Argument 2....(optional)]"
         ],
         "description": "To call a user-defined function created by $function"
     },
@@ -5323,7 +5323,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$return[",
         "body": [
-            "$return[Return Value]"
+            "\\$return[Return Value]"
         ],
         "description": "Can only be used inside user-defined function created by $function It has no effect outside the user-defined function"
     },
@@ -5339,7 +5339,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$dm[",
         "body": [
-            "$dm or $dm[userID (optional)]"
+            "\\$dm or $dm[userID (optional)]"
         ],
         "description": "Redirects the output to a user dm"
     },
@@ -5355,7 +5355,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sendDM[",
         "body": [
-            "$sendDM[userID (optional);message;return message id or undefined,if message could not be send (yes/no , default is no)]"
+            "\\$sendDM[userID (optional);message;return message id or undefined,if message could not be send (yes/no , default is no)]"
         ],
         "description": "Sends a dm message to given user ID."
     },
@@ -5371,7 +5371,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$moveUser[",
         "body": [
-            "$moveUser[userID;channelID (optional);reason (optional)]"
+            "\\$moveUser[userID;channelID (optional);reason (optional)]"
         ],
         "description": "Move an user from a voice channel or disconnect them if optional params are not provided"
     },
@@ -5387,7 +5387,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modifyRole[",
         "body": [
-            "$modifyRole[roleID;name (optional);color (optional);mentionable(yes/no, optional);hoisted(yes/no, optional);position (optional)]"
+            "\\$modifyRole[roleID;name (optional);color (optional);mentionable(yes/no, optional);hoisted(yes/no, optional);position (optional)]"
         ],
         "description": "Modifies the role by using their ID."
     },
@@ -5403,7 +5403,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$muteUser[",
         "body": [
-            "$muteUser[userID;mute (yes/no);reason (optional)]"
+            "\\$muteUser[userID;mute (yes/no);reason (optional)]"
         ],
         "description": "(Un)Mute an user in voice channel"
     },
@@ -5419,7 +5419,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableButton[",
         "body": [
-            "$disableButton[Message ID;Label/Emoji/URL/ID (optional, empty means disable the last button)]"
+            "\\$disableButton[Message ID;Label/Emoji/URL/ID (optional, empty means disable the last button)]"
         ],
         "description": "Disables a button from a message by (label/emoji/url/id)"
     },
@@ -5435,7 +5435,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editButton[",
         "body": [
-            "$editButton[Message ID;Query (optional, default: edit the last button);label/style/emoji/disabled/url/custom_id;New Value]"
+            "\\$editButton[Message ID;Query (optional, default: edit the last button);label/style/emoji/disabled/url/custom_id;New Value]"
         ],
         "description": "To edit a button given by message id and a query if there's multiple buttons in that message"
     },
@@ -5451,7 +5451,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$voiceChannelID[",
         "body": [
-            "$voiceChannelID"
+            "\\$voiceChannelID"
         ],
         "description": "To return the voice channel id where the user join/left in voice trigger in situation of moving from channel to channel, this function will return the new channel This function is **deprecated**, please use `$vcBefore, $vcAfter` instead"
     },
@@ -5467,7 +5467,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$resetRandom[",
         "body": [
-            "$resetRandom"
+            "\\$resetRandom"
         ],
         "description": "To reset the randoms like $random functions, to return a new randomzied value"
     },
@@ -5499,7 +5499,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modifyRolePerms[",
         "body": [
-            "$modifyRolePerms[Role ID;+/-Perm1;+/-Perm2...]"
+            "\\$modifyRolePerms[Role ID;+/-Perm1;+/-Perm2...]"
         ],
         "description": "Modifying role permissions"
     },
@@ -5515,7 +5515,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$void[",
         "body": [
-            "$void[ANYTHING]"
+            "\\$void[ANYTHING]"
         ],
         "description": "A function that eats input but return nothing!"
     },
@@ -5531,7 +5531,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$transcriptChannel[",
         "body": [
-            "$transcriptChannel[Channel ID;Send to Channel ID;Message (optional);file name (optional);return message id or undefined.if message could not be send(yes/no default=no)]"
+            "\\$transcriptChannel[Channel ID;Send to Channel ID;Message (optional);file name (optional);return message id or undefined.if message could not be send(yes/no default=no)]"
         ],
         "description": "To compile latest messages of messages in html file"
     },
@@ -5547,7 +5547,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$redirectErrors[",
         "body": [
-            "$redirectErrors[Channel ID]"
+            "\\$redirectErrors[Channel ID]"
         ],
         "description": "To redirect any kind of errors to specific channel, by default errors will appear in execution channel"
     },
@@ -5563,7 +5563,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$spread[",
         "body": [
-            "$spread[seperator (optional,default space);data]"
+            "\\$spread[seperator (optional,default space);data]"
         ],
         "description": "To spread data as arguments inside another function"
     },
@@ -5579,7 +5579,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$toggleRoles[",
         "body": [
-            "$toggleRoles[User ID (optional);Role ID 1;Role ID 2...]"
+            "\\$toggleRoles[User ID (optional);Role ID 1;Role ID 2...]"
         ],
         "description": "To remove roles from a user if found, or add these roles if are not found"
     },
@@ -5595,7 +5595,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$awaitButton[",
         "body": [
-            "$awaitButton[Message (optional);user id (optional, default:author);timeout (optional, default:15s);button id1 (optional);button id2...]"
+            "\\$awaitButton[Message (optional);user id (optional, default:author);timeout (optional, default:15s);button id1 (optional);button id2...]"
         ],
         "description": "To wait button to be clicked and return that button id In case of no button clicked, it return undefined"
     },
@@ -5611,7 +5611,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$reply[",
         "body": [
-            "$reply[messageID (optional); mention on reply (yes/no, default is no)]"
+            "\\$reply[messageID (optional); mention on reply (yes/no, default is no)]"
         ],
         "description": "to make the bot reply to specific message"
     },
@@ -5659,7 +5659,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$createThread[",
         "body": [
-            "$createThread[Channel ID;Message ID;Thread Name;Reason;Duration (1h/1d/3d/7d);Return ID (yes/no);Private Thread? (yes/no)]"
+            "\\$createThread[Channel ID;Message ID;Thread Name;Reason;Duration (1h/1d/3d/7d);Return ID (yes/no);Private Thread? (yes/no)]"
         ],
         "description": "To create thread of message in a channel"
     },
@@ -5675,7 +5675,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$thread[",
         "body": [
-            "$thread[Thread ID;data]"
+            "\\$thread[Thread ID;data]"
         ],
         "description": "To get the informations of a thread"
     },
@@ -5691,7 +5691,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getThreads[",
         "body": [
-            "$getThreads[Channel ID/Category ID/By Owner ID;Return Data (id/name);Seperator]"
+            "\\$getThreads[Channel ID/Category ID/By Owner ID;Return Data (id/name);Seperator]"
         ],
         "description": "To return threads list by channel parent or category or owner ID"
     },
@@ -5707,7 +5707,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editThread[",
         "body": [
-            "$editThread[Thread ID;Name;Archived (yes/no);duration (ie. 1d);Rate limit per user (ie. 60s);Locked (yes/no)]"
+            "\\$editThread[Thread ID;Name;Archived (yes/no);duration (ie. 1d);Rate limit per user (ie. 60s);Locked (yes/no)]"
         ],
         "description": "To edit an existing thread settings"
     },
@@ -5723,7 +5723,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteThreads[",
         "body": [
-            "$deleteThreads[Thread ID 1;Thread ID 2...]"
+            "\\$deleteThreads[Thread ID 1;Thread ID 2...]"
         ],
         "description": "To delete an existing threads in a channel"
     },
@@ -5739,7 +5739,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$interactionReply[",
         "body": [
-            "$interactionReply[message;ephemeral(yes/no) (optional);return id (yes/no)]"
+            "\\$interactionReply[message;ephemeral(yes/no) (optional);return id (yes/no)]"
         ],
         "description": "replys to Interaction as ephemeral(a message ,which can only get viewed by the author) or normal message like for Button Interactions"
     },
@@ -5755,7 +5755,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$selectMenu[",
         "body": [
-            "Example: $selectMenu["
+            "Example: \\$selectMenu["
         ],
         "description": "creates a select menu with options"
     },
@@ -5771,7 +5771,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayMap[",
         "body": [
-            "$arrayMap[Element Value;Element Index;array name (optional)]{"
+            "\\$arrayMap[Element Value;Element Index;array name (optional)]{"
         ],
         "description": "To replace array values to another value **Note:** Only zero-cooldown functions allowed in CODE"
     },
@@ -5787,7 +5787,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayFilter[",
         "body": [
-            "$arrayFilter[Element Value;Element Index;array name]{"
+            "\\$arrayFilter[Element Value;Element Index;array name]{"
         ],
         "description": "To filter an array depend on a value of CODE, if `false` then remove that element from the array **Note:** Only zero-cooldown functions allowed in CODE"
     },
@@ -5803,7 +5803,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$interactionEdit[",
         "body": [
-            "$interactionEdit[New Message;message id (optional, default is previously sent message)]"
+            "\\$interactionEdit[New Message;message id (optional, default is previously sent message)]"
         ],
         "description": "To edit a previously sent interaction with $interactionReply"
     },
@@ -5819,7 +5819,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$interactionDelete[",
         "body": [
-            "$interactionDelete[message id (optional, default is previously sent message)]"
+            "\\$interactionDelete[message id (optional, default is previously sent message)]"
         ],
         "description": "To delete a previously sent interaction with $interactionReply"
     },
@@ -5835,7 +5835,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$eventSelected[",
         "body": [
-            "$eventSelected or $eventSelected[position;seperator]"
+            "\\$eventSelected or $eventSelected[position;seperator]"
         ],
         "description": "returns selected values of selectMenus"
     },
@@ -5851,7 +5851,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayJoin[",
         "body": [
-            "$arrayJoin[Seperator (optional);array name (optional)]"
+            "\\$arrayJoin[Seperator (optional);array name (optional)]"
         ],
         "description": "To join the array with specific seperator"
     },
@@ -5867,7 +5867,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayPop[",
         "body": [
-            "$arrayPop[array name (optional)]"
+            "\\$arrayPop[array name (optional)]"
         ],
         "description": "To remove and return the last element in the array"
     },
@@ -5883,7 +5883,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayPush[",
         "body": [
-            "$arrayPush[Value;array name (optional)]"
+            "\\$arrayPush[Value;array name (optional)]"
         ],
         "description": "To add an element to the array (from the last)"
     },
@@ -5899,7 +5899,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayShift[",
         "body": [
-            "$arrayShift[array name (optional)]"
+            "\\$arrayShift[array name (optional)]"
         ],
         "description": "To remove and return the first element in the array"
     },
@@ -5915,7 +5915,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arraySlice[",
         "body": [
-            "$arraySlice[from;to;array name (optional)]"
+            "\\$arraySlice[from;to;array name (optional)]"
         ],
         "description": "To keep only a part of the array"
     },
@@ -5931,7 +5931,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayUnshift[",
         "body": [
-            "$arrayUnshift[value;array name (optional)]"
+            "\\$arrayUnshift[value;array name (optional)]"
         ],
         "description": "To add an element to the array (from the first)"
     },
@@ -5947,7 +5947,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayLength[",
         "body": [
-            "$arrayLength[array name (optional)]"
+            "\\$arrayLength[array name (optional)]"
         ],
         "description": "return the elements number in array"
     },
@@ -5963,7 +5963,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayCount[",
         "body": [
-            "$arrayCount[array name (optional)]"
+            "\\$arrayCount[array name (optional)]"
         ],
         "description": "alias for `$arrayLength`"
     },
@@ -5979,7 +5979,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayGet[",
         "body": [
-            "$arrayGet[index;array name (optional)]"
+            "\\$arrayGet[index;array name (optional)]"
         ],
         "description": "return the element value at specific position in array"
     },
@@ -5995,7 +5995,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arraySet[",
         "body": [
-            "$arraySet[index;value;array name (optional)]"
+            "\\$arraySet[index;value;array name (optional)]"
         ],
         "description": "set element value at specific position in array"
     },
@@ -6011,7 +6011,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$joinThreads[",
         "body": [
-            "$joinThreads[Thread ID 1;Thread ID 2...]"
+            "\\$joinThreads[Thread ID 1;Thread ID 2...]"
         ],
         "description": "To join thread channel"
     },
@@ -6027,7 +6027,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$leaveThreads[",
         "body": [
-            "$leaveThreads[Thread ID 1;Thread ID 2...]"
+            "\\$leaveThreads[Thread ID 1;Thread ID 2...]"
         ],
         "description": "To leave thread channel"
     },
@@ -6043,7 +6043,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arraySearch[",
         "body": [
-            "$arraySearch[Value to search;array name (optional)]"
+            "\\$arraySearch[Value to search;array name (optional)]"
         ],
         "description": "To check search of a value in the array"
     },
@@ -6059,7 +6059,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayRemove[",
         "body": [
-            "$arrayRemove[Index;Index... (optional);array name (optional)]"
+            "\\$arrayRemove[Index;Index... (optional);array name (optional)]"
         ],
         "description": "To remove an index in the array return nothing array name must be non-number"
     },
@@ -6075,7 +6075,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayInclude[",
         "body": [
-            "$arrayInclude[Value;array name (optional)]"
+            "\\$arrayInclude[Value;array name (optional)]"
         ],
         "description": "To check if a value exists in the array return true if exists otherwise false"
     },
@@ -6091,7 +6091,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectGet[",
         "body": [
-            "$ObjectGet[Key;Key...(optional)]"
+            "\\$ObjectGet[Key;Key...(optional)]"
         ],
         "description": "To return Key value if exists return key value if exists otherwise undefined"
     },
@@ -6107,7 +6107,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectSet[",
         "body": [
-            "$ObjectSet[Key;Key...(optional);value]"
+            "\\$ObjectSet[Key;Key...(optional);value]"
         ],
         "description": "To set key value If key doesnt exist, will set new one"
     },
@@ -6123,7 +6123,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectCreate[",
         "body": [
-            "$ObjectCreate[JSON]"
+            "\\$ObjectCreate[JSON]"
         ],
         "description": "To create object from JSON input"
     },
@@ -6139,7 +6139,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectValues[",
         "body": [
-            "$ObjectValues[Seperator (optional, default:, )]"
+            "\\$ObjectValues[Seperator (optional, default:, )]"
         ],
         "description": "Return the Object values with seperator between each value"
     },
@@ -6155,7 +6155,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectKeys[",
         "body": [
-            "$ObjectKeys[Seperator (optional, default:, )]"
+            "\\$ObjectKeys[Seperator (optional, default:, )]"
         ],
         "description": "Return the Object Keys with seperator between each key"
     },
@@ -6187,7 +6187,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeButtons[",
         "body": [
-            "$removeButtons[Message ID;Button ID1;Button ID2...]"
+            "\\$removeButtons[Message ID;Button ID1;Button ID2...]"
         ],
         "description": "Remove multiple buttons from a message"
     },
@@ -6203,7 +6203,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayShuffle[",
         "body": [
-            "$arrayShuffle[array name (optional)]"
+            "\\$arrayShuffle[array name (optional)]"
         ],
         "description": "To shuffle an existing array"
     },
@@ -6219,7 +6219,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arraySort[",
         "body": [
-            "$arraySort[Ascending (yes/no, default is no);Sort Type;array name (optional)]"
+            "\\$arraySort[Ascending (yes/no, default is no);Sort Type;array name (optional)]"
         ],
         "description": "sort the array from `$textsplit` depends if you want to sort numerically or alphabetically or occurrences"
     },
@@ -6235,7 +6235,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getCommandOption[",
         "body": [
-            "$getCommandOption[type;Option Name]"
+            "\\$getCommandOption[type;Option Name]"
         ],
         "description": "To get the command option return the option value"
     },
@@ -6251,7 +6251,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$commandName[",
         "body": [
-            "$commandName"
+            "\\$commandName"
         ],
         "description": "To get the slash command name return the command name"
     },
@@ -6267,7 +6267,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectRemove[",
         "body": [
-            "$ObjectRemove[Key;Key...(Optional)]"
+            "\\$ObjectRemove[Key;Key...(Optional)]"
         ],
         "description": "To remove a key from the object"
     },
@@ -6283,7 +6283,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$awaitMenu[",
         "body": [
-            "$awaitMenu[Message (optional);user id (optional, default:author);timeout (optional, default:15s);menu id1 (optional);menu id2...]"
+            "\\$awaitMenu[Message (optional);user id (optional, default:author);timeout (optional, default:15s);menu id1 (optional);menu id2...]"
         ],
         "description": "To wait for a menu option to be selected and return the selected options values In case of no option selected, it return **undefined** In case of multiple values selected, all of them will return with `,` as seperator"
     },
@@ -6299,7 +6299,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getCooldownTime[",
         "body": [
-            "$getCooldownTime[time (i.e 10m);type (i.e server);id (in case of user id or channel id)]"
+            "\\$getCooldownTime[time (i.e 10m);type (i.e server);id (in case of user id or channel id)]"
         ],
         "description": "To get the cooldown time left set by $cooldown functions in millisecond. Type can be: user, channel, server"
     },
@@ -6315,7 +6315,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$categoryChannels[",
         "body": [
-            "$categoryChannels[Category ID;Info type (name/id/mention);Seperator (optional, default is \",\")]"
+            "\\$categoryChannels[Category ID;Info type (name/id/mention);Seperator (optional, default is \",\")]"
         ],
         "description": "To get the channels inside category"
     },
@@ -6347,7 +6347,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableMenu[",
         "body": [
-            "$disableMenu[message id;Menu ID 1;Menu ID 2;Menu ID 3;....]"
+            "\\$disableMenu[message id;Menu ID 1;Menu ID 2;Menu ID 3;....]"
         ],
         "description": "Disable a menu(s) in given message, not providing Menu ID will disable every menu in the message"
     },
@@ -6363,7 +6363,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$enableMenu[",
         "body": [
-            "$enableMenu[message id;Menu ID 1;Menu ID 2;Menu ID 3;....]"
+            "\\$enableMenu[message id;Menu ID 1;Menu ID 2;Menu ID 3;....]"
         ],
         "description": "enable a menu(s) in given message, not providing Menu ID will enable every menu in the message"
     },
@@ -6379,7 +6379,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeMenu[",
         "body": [
-            "$removeMenu[message id;Menu ID 1;Menu ID 2;Menu ID 3;....]"
+            "\\$removeMenu[message id;Menu ID 1;Menu ID 2;Menu ID 3;....]"
         ],
         "description": "remove a menu(s) in given message, not providing Menu ID will remove every menu in the message"
     },
@@ -6395,7 +6395,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editMenu[",
         "body": [
-            "$editMenu[message id;menu id;type;new value]"
+            "\\$editMenu[message id;menu id;type;new value]"
         ],
         "description": "edit a menu in given message type can be: `id/disabled/max/min/placeholder/ph/options"
     },
@@ -6411,7 +6411,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editEmbed[",
         "body": [
-            "$editEmbed[channel id (optional);message id (optional);New data (curl);Embed Number (optional, default 1)]"
+            "\\$editEmbed[channel id (optional);message id (optional);New data (curl);Embed Number (optional, default 1)]"
         ],
         "description": "edit embed in given message"
     },
@@ -6427,7 +6427,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userSetTimeout[",
         "body": [
-            "$userSetTimeout[user id;time (optional, default:'10m');reason (optional)]"
+            "\\$userSetTimeout[user id;time (optional, default:'10m');reason (optional)]"
         ],
         "description": "Set timeout user so he can't chat or communicate for specified period"
     },
@@ -6443,7 +6443,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userRemoveTimeout[",
         "body": [
-            "$userRemoveTimeout[user id;reason (optional)]"
+            "\\$userRemoveTimeout[user id;reason (optional)]"
         ],
         "description": "Remove timeout on a user, so he can talk"
     },
@@ -6459,7 +6459,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userGetTimeout[",
         "body": [
-            "$userGetTimeout[user id]"
+            "\\$userGetTimeout[user id]"
         ],
         "description": "Return timeleft for timeout expiry in milliseconds If user is not timeout, it will return 0"
     },
@@ -6475,7 +6475,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getTrigger[",
         "body": [
-            "$getTrigger[InfoType;Token (optional)]"
+            "\\$getTrigger[InfoType;Token (optional)]"
         ],
         "description": "Return the command trigger information like `name` or `type` Valid InfoType: name, token, guild, code, runonlyin, ignorerole, type, typename, trigger, createdby, minperms, channelused"
     },
@@ -6491,7 +6491,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editTrigger[",
         "body": [
-            "$editTrigger[InfoType;New value;Token (optional)]"
+            "\\$editTrigger[InfoType;New value;Token (optional)]"
         ],
         "description": "Edit a command information like `name` or `type` Editable types: name, runonlyin, ignorerole, type, trigger, channelused, minperms"
     },
@@ -6507,7 +6507,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteTrigger[",
         "body": [
-            "$deleteTrigger[Token]"
+            "\\$deleteTrigger[Token]"
         ],
         "description": "delete a command with token, **empty token = delete current command**"
     },
@@ -6523,7 +6523,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$dateToTime[",
         "body": [
-            "$dateToTime[Date]"
+            "\\$dateToTime[Date]"
         ],
         "description": "Convert date to Time (Date Timezone will use $timeZone value)"
     },
@@ -6539,7 +6539,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$timeToDate[",
         "body": [
-            "$timeToDate[Time;Format (optional)]"
+            "\\$timeToDate[Time;Format (optional)]"
         ],
         "description": "Convert timestamp (since 1970 in ms) to formatted Date (Timezone will respect $timeZone value) Accept [this format](https://discord.com/channels/772051119538176021/949797746917933126/952064529876021358)"
     },
@@ -6555,7 +6555,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buffer[",
         "body": [
-            "$buffer[input]"
+            "\\$buffer[input]"
         ],
         "description": "It return the input (useful for some rare cases)"
     },
@@ -6571,7 +6571,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roleIcon[",
         "body": [
-            "$roleIcon[name/id;icon (optional)]"
+            "\\$roleIcon[name/id;icon (optional)]"
         ],
         "description": "Sets or return Role Icon in a guild"
     },
@@ -6587,7 +6587,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverChannels[",
         "body": [
-            "$serverChannels[info (optional, default is name);type (optional, default is all);separator (optional, default is \", \")]"
+            "\\$serverChannels[info (optional, default is name);type (optional, default is all);separator (optional, default is \", \")]"
         ],
         "description": "Return all the channels inside the guild info can be: name, id"
     },
@@ -6603,7 +6603,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$clearCoolDown[",
         "body": [
-            "$clearCoolDown[type (optional, default user);id (optional, default \"$authorID\")]"
+            "\\$clearCoolDown[type (optional, default user);id (optional, default \"$authorID\")]"
         ],
         "description": "Clear cooldown set by $cooldown functions Type can be: user, channel, server"
     },
@@ -6619,7 +6619,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$membersWithStatus[",
         "body": [
-            "$membersWithStatus[Status1;Status2...]"
+            "\\$membersWithStatus[Status1;Status2...]"
         ],
         "description": "Forcible fetch members with those status, and return the ids separated by `,`"
     },
@@ -6635,7 +6635,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$textShuffle[",
         "body": [
-            "$textShuffle[Text;Separator (optional)]"
+            "\\$textShuffle[Text;Separator (optional)]"
         ],
         "description": "Shuffle a text **Return**: the shuffled text"
     },
@@ -6651,7 +6651,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userBanner[",
         "body": [
-            "$userBanner[User ID (optional)]"
+            "\\$userBanner[User ID (optional)]"
         ],
         "description": "Get user banner **Return**: `undefined` (in case of no banner) or banner URL"
     },
@@ -6667,7 +6667,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editWebhookMessage[",
         "body": [
-            "$editWebhookMessage[ID;Token;Message ID;New Content;Thread ID (optional)]"
+            "\\$editWebhookMessage[ID;Token;Message ID;New Content;Thread ID (optional)]"
         ],
         "description": "Edits a message sent by a webhook"
     },
@@ -6683,7 +6683,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteWebhookMessage[",
         "body": [
-            "$deleteWebhookMessage[ID;Token;Message ID;Thread ID (optional)]"
+            "\\$deleteWebhookMessage[ID;Token;Message ID;Thread ID (optional)]"
         ],
         "description": "deletes a message sent by a webhook"
     },
@@ -6699,7 +6699,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userVarRank[",
         "body": [
-            "$uservarRank[Variable name;Order Type (optional) (asc/desc, default is desc);User ID (optional)]"
+            "\\$uservarRank[Variable name;Order Type (optional) (asc/desc, default is desc);User ID (optional)]"
         ],
         "description": "Return user var rank returned by $userleaderboard for a single user"
     },
@@ -6715,7 +6715,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getMessageReactions[",
         "body": [
-            "$getMessageReactions[Channel ID (optional, default is $channelID);Message ID (optional, default is $messageID);Separator (optional, default is ',')]"
+            "\\$getMessageReactions[Channel ID (optional, default is $channelID);Message ID (optional, default is $messageID);Separator (optional, default is ',')]"
         ],
         "description": "Return the reactions in a given message"
     },
@@ -6731,7 +6731,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getReactionCount[",
         "body": [
-            "$getReactionCount[Channel ID (optional, default is $channelID);Message ID (optional, default is $messageID);Reaction]"
+            "\\$getReactionCount[Channel ID (optional, default is $channelID);Message ID (optional, default is $messageID);Reaction]"
         ],
         "description": "Return the reaction count in a given message"
     },
@@ -6843,7 +6843,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableButtons[",
         "body": [
-            "$disableButtons[Message ID;Button ID 1;Button ID 2;....]"
+            "\\$disableButtons[Message ID;Button ID 1;Button ID 2;....]"
         ],
         "description": "Disable buttons in a message, not providing button id will disable every button in the message"
     },
@@ -6859,7 +6859,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$enableButtons[",
         "body": [
-            "$enableButtons[Message ID;Button ID 1;Button ID 2;....]"
+            "\\$enableButtons[Message ID;Button ID 1;Button ID 2;....]"
         ],
         "description": "Enable buttons in a message, not providing button id will enable every button in the message"
     },
@@ -6875,7 +6875,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$abs[",
         "body": [
-            "$abs[Number]"
+            "\\$abs[Number]"
         ],
         "description": "Return the absolute of a number"
     },
@@ -6891,7 +6891,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mathMin[",
         "body": [
-            "$mathMin[Number 1;Number 2;Number 3;...]"
+            "\\$mathMin[Number 1;Number 2;Number 3;...]"
         ],
         "description": "Return the lowest number from a list of numbers"
     },
@@ -6907,7 +6907,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mathMax[",
         "body": [
-            "$MathMax[Number 1;Number 2;Number 3;...]"
+            "\\$MathMax[Number 1;Number 2;Number 3;...]"
         ],
         "description": "Return the highest number from a list of numbers"
     },
@@ -6923,7 +6923,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ceil[",
         "body": [
-            "$ceil[Number]"
+            "\\$ceil[Number]"
         ],
         "description": "rounds a number up to the next largest integer"
     },
@@ -6939,7 +6939,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$floor[",
         "body": [
-            "$floor[Number]"
+            "\\$floor[Number]"
         ],
         "description": "return the largest integer less than or equal to a given number"
     },
@@ -6955,7 +6955,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayReverse[",
         "body": [
-            "$arrayReverse[array name (optional)]"
+            "\\$arrayReverse[array name (optional)]"
         ],
         "description": "To reverse the array"
     },
@@ -6971,7 +6971,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ignoreErrors[",
         "body": [
-            "$ignoreErrors[yes/no;placeholder (default: error)]"
+            "\\$ignoreErrors[yes/no;placeholder (default: error)]"
         ],
         "description": "It will tell the interpreter to ignore the errors and in case of error, the function will return the placeholder you specified"
     },
@@ -6987,7 +6987,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modal[",
         "body": [
-            "$modal["
+            "\\$modal["
         ],
         "description": "Send a modal, it will only work in interaction-related triggers **Note**: You can only use this within 2 seconds of execution"
     },
@@ -7003,7 +7003,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modalID[",
         "body": [
-            "$modalId"
+            "\\$modalId"
         ],
         "description": "To get the modal id that triggered the custom command"
     },
@@ -7019,7 +7019,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modalAnswer[",
         "body": [
-            "$modalAnswer[Input ID/Index]"
+            "\\$modalAnswer[Input ID/Index]"
         ],
         "description": "To get the modal submitted answer by user, by id or index"
     },
@@ -7035,7 +7035,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getChannelMessages[",
         "body": [
-            "$getChannelMessages[Channel ID;From User ID or everyone (default is everyone);ids/contents;separator;amount (max is 50)]"
+            "\\$getChannelMessages[Channel ID;From User ID or everyone (default is everyone);ids/contents;separator;amount (max is 50)]"
         ],
         "description": "To return list of messages ids"
     },
@@ -7051,7 +7051,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayUnique[",
         "body": [
-            "$arrayUnique[Separator (default ', ');Trim Element before check? (default is yes);array name (optional)]"
+            "\\$arrayUnique[Separator (default ', ');Trim Element before check? (default is yes);array name (optional)]"
         ],
         "description": "Return the unique elements in the array glued with the separator"
     },
@@ -7099,7 +7099,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$modifyUserRoles[",
         "body": [
-            "$modifyUserRoles[User ID;[op]Role 1;[op]Role 2;....]"
+            "\\$modifyUserRoles[User ID;[op]Role 1;[op]Role 2;....]"
         ],
         "description": "To modify user roles, you can add/remove/toggle roles in same time **op** can be: `+` for add `-` for remove `~` for toggle"
     },
@@ -7115,7 +7115,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageStickers[",
         "body": [
-            "$messageStickers[Index]"
+            "\\$messageStickers[Index]"
         ],
         "description": "To return the user message stickers (id) **Index**: starts with 1, leaving it empty return all stickers ids separated by `, `"
     },
@@ -7131,7 +7131,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sticker[",
         "body": [
-            "$sticker[Sticker ID;name;Info]"
+            "\\$sticker[Sticker ID;name;Info]"
         ],
         "description": "To return an information about a sticker using ID **Info** can be: name,desc,url,tags,time"
     },
@@ -7147,7 +7147,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteSticker[",
         "body": [
-            "$deleteSticker[Sticker ID]"
+            "\\$deleteSticker[Sticker ID]"
         ],
         "description": "To delete a sticker inside the server"
     },
@@ -7163,7 +7163,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editSticker[",
         "body": [
-            "$editSticker[Sticker ID;Info;New Value]"
+            "\\$editSticker[Sticker ID;Info;New Value]"
         ],
         "description": "To edit a sticker inside the server **Info** can be: name,desc,emoji"
     },
@@ -7179,7 +7179,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverStickers[",
         "body": [
-            "$serverStickers[Separator]"
+            "\\$serverStickers[Separator]"
         ],
         "description": "To return all server stickers's id"
     },
@@ -7195,7 +7195,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayLoop[",
         "body": [
-            "$arrayLoop[varname;index;array name (optional)]{"
+            "\\$arrayLoop[varname;index;array name (optional)]{"
         ],
         "description": "To loop over the array **Note:** Only zero-cooldown functions allowed in CODE"
     },
@@ -7211,7 +7211,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$includeLibrary[",
         "body": [
-            "$includeLibrary[Library name]"
+            "\\$includeLibrary[Library name]"
         ],
         "description": "To include code created in Library trigger"
     },
@@ -7227,7 +7227,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$guildEvents[",
         "body": [
-            "$guildEvents[info type;filter;separator (default is ', ')]"
+            "\\$guildEvents[info type;filter;separator (default is ', ')]"
         ],
         "description": "to get the guild events info type can be : id/name filter can be: active,scheduled"
     },
@@ -7243,7 +7243,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getEventInfo[",
         "body": [
-            "$getEventInfo[event id;info type]"
+            "\\$getEventInfo[event id;info type]"
         ],
         "description": "to get an information about an event in the guild info type can be: id, name, owner, channel, desc, description, start_time, end_time, status, type, location, cover, users_count, url, privacy"
     },
@@ -7259,7 +7259,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getEventUsers[",
         "body": [
-            "$getEventUsers[event id;separator (default is ', ')]"
+            "\\$getEventUsers[event id;separator (default is ', ')]"
         ],
         "description": "to get the users interested in an event"
     },
@@ -7275,7 +7275,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$eventExists[",
         "body": [
-            "$eventExists[event id]"
+            "\\$eventExists[event id]"
         ],
         "description": "to check if an event exists or not"
     },
@@ -7291,7 +7291,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteEvent[",
         "body": [
-            "$deleteEvent[event id]"
+            "\\$deleteEvent[event id]"
         ],
         "description": "to delete an already existed event"
     },
@@ -7307,7 +7307,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayClear[",
         "body": [
-            "$arrayClear[array name (optional)]"
+            "\\$arrayClear[array name (optional)]"
         ],
         "description": "empty the array"
     },
@@ -7323,7 +7323,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomTextBiased[",
         "body": [
-            "$randomTextBiased[Text1,Percentage1;Text2,Percentage2;Text3,Percentage3]"
+            "\\$randomTextBiased[Text1,Percentage1;Text2,Percentage2;Text3,Percentage3]"
         ],
         "description": "same as $randomText but with biased random"
     },
@@ -7339,7 +7339,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$triggerExists[",
         "body": [
-            "$triggerExists[Token]"
+            "\\$triggerExists[Token]"
         ],
         "description": "Check if a trigger with token exists or not"
     },
@@ -7355,7 +7355,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$addUsersToThread[",
         "body": [
-            "$addUsersToThread[Thread ID;User 1 ID;User 2 ID;User 3 ID....]"
+            "\\$addUsersToThread[Thread ID;User 1 ID;User 2 ID;User 3 ID....]"
         ],
         "description": "Add users to a thread"
     },
@@ -7371,7 +7371,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$removeUsersFromThread[",
         "body": [
-            "$removeUsersFromThread[Thread ID;User 1 ID;User 2 ID;User 3 ID....]"
+            "\\$removeUsersFromThread[Thread ID;User 1 ID;User 2 ID;User 3 ID....]"
         ],
         "description": "remove users from a thread"
     },
@@ -7387,7 +7387,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$lockThread[",
         "body": [
-            "$lockThread[Thread ID;Lock? (yes/no)]"
+            "\\$lockThread[Thread ID;Lock? (yes/no)]"
         ],
         "description": "lock/unlock a thread"
     },
@@ -7403,7 +7403,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$archiveThread[",
         "body": [
-            "$archiveThread[Thread ID;Lock? (yes/no)]"
+            "\\$archiveThread[Thread ID;Lock? (yes/no)]"
         ],
         "description": "archive/unarchive a thread"
     },
@@ -7419,7 +7419,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getOption[",
         "body": [
-            "$getOption[Option name]"
+            "\\$getOption[Option name]"
         ],
         "description": "get the user input for specific option"
     },
@@ -7435,7 +7435,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hyperlink[",
         "body": [
-            "$hyperlink[url;title]"
+            "\\$hyperlink[url;title]"
         ],
         "description": "helps you construct hyper link that works inside embeds"
     },
@@ -7451,7 +7451,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botVerified[",
         "body": [
-            "$botVerified[bot id]"
+            "\\$botVerified[bot id]"
         ],
         "description": "checks if a bot is verified or not"
     },
@@ -7467,7 +7467,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$createSticker[",
         "body": [
-            "$createSticker[name;image url (png/apng, max 512KB);emoji;description (optional);return sticker id (yes/no)]"
+            "\\$createSticker[name;image url (png/apng, max 512KB);emoji;description (optional);return sticker id (yes/no)]"
         ],
         "description": "create a new sticker in the server"
     },
@@ -7483,7 +7483,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setBotActivity[",
         "body": [
-            "$setBotActivity[activity type;activity text]"
+            "\\$setBotActivity[activity type;activity text]"
         ],
         "description": "set a custom bot activity like `Watching ?help`"
     },
@@ -7499,7 +7499,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getBotActivity[",
         "body": [
-            "$getBotActivity[information type]"
+            "\\$getBotActivity[information type]"
         ],
         "description": "get a custom bot activity"
     },
@@ -7515,7 +7515,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$arrayCreate[",
         "body": [
-            "$arrayCreate[List;separator;array name (optional)]"
+            "\\$arrayCreate[List;separator;array name (optional)]"
         ],
         "description": "Creates an array from a list"
     }
