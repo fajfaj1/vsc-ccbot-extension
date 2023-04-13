@@ -7,3 +7,5 @@
 - [1/14/2022] Added snippets
 
 - [4/13/2023] Updated snippets
+
+- [4/13/2023] Added $function[ snippets
