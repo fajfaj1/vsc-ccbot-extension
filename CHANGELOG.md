@@ -9,3 +9,5 @@
 - [4/13/2023] Updated snippets
 
 - [4/13/2023] Added $function[ snippets
+
+- [5/25/2023] Added {} as brackets
