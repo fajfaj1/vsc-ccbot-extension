@@ -24,7 +24,7 @@
 			"name": "keyword.other.percentTag"
 		},
 		{
-			"match": "^\\s*\/\/\\s.+",
+			"match": "\/\/\\s.+",
 			"name": "comment.line.double-slash"
 		},
 		{
