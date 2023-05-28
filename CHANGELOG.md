@@ -11,3 +11,5 @@
 - [4/13/2023] Added $function[ snippets
 
 - [5/25/2023] Added {} as brackets
+
+- [5/28/2023] Fixed one-line comments
