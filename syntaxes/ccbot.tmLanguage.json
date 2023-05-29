@@ -12,10 +12,6 @@
 			"name": "constant.character.separator"
 		},
 		{
-			"match": "(!|=|<|>)=|<|>",
-			"name": "keyword.operator.condition"
-		},
-		{
 			"match": "{\\w+((:|=)(?=\\s\\w+|:|;))?|{|}",
 			"name": "entity.name.type"
 		},
@@ -24,11 +20,12 @@
 			"name": "keyword.other.percentTag"
 		},
 		{
-			"match": "\/\/\\s.+",
+			"match": "\/\/\\s.+$",
 			"name": "comment.line.double-slash"
 		},
 		{
-			"match": "\\/\\*.+\\*\\/",
+			"begin": "\/\\*",
+			"end": "\\*\/",
 			"name": "comment.block.documentation"
 		},
 		{
@@ -40,6 +37,18 @@
 		{
 			"match": "#\\w+#",
 			"name": "entity.name.tag"
+		},
+		{
+			"match": "(!|=|<|>)=|<|>",
+			"name": "keyword.operator.comparsion"
+		},
+		{
+			"match": "\b(true|yes)\b",
+			"name": "constant.language.boolean.true"
+		},
+		{
+			"match": "\b(false|no)\b",
+			"name": "constant.language.boolean.false"
 		}
 	],
 	"scopeName": "source.ccbot"
