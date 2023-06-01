@@ -187,7 +187,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$cooldown[",
         "body": [
-            "\\$cooldown[time (default 5s);error message]"
+            "\\$cooldown[time (default 5s);error message;user id (optional)]"
         ],
         "description": "Sets a server user cooldown"
     },
@@ -277,15 +277,15 @@
         "body": [
             "\\$dateStamp"
         ],
-        "description": "Returns the curren$t date since 1970 in ms."
+        "description": "Returns the current date since 1970 in ms (UTC)."
     },
     "dateStamp[": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$dateStamp[",
         "body": [
-            ""
+            "\\$timeStamp[Return in Seconds (Yes/No, Default is No)]"
         ],
-        "description": "Returns the curren$t date since 1970 in ms."
+        "description": "Returns the current date since 1970 in ms (UTC)."
     },
     "timeStamp": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -299,7 +299,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$timeStamp[",
         "body": [
-            ""
+            "\\$timeStamp[Return in Seconds (Yes/No, Default is No)]"
         ],
         "description": "Returns the current date since 1970 in ms (UTC)."
     },
@@ -875,7 +875,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$userAvatar[",
         "body": [
-            "\\$userAvatar or $userAvatar[userID;size (optional);dynamic (optional)]"
+            "\\$userAvatar or $userAvatar[userID;size (optional);dynamic (optional);return server avatar (default is no)]"
         ],
         "description": "Returns the user's avatar"
     },
@@ -1310,6 +1310,38 @@
             "\\$color[hex or number]"
         ],
         "description": "Sets a embed color"
+    },
+    "viewUserVars": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$viewUserVars",
+        "body": [
+            "\\$viewUserVars"
+        ],
+        "description": "View a list of all the variables that are defined for a specific user"
+    },
+    "viewUserVars[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$viewUserVars[",
+        "body": [
+            "\\$viewUserVars[User ID;Separator]"
+        ],
+        "description": "View a list of all the variables that are defined for a specific user"
+    },
+    "viewServerVars": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$viewServerVars",
+        "body": [
+            "\\$viewServerVars"
+        ],
+        "description": "View a list of all the variables that are defined for the server, and search for specific variables using a regular expression query filter"
+    },
+    "viewServerVars[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$viewServerVars[",
+        "body": [
+            "\\$viewUserVars[User ID;Separator;Query Regex (optional)]"
+        ],
+        "description": "View a list of all the variables that are defined for the server, and search for specific variables using a regular expression query filter"
     },
     "addField": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2139,7 +2171,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$authorAvatar[",
         "body": [
-            ""
+            "\\$authorAvatar[return server avatar (default is no)]"
         ],
         "description": "Returns the author's avatar."
     },
@@ -2204,6 +2236,22 @@
         "prefix": "$charCount[",
         "body": [
             "\\$charCount or $charCount[text]"
+        ],
+        "description": "Counts character of a text, or the user's message."
+    },
+    "textLength": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$textLength",
+        "body": [
+            "\\$textLength"
+        ],
+        "description": "Counts character of a text, or the user's message."
+    },
+    "textLength[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$textLength[",
+        "body": [
+            "\\$textLength or $textLength[text]"
         ],
         "description": "Counts character of a text, or the user's message."
     },
@@ -2411,7 +2459,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$cloneChannel[",
         "body": [
-            "\\$cloneChannel[Channel ID]"
+            "\\$cloneChannel[Channel ID;New Name (optional);Category (optional);Return ID (yes/no, optional)]"
         ],
         "description": "Clones a channel with permissions."
     },
@@ -2619,7 +2667,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$usersWithRole[",
         "body": [
-            "\\$usersWithRole[roleID;separator (optional, default space);id/username/tag/mention (optional, default tag)]"
+            "\\$usersWithRole[roleID;separator (optional, default new line);id/username/tag/mention (optional, default tag)]"
         ],
         "description": "Returns a list of users with given role (members are given from the cache.)"
     },
@@ -3691,7 +3739,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$sendCrosspostingMessage[",
         "body": [
-            "\\$sendCrosspostingMessage[message;channelID;channelID;...]"
+            "\\$sendCrosspostingMessage[message;channel 1;channel 2;...]"
         ],
         "description": "Sends a message to multiple channels"
     },
@@ -3852,6 +3900,22 @@
         "prefix": "$replaceTextWithRegex[",
         "body": [
             "\\$replaceTextWithRegex[text;regex;flags;new text]"
+        ],
+        "description": "Uses a regular expression to replace matching queries"
+    },
+    "regexReplace": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$regexReplace",
+        "body": [
+            "\\$regexReplace"
+        ],
+        "description": "Uses a regular expression to replace matching queries"
+    },
+    "regexReplace[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$regexReplace[",
+        "body": [
+            "\\$regexReplace[text;regex;flags;new text]"
         ],
         "description": "Uses a regular expression to replace matching queries"
     },
@@ -4155,7 +4219,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$editChannel[",
         "body": [
-            "\\$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission (yes/no);reason (optional)]"
+            "\\$editChannel[channelID;categoryID/$default;name/$default;position/$default;nsfw/$default (yes/no);bitrate/$default;userLimit/$default;syncPermission/$default (yes/no);reason (optional)]"
         ],
         "description": "Edit a guild channel data"
     },
@@ -4731,7 +4795,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$get[",
         "body": [
-            "\\$get[variable_name] or $variable_name"
+            "\\$get[variable_name;value if not defined] or $variable_name"
         ],
         "description": "return variable value that was saved using `$let`"
     },
@@ -6139,7 +6203,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectValues[",
         "body": [
-            "\\$ObjectValues[Seperator (optional, default:, )]"
+            "\\$ObjectValues[Seperator (optional, default:, );Nested Propery 1;Nested Property 2]"
         ],
         "description": "Return the Object values with seperator between each value"
     },
@@ -6155,7 +6219,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ObjectKeys[",
         "body": [
-            "\\$ObjectKeys[Seperator (optional, default:, )]"
+            "\\$ObjectKeys[Seperator (optional, default:, );Nested Property 1;Nested Property 2;...]"
         ],
         "description": "Return the Object Keys with seperator between each key"
     },
@@ -6507,7 +6571,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteTrigger[",
         "body": [
-            "\\$deleteTrigger[Token]"
+            "\\$deleteTrigger[Token;Delete Current Trigger If Empty (yes/no, default yes)]"
         ],
         "description": "delete a command with token, **empty token = delete current command**"
     },
@@ -7035,7 +7099,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getChannelMessages[",
         "body": [
-            "\\$getChannelMessages[Channel ID;From User ID or everyone (default is everyone);ids/contents;separator;amount (max is 50)]"
+            "\\$getChannelMessages[Channel ID;From User ID or everyone (default is everyone);ids/contents;separator;amount (max is 50);reverse (yes/no, default is no)]"
         ],
         "description": "To return list of messages ids"
     },
@@ -7518,5 +7582,101 @@
             "\\$arrayCreate[List;separator;array name (optional)]"
         ],
         "description": "Creates an array from a list"
+    },
+    "sentMessageID": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sentMessageID",
+        "body": [
+            "\\$sentMessageID"
+        ],
+        "description": "Retrieve the recently sent message in the code"
+    },
+    "sentMessageID[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$sentMessageID[",
+        "body": [
+            "\\$sentMessageID"
+        ],
+        "description": "Retrieve the recently sent message in the code"
+    },
+    "isConnected": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isConnected",
+        "body": [
+            "\\$isConnected"
+        ],
+        "description": "To check whether user is connected to voice channel or not (only cached users)"
+    },
+    "isConnected[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isConnected[",
+        "body": [
+            "\\$isConnected[User ID]"
+        ],
+        "description": "To check whether user is connected to voice channel or not (only cached users)"
+    },
+    "isStreaming": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isStreaming",
+        "body": [
+            "\\$isStreaming"
+        ],
+        "description": "To check whether user is streaming in a voice channel or not (only cached users)"
+    },
+    "isStreaming[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isStreaming[",
+        "body": [
+            "\\$isStreaming[User ID]"
+        ],
+        "description": "To check whether user is streaming in a voice channel or not (only cached users)"
+    },
+    "regexCheck": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$regexCheck",
+        "body": [
+            "\\$regexCheck"
+        ],
+        "description": "To check if a text match a regex or not"
+    },
+    "regexCheck[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$regexCheck[",
+        "body": [
+            "\\$regexCheck[Text;Regex;Flags]"
+        ],
+        "description": "To check if a text match a regex or not"
+    },
+    "ObjectLoop": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectLoop",
+        "body": [
+            "\\$ObjectLoop"
+        ],
+        "description": "To loop over the object **Note:** Only zero-cooldown functions allowed in CODE"
+    },
+    "ObjectLoop[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectLoop[",
+        "body": [
+            "\\$ObjectLoop[key name;value name;index name;Nested Prroperty 1;Nested Property 2;...]{"
+        ],
+        "description": "To loop over the object **Note:** Only zero-cooldown functions allowed in CODE"
+    },
+    "arrayElementCount": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayElementCount",
+        "body": [
+            "\\$arrayElementCount"
+        ],
+        "description": "This function is used to count the number of times a specific element appears in an array. It takes three parameters: the element to count, whether or not to trim whitespace before comparing elements, and the name of the array to search"
+    },
+    "arrayElementCount[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayElementCount[",
+        "body": [
+            "\\$arrayElementCount[Element To Count;Trim before compare (yes/no);array name]"
+        ],
+        "description": "This function is used to count the number of times a specific element appears in an array. It takes three parameters: the element to count, whether or not to trim whitespace before comparing elements, and the name of the array to search"
     }
 }

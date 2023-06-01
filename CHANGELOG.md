@@ -15,3 +15,5 @@
 - [5/28/2023] Fixed one-line comments
 
 - [5/29/2023] Fixed conditions and added styling for Booleans
+
+- [6/1/2023] Updated snippets
