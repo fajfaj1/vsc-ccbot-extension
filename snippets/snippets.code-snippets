@@ -43,7 +43,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverCount[",
         "body": [
-            ""
+            "\\$serverCount"
         ],
         "description": "returns the amount of you server your bot is in"
     },
@@ -59,7 +59,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ram[",
         "body": [
-            ""
+            "\\$ram"
         ],
         "description": "returns memory Usage in MB"
     },
@@ -91,7 +91,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ping[",
         "body": [
-            ""
+            "\\$ping"
         ],
         "description": "Returns the Bot websocket ping"
     },
@@ -139,7 +139,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableMentions[",
         "body": [
-            ""
+            "\\$disableMentions"
         ],
         "description": "Replaces all the user mentions with their user names"
     },
@@ -155,7 +155,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$authorID[",
         "body": [
-            ""
+            "\\$authorID"
         ],
         "description": "Returns the author's ID."
     },
@@ -171,7 +171,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverBoostCount[",
         "body": [
-            ""
+            "\\$serverBoostCount"
         ],
         "description": "Returns the amount of boosts this server has"
     },
@@ -347,7 +347,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverVerificationLevel[",
         "body": [
-            ""
+            "\\$serverVerificationLevel"
         ],
         "description": "Returns the server verification level of this guild"
     },
@@ -363,7 +363,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mention[",
         "body": [
-            ""
+            "\\$mention"
         ],
         "description": "Returns the mention of the author"
     },
@@ -411,7 +411,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$roleCount[",
         "body": [
-            ""
+            "\\$roleCount"
         ],
         "description": "Returns the amount of roles in this guild"
     },
@@ -651,7 +651,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botCount[",
         "body": [
-            ""
+            "\\$botCount"
         ],
         "description": "Returns the amount of bots in this server"
     },
@@ -1003,7 +1003,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$commandCode[",
         "body": [
-            ""
+            "\\$commandCode"
         ],
         "description": "Returns the command code"
     },
@@ -1083,7 +1083,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$allMembersCount[",
         "body": [
-            ""
+            "\\$allMembersCount"
         ],
         "description": "Returns the total user count of the bot"
     },
@@ -1099,7 +1099,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverContentFilter[",
         "body": [
-            ""
+            "\\$serverContentFilter"
         ],
         "description": "Returns the content filter level of this guild"
     },
@@ -1883,7 +1883,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deletecommand[",
         "body": [
-            ""
+            "\\$deletecommand"
         ],
         "description": "deletes the user's message"
     },
@@ -1947,7 +1947,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emojiName[",
         "body": [
-            ""
+            "\\$emojiName"
         ],
         "description": "Returns the emoji name the user reacted with"
     },
@@ -1963,7 +1963,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getTextSplitLength[",
         "body": [
-            ""
+            "\\$getTextSplitLength"
         ],
         "description": "gets the length of the $textSplit"
     },
@@ -2043,7 +2043,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$clientID[",
         "body": [
-            ""
+            "\\$clientID"
         ],
         "description": "Returns the Bot ID"
     },
@@ -2091,7 +2091,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emojiID[",
         "body": [
-            ""
+            "\\$emojiID"
         ],
         "description": "Returns the emoji ID of the emoji the user reacted with"
     },
@@ -2155,7 +2155,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emojiToString[",
         "body": [
-            ""
+            "\\$emojiToString"
         ],
         "description": "Returns the emoji the user reacted with"
     },
@@ -2427,7 +2427,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageAttachment[",
         "body": [
-            ""
+            "\\$messageAttachment"
         ],
         "description": "Returns the first attachment url of this message. (if any)"
     },
@@ -2587,7 +2587,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$uptime[",
         "body": [
-            ""
+            "\\$uptime"
         ],
         "description": "Uptime of the bot"
     },
@@ -2715,7 +2715,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomUserID[",
         "body": [
-            ""
+            "\\$randomUserID"
         ],
         "description": "Returns a random user ID from this server."
     },
@@ -2779,7 +2779,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomChannelID[",
         "body": [
-            ""
+            "\\$randomChannelID"
         ],
         "description": "Returns a random text channel ID."
     },
@@ -2795,7 +2795,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomMention[",
         "body": [
-            ""
+            "\\$randomMention"
         ],
         "description": "Mentions a random user of this server."
     },
@@ -3003,7 +3003,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverEmojis[",
         "body": [
-            ""
+            "\\$serverEmojis"
         ],
         "description": "Returns the emojis of this guild."
     },
@@ -3019,7 +3019,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$emojiCount[",
         "body": [
-            ""
+            "\\$emojiCount"
         ],
         "description": "Returns the amount of emojis in this server"
     },
@@ -3035,7 +3035,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$randomRoleID[",
         "body": [
-            ""
+            "\\$randomRoleID"
         ],
         "description": "Returns a random role ID from this guild."
     },
@@ -3083,7 +3083,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$argsCount[",
         "body": [
-            ""
+            "\\$argsCount"
         ],
         "description": "Returns the amount of user arguments."
     },
@@ -3211,7 +3211,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverRegion[",
         "body": [
-            ""
+            "\\$serverRegion"
         ],
         "description": "Return the Guild region"
     },
@@ -3227,7 +3227,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageType[",
         "body": [
-            ""
+            "\\$messageType"
         ],
         "description": "Returns the type of this message."
     },
@@ -3259,7 +3259,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$cpu[",
         "body": [
-            ""
+            "\\$cpu"
         ],
         "description": "Returns the cpu usage."
     },
@@ -3275,7 +3275,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$maxRam[",
         "body": [
-            ""
+            "\\$maxRam"
         ],
         "description": "Total memory for this process."
     },
@@ -3323,7 +3323,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverBoostLevel[",
         "body": [
-            ""
+            "\\$serverBoostLevel"
         ],
         "description": "Return the Level of Server Count:$serverBoostLevel"
     },
@@ -3419,7 +3419,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$referenceChannelID[",
         "body": [
-            ""
+            "\\$referenceChannelID"
         ],
         "description": "The ID of the channel where this user replied in"
     },
@@ -3435,7 +3435,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$referenceMessageID[",
         "body": [
-            ""
+            "\\$referenceMessageID"
         ],
         "description": "The ID of the message that the user replied to"
     },
@@ -3755,7 +3755,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botPing[",
         "body": [
-            ""
+            "\\$botPing"
         ],
         "description": "Returns the Bot Message ping"
     },
@@ -3771,7 +3771,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageID[",
         "body": [
-            ""
+            "\\$messageID"
         ],
         "description": "Returns the user's message ID"
     },
@@ -3803,7 +3803,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$executionTime[",
         "body": [
-            ""
+            "\\$executionTime"
         ],
         "description": "Returns the time the interpreter took to execute every function in the code (in milliseconds) This function won't work in embeds"
     },
@@ -3995,7 +3995,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$year[",
         "body": [
-            ""
+            "\\$year"
         ],
         "description": "Returns current year"
     },
@@ -4043,7 +4043,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$second[",
         "body": [
-            ""
+            "\\$second"
         ],
         "description": "Returns current second"
     },
@@ -4059,7 +4059,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hour[",
         "body": [
-            ""
+            "\\$hour"
         ],
         "description": "Returns current hour"
     },
@@ -4075,7 +4075,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$minute[",
         "body": [
-            ""
+            "\\$minute"
         ],
         "description": "Returns current minute"
     },
@@ -4139,7 +4139,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageWebhookID[",
         "body": [
-            ""
+            "\\$messageWebhookID"
         ],
         "description": "Returns the ID of the webhook that sent this message"
     },
@@ -4155,7 +4155,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$messageFlags[",
         "body": [
-            ""
+            "\\$messageFlags"
         ],
         "description": "Returns the message flags for this message"
     },
@@ -4267,7 +4267,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$highestServerRole[",
         "body": [
-            ""
+            "\\$highestServerRole"
         ],
         "description": "Returns the ID of the highest role in this server"
     },
@@ -4283,7 +4283,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$lowestServerRole[",
         "body": [
-            ""
+            "\\$lowestServerRole"
         ],
         "description": "Returns the ID of the lowest role in this server"
     },
@@ -4315,7 +4315,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverDescription[",
         "body": [
-            ""
+            "\\$serverDescription"
         ],
         "description": "Returns the server's description"
     },
@@ -4587,7 +4587,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableChannelMentions[",
         "body": [
-            ""
+            "\\$disableChannelMentions"
         ],
         "description": "Disables all channel mentions in this code"
     },
@@ -4603,7 +4603,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$disableEveryoneMentions[",
         "body": [
-            ""
+            "\\$disableEveryoneMentions"
         ],
         "description": "Disables all mentions with @everyone Role."
     },
@@ -4619,7 +4619,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$enableEveryoneMentions[",
         "body": [
-            ""
+            "\\$enableEveryoneMentions"
         ],
         "description": "enable mention on @everyone."
     },
@@ -4747,7 +4747,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ordinal[",
         "body": [
-            ""
+            "\\$ordinal"
         ],
         "description": "Returns the given number as an ordinal number."
     },
@@ -4763,7 +4763,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isEmoji[",
         "body": [
-            ""
+            "\\$isEmoji"
         ],
         "description": "Returns true if the content is a default emoji. Returns false otherwise."
     },
@@ -5147,7 +5147,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buttonID[",
         "body": [
-            ""
+            "\\$buttonID"
         ],
         "description": "return the button ID, return undefined if not found"
     },
@@ -5163,7 +5163,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buttonEmoji[",
         "body": [
-            ""
+            "\\$buttonEmoji"
         ],
         "description": "return the clicked button emoji in Button trigger, return undefined if not found"
     },
@@ -5179,7 +5179,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buttonLabel[",
         "body": [
-            ""
+            "\\$buttonLabel"
         ],
         "description": "return the clicked button label in Button trigger, return undefined if not found"
     },
@@ -5195,7 +5195,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buttonURL[",
         "body": [
-            ""
+            "\\$buttonURL"
         ],
         "description": "return the clicked button URL in Button trigger if exists , return undefined if not found"
     },
@@ -5211,7 +5211,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buttonStyle[",
         "body": [
-            ""
+            "\\$buttonStyle"
         ],
         "description": "return the clicked button style like blurple/red/url in Button trigger, return undefined if not found"
     },
@@ -5227,7 +5227,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$buttonIsDisabled[",
         "body": [
-            ""
+            "\\$buttonIsDisabled"
         ],
         "description": "return true if button is disabled, false otherwise, return undefined if not found"
     },
@@ -5547,7 +5547,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botTier[",
         "body": [
-            ""
+            "\\$botTier"
         ],
         "description": "Return the bot tier"
     },
@@ -5691,7 +5691,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$eventChannelID[",
         "body": [
-            ""
+            "\\$eventChannelID"
         ],
         "description": "To return the channel/thread ID which was created/deleted **Useful** only inside channel trigger"
     },
@@ -5707,7 +5707,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$eventChannelParent[",
         "body": [
-            ""
+            "\\$eventChannelParent"
         ],
         "description": "To return the channel/thread parent ID which was created/deleted **Useful** only inside channel trigger"
     },
@@ -6235,7 +6235,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$interactionId[",
         "body": [
-            ""
+            "\\$interactionId"
         ],
         "description": "Return the interaction custom id , works for button and menu.."
     },
@@ -6395,7 +6395,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$botVersion[",
         "body": [
-            ""
+            "\\$botVersion"
         ],
         "description": "Return the current CC bot version"
     },
@@ -6811,7 +6811,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$vcBefore[",
         "body": [
-            ""
+            "\\$vcBefore"
         ],
         "description": "Return the voice channel id that user just left in voice trigger"
     },
@@ -6827,7 +6827,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$vcAfter[",
         "body": [
-            ""
+            "\\$vcAfter"
         ],
         "description": "Return the voice channel id that user just join in voice trigger"
     },
@@ -6843,7 +6843,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$menuId[",
         "body": [
-            ""
+            "\\$menuId"
         ],
         "description": "Return the menu id of the menu in Select Menu Trigger"
     },
@@ -6859,7 +6859,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$timeoutBy[",
         "body": [
-            ""
+            "\\$timeoutBy"
         ],
         "description": "Return the user id of the admin/mod that timeout the user in Timeout trigger"
     },
@@ -6875,7 +6875,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$timeoutReason[",
         "body": [
-            ""
+            "\\$timeoutReason"
         ],
         "description": "Return the reason of timeout in Timeout trigger"
     },
@@ -6891,7 +6891,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$timeoutAction[",
         "body": [
-            ""
+            "\\$timeoutAction"
         ],
         "description": "Return `add` in case of timeout user, `remove` in case of timeout got removed by someone in Timeout trigger"
     },
@@ -7131,7 +7131,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$eventOldNickname[",
         "body": [
-            ""
+            "\\$eventOldNickname"
         ],
         "description": "Return the old nickname in Nickname trigger"
     },
@@ -7147,7 +7147,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$eventNewNickname[",
         "body": [
-            ""
+            "\\$eventNewNickname"
         ],
         "description": "Return the new nickname in Nickname trigger"
     },
