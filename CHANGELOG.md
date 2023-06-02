@@ -17,3 +17,5 @@
 - [5/29/2023] Fixed conditions and added styling for Booleans
 
 - [6/1/2023] Updated snippets
+
+- [6/2/2023] Fixed snippets for functions with no arguments
