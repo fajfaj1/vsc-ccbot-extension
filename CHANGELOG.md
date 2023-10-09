@@ -19,3 +19,5 @@
 - [6/1/2023] Updated snippets
 
 - [6/2/2023] Fixed snippets for functions with no arguments
+
+- [10/9/2023] Updated snippets

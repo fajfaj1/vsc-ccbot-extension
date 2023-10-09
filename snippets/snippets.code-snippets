@@ -331,7 +331,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$systemChannelID[",
         "body": [
-            "\\$systemChannelID or $systemChannelID[guildID]"
+            "\\$systemChannelID"
         ],
         "description": "Returns the system channel ID of this server (if any)"
     },
@@ -357,15 +357,15 @@
         "body": [
             "\\$mention"
         ],
-        "description": "Returns the mention of the author"
+        "description": "Returns the mention of the user"
     },
     "mention[": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$mention[",
         "body": [
-            "\\$mention"
+            "\\$mention[User ID (optional, default $authorID)]"
         ],
-        "description": "Returns the mention of the author"
+        "description": "Returns the mention of the user"
     },
     "round": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -571,7 +571,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverIcon[",
         "body": [
-            "\\$serverIcon or $serverIcon[guildID;size (optional);dynamic (yes/no)(optional)]"
+            "\\$serverIcon or $serverIcon[size (optional);dynamic (yes/no)(optional)]"
         ],
         "description": "Returns the Server Icon"
     },
@@ -1221,7 +1221,7 @@
         "body": [
             "\\$userLeaderboard"
         ],
-        "description": "Creates an user leaderboard"
+        "description": "generate a leaderboard of a user variable and return it"
     },
     "userLeaderboard[": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -1229,7 +1229,7 @@
         "body": [
             "\\$userLeaderboard[variable;asc/desc (optional);{rank}.- {username} - {value};list (optional, max=40);page (optional)]"
         ],
-        "description": "Creates an user leaderboard"
+        "description": "generate a leaderboard of a user variable and return it"
     },
     "noMentionMessage": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -1291,7 +1291,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getUserVar[",
         "body": [
-            "\\$getUserVar[variable;userID (optional);guildID (optional)]"
+            "\\$getUserVar[variable;userID (optional)]"
         ],
         "description": "Gets an user variable value"
     },
@@ -1339,7 +1339,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$viewServerVars[",
         "body": [
-            "\\$viewUserVars[User ID;Separator;Query Regex (optional)]"
+            "\\$viewServerVars[Separator;Query Regex (optional)]"
         ],
         "description": "View a list of all the variables that are defined for the server, and search for specific variables using a regular expression query filter"
     },
@@ -1387,7 +1387,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$setUserVar[",
         "body": [
-            "\\$setUserVar[variable;value;userID (optional);guildID (optional)]"
+            "\\$setUserVar[variable;value;userID (optional)]"
         ],
         "description": "Sets a user variable value"
     },
@@ -1723,7 +1723,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$ownerID[",
         "body": [
-            "\\$ownerID or $ownerID[guildID]"
+            "\\$ownerID"
         ],
         "description": "returns the server owner id"
     },
@@ -1739,7 +1739,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverFeatures[",
         "body": [
-            "\\$serverFeatures or $serverFeatures[guildID]"
+            "\\$serverFeatures"
         ],
         "description": "returns the guild's features"
     },
@@ -1989,15 +1989,15 @@
         "body": [
             "\\$serverName"
         ],
-        "description": "Returns the Current Guild or ID of Guild"
+        "description": "Returns the Current Server Name"
     },
     "serverName[": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverName[",
         "body": [
-            "\\$serverName or $serverName[guildID]"
+            "\\$serverName"
         ],
-        "description": "Returns the Current Guild or ID of Guild"
+        "description": "Returns the Current Server Name"
     },
     "onlyPerms": {
         "scope": "ccbot,cb,customcommand,customcommandbot",
@@ -2603,7 +2603,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$hasRole[",
         "body": [
-            "\\$hasRole[userID;roleID;guildID (optional)]"
+            "\\$hasRole[userID;roleID]"
         ],
         "description": "Checks if the user has the given role."
     },
@@ -2907,7 +2907,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$usersInChannel[",
         "body": [
-            "\\$usersInChannel[channelID;id/mention/username (optional);separator (optional)]"
+            "\\$usersInChannel[channelID;id/mention/username/count (optional);separator (optional)]"
         ],
         "description": "Returns the users that are connected to this voice channel."
     },
@@ -2955,7 +2955,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$isBanned[",
         "body": [
-            "\\$isBanned[userID;guildID (optional)]"
+            "\\$isBanned[userID]"
         ],
         "description": "Checks whether given user ID is banned from a guild."
     },
@@ -3307,7 +3307,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverBanner[",
         "body": [
-            "\\$serverBanner or $serverBanner[guildID;size (optional);dynamic (yes/no)(optional)]"
+            "\\$serverBanner"
         ],
         "description": "Returns the Server Banner."
     },
@@ -3515,7 +3515,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$getInviteInfo[",
         "body": [
-            "\\$getInviteInfo[code/url;maxUses/uses/channelID/guildID/userID/isTemporary/expiresAt/createdAt/url]"
+            "\\$getInviteInfo[code/url;Property]"
         ],
         "description": "Gets invite info from given invite code"
     },
@@ -3723,7 +3723,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$serverSplash[",
         "body": [
-            "\\$serverSplash or $serverSplash[guildID;size (optional)]"
+            "\\$serverSplash[size (optional)]"
         ],
         "description": "Returns Server Invite Splash"
     },
@@ -4971,7 +4971,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteUserVar[",
         "body": [
-            "\\$deleteUserVar[variable;userID (optional);guildID (optional)]"
+            "\\$deleteUserVar[variable;userID (optional)]"
         ],
         "description": "Delete a local user var from database."
     },
@@ -4987,7 +4987,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$deleteServerVar[",
         "body": [
-            "\\$deleteServerVar[variable;guildID (optional)]"
+            "\\$deleteServerVar[variable]"
         ],
         "description": "Delete a server var from database."
     },
@@ -7467,7 +7467,7 @@
         "scope": "ccbot,cb,customcommand,customcommandbot",
         "prefix": "$archiveThread[",
         "body": [
-            "\\$archiveThread[Thread ID;Lock? (yes/no)]"
+            "\\$archiveThread[Thread ID;Archive? (yes/no)]"
         ],
         "description": "archive/unarchive a thread"
     },
@@ -7678,5 +7678,645 @@
             "\\$arrayElementCount[Element To Count;Trim before compare (yes/no);array name]"
         ],
         "description": "This function is used to count the number of times a specific element appears in an array. It takes three parameters: the element to count, whether or not to trim whitespace before comparing elements, and the name of the array to search"
+    },
+    "ObjectKeyExists": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectKeyExists",
+        "body": [
+            "\\$ObjectKeyExists"
+        ],
+        "description": "To check if a key is exists in the object, returns true or false"
+    },
+    "ObjectKeyExists[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectKeyExists[",
+        "body": [
+            "\\$ObjectKeyExists[Key;Nested Key...(optional)]"
+        ],
+        "description": "To check if a key is exists in the object, returns true or false"
+    },
+    "conditional": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$conditional",
+        "body": [
+            "\\$conditional"
+        ],
+        "description": "return A if condition is true, B if condition is false"
+    },
+    "conditional[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$conditional[",
+        "body": [
+            "\\$conditional[condition;A;B]"
+        ],
+        "description": "return A if condition is true, B if condition is false"
+    },
+    "cacheChannelMessages": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$cacheChannelMessages",
+        "body": [
+            "\\$cacheChannelMessages"
+        ],
+        "description": "Force cache latest messages of a channel It will cache up to 50 messages for main bot, and 100 messages for tier 3+"
+    },
+    "cacheChannelMessages[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$cacheChannelMessages[",
+        "body": [
+            "\\$cacheChannelMessages[Channel ID (default is $channelID)]"
+        ],
+        "description": "Force cache latest messages of a channel It will cache up to 50 messages for main bot, and 100 messages for tier 3+"
+    },
+    "latestMessage": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$latestMessage",
+        "body": [
+            "\\$latestMessage"
+        ],
+        "description": "Return the latest message content/id in a channel, uses the cache"
+    },
+    "latestMessage[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$latestMessage[",
+        "body": [
+            "\\$latestMessage[Channel ID (default is $channelID);User ID (default everyone);Return Message ID instead (yes/no, default no)]"
+        ],
+        "description": "Return the latest message content/id in a channel, uses the cache"
+    },
+    "padLeft": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$padLeft",
+        "body": [
+            "\\$padLeft"
+        ],
+        "description": "Adds a filling text at the start of text, depend on the maximum length"
+    },
+    "padLeft[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$padLeft[",
+        "body": [
+            "\\$padLeft[Text;Max Length;Filling Text]"
+        ],
+        "description": "Adds a filling text at the start of text, depend on the maximum length"
+    },
+    "padRight": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$padRight",
+        "body": [
+            "\\$padRight"
+        ],
+        "description": "Adds a filling text at the end of text, depend on the maximum length"
+    },
+    "padRight[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$padRight[",
+        "body": [
+            "\\$padRight[Text;Max Length;Filling Text]"
+        ],
+        "description": "Adds a filling text at the end of text, depend on the maximum length"
+    },
+    "increaseUserVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$increaseUserVar",
+        "body": [
+            "\\$increaseUserVar"
+        ],
+        "description": "To increase user variable with a certain amount"
+    },
+    "increaseUserVar[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$increaseUserVar[",
+        "body": [
+            "\\$increaseUserVar[variable name;amount/expression;user id;default amount (default is 0)]"
+        ],
+        "description": "To increase user variable with a certain amount"
+    },
+    "increaseChannelVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$increaseChannelVar",
+        "body": [
+            "\\$increaseChannelVar"
+        ],
+        "description": "To increase channel variable with a certain amount"
+    },
+    "increaseChannelVar[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$increaseChannelVar[",
+        "body": [
+            "\\$increaseChannelVar[variable name;amount/expression;channel id;default amount (default is 0)]"
+        ],
+        "description": "To increase channel variable with a certain amount"
+    },
+    "increaseServerVar": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$increaseServerVar",
+        "body": [
+            "\\$increaseServerVar"
+        ],
+        "description": "To increase server variable with a certain amount"
+    },
+    "increaseServerVar[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$increaseServerVar[",
+        "body": [
+            "\\$increaseServerVar[variable name;amount/expression;default amount (default is 0)]"
+        ],
+        "description": "To increase server variable with a certain amount"
+    },
+    "viewChannelVars": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$viewChannelVars",
+        "body": [
+            "\\$viewChannelVars"
+        ],
+        "description": "View a list of all the variables that are defined for a specific channel, and search for specific variables using a regular expression query filter"
+    },
+    "viewChannelVars[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$viewChannelVars[",
+        "body": [
+            "\\$viewChannelVars[Channel ID (default: $channelID);Separator;Query Regex (optional)]"
+        ],
+        "description": "View a list of all the variables that are defined for a specific channel, and search for specific variables using a regular expression query filter"
+    },
+    "isUserMention": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isUserMention",
+        "body": [
+            "\\$isUserMention"
+        ],
+        "description": "To check if text provided satisfy discord user mention format or not"
+    },
+    "isUserMention[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isUserMention[",
+        "body": [
+            "\\$isUserMention[Text]"
+        ],
+        "description": "To check if text provided satisfy discord user mention format or not"
+    },
+    "isChannelMention": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isChannelMention",
+        "body": [
+            "\\$isChannelMention"
+        ],
+        "description": "To check if text provided satisfy discord channel mention format or not"
+    },
+    "isChannelMention[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$isChannelMention[",
+        "body": [
+            "\\$isChannelMention[Text]"
+        ],
+        "description": "To check if text provided satisfy discord channel mention format or not"
+    },
+    "ObjectIncrease": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectIncrease",
+        "body": [
+            "\\$ObjectIncrease"
+        ],
+        "description": "To increase key value, if not exists, it will create it and set to the value"
+    },
+    "ObjectIncrease[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectIncrease[",
+        "body": [
+            "\\$ObjectIncrease[Key;Amount]"
+        ],
+        "description": "To increase key value, if not exists, it will create it and set to the value"
+    },
+    "OnTemplate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$OnTemplate",
+        "body": [
+            "\\$OnTemplate"
+        ],
+        "description": "Only useful for templates, not for public use"
+    },
+    "OnTemplate[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$OnTemplate[",
+        "body": [
+            "\\$OnTemplate"
+        ],
+        "description": "Only useful for templates, not for public use"
+    },
+    "imageDraw": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageDraw",
+        "body": [
+            "\\$imageDraw"
+        ],
+        "description": "Draw a loaded image on the current image"
+    },
+    "imageDraw[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageDraw[",
+        "body": [
+            "\\$imageDraw[image name;x;y;width;height]"
+        ],
+        "description": "Draw a loaded image on the current image"
+    },
+    "imageDrawBack": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageDrawBack",
+        "body": [
+            "\\$imageDrawBack"
+        ],
+        "description": "Draw a loaded image behind the current image"
+    },
+    "imageDrawBack[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageDrawBack[",
+        "body": [
+            "\\$imageDrawBack[image name;x;y;width;height]"
+        ],
+        "description": "Draw a loaded image behind the current image"
+    },
+    "imageFill": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageFill",
+        "body": [
+            "\\$imageFill"
+        ],
+        "description": "Fill image with specific color name"
+    },
+    "imageFill[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageFill[",
+        "body": [
+            "\\$imageFill[color;x;y;width;height]"
+        ],
+        "description": "Fill image with specific color name"
+    },
+    "imageWidth": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageWidth",
+        "body": [
+            "\\$imageWidth"
+        ],
+        "description": "Return the image width, based on the name"
+    },
+    "imageWidth[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageWidth[",
+        "body": [
+            "\\$imageWidth[image name]"
+        ],
+        "description": "Return the image width, based on the name"
+    },
+    "imageHeight": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageHeight",
+        "body": [
+            "\\$imageHeight"
+        ],
+        "description": "Return the image height, based on the name"
+    },
+    "imageHeight[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageHeight[",
+        "body": [
+            "\\$imageHeight[image name]"
+        ],
+        "description": "Return the image height, based on the name"
+    },
+    "imageLoadFromURL": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageLoadFromURL",
+        "body": [
+            "\\$imageLoadFromURL"
+        ],
+        "description": "Load an image and save it with reference name, that can be used in other functions"
+    },
+    "imageLoadFromURL[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageLoadFromURL[",
+        "body": [
+            "\\$imageLoadFromURL[name;URL]"
+        ],
+        "description": "Load an image and save it with reference name, that can be used in other functions"
+    },
+    "imageOutput": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageOutput",
+        "body": [
+            "\\$imageOutput"
+        ],
+        "description": "Generate the current draw into file, and return the filename, it can be used inside $image or {image:...} and other places that accept image"
+    },
+    "imageOutput[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageOutput[",
+        "body": [
+            "\\$imageOutput[type]"
+        ],
+        "description": "Generate the current draw into file, and return the filename, it can be used inside $image or {image:...} and other places that accept image"
+    },
+    "imageCreate": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageCreate",
+        "body": [
+            "\\$imageCreate"
+        ],
+        "description": "Create an empty image with specific size"
+    },
+    "imageCreate[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageCreate[",
+        "body": [
+            "\\$imageCreate[width;height]"
+        ],
+        "description": "Create an empty image with specific size"
+    },
+    "imageBorderRad": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageBorderRad",
+        "body": [
+            "\\$imageBorderRad"
+        ],
+        "description": "Control the border radius of the filled box with $imageFill"
+    },
+    "imageBorderRad[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageBorderRad[",
+        "body": [
+            "\\$imageBorderRad[border radius]"
+        ],
+        "description": "Control the border radius of the filled box with $imageFill"
+    },
+    "imageUseFont": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageUseFont",
+        "body": [
+            "\\$imageUseFont"
+        ],
+        "description": "set font type for text written on the images"
+    },
+    "imageUseFont[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageUseFont[",
+        "body": [
+            "\\$imageUseFont[font name]"
+        ],
+        "description": "set font type for text written on the images"
+    },
+    "imageTextFillColor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextFillColor",
+        "body": [
+            "\\$imageTextFillColor"
+        ],
+        "description": "specify the filling text color"
+    },
+    "imageTextFillColor[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextFillColor[",
+        "body": [
+            "\\$imageTextFillColor[Color name]"
+        ],
+        "description": "specify the filling text color"
+    },
+    "imageTextColor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextColor",
+        "body": [
+            "\\$imageTextColor"
+        ],
+        "description": "specify the filling & stroke text color"
+    },
+    "imageTextColor[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextColor[",
+        "body": [
+            "\\$imageTextColor[Color name]"
+        ],
+        "description": "specify the filling & stroke text color"
+    },
+    "imageTextFill": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextFill",
+        "body": [
+            "\\$imageTextFill"
+        ],
+        "description": "write a filled text on an image"
+    },
+    "imageTextFill[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextFill[",
+        "body": [
+            "\\$imageTextFill[Text;position x;position y]"
+        ],
+        "description": "write a filled text on an image"
+    },
+    "imageTextStrokeColor": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextStrokeColor",
+        "body": [
+            "\\$imageTextStrokeColor"
+        ],
+        "description": "specify the stroke text color"
+    },
+    "imageTextStrokeColor[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextStrokeColor[",
+        "body": [
+            "\\$imageTextStrokeColor[Color name]"
+        ],
+        "description": "specify the stroke text color"
+    },
+    "imageTextSize": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextSize",
+        "body": [
+            "\\$imageTextSize"
+        ],
+        "description": "specify the text's font size"
+    },
+    "imageTextSize[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextSize[",
+        "body": [
+            "\\$imageTextSize[font size]"
+        ],
+        "description": "specify the text's font size"
+    },
+    "imageTextStroke": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextStroke",
+        "body": [
+            "\\$imageTextStroke"
+        ],
+        "description": "write a stroke (border) text on an image"
+    },
+    "imageTextStroke[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextStroke[",
+        "body": [
+            "\\$imageTextStroke[Text;position x;position y]"
+        ],
+        "description": "write a stroke (border) text on an image"
+    },
+    "imageTextWeight": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextWeight",
+        "body": [
+            "\\$imageTextWeight"
+        ],
+        "description": "specify the weight of font, i.e bold, italic.."
+    },
+    "imageTextWeight[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextWeight[",
+        "body": [
+            "\\$imageTextWeight[Weight Type]"
+        ],
+        "description": "specify the weight of font, i.e bold, italic.."
+    },
+    "imageTextAlign": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextAlign",
+        "body": [
+            "\\$imageTextAlign"
+        ],
+        "description": "specify the alignment of the text, effects the meaning of pos x and pos y for writing text positions"
+    },
+    "imageTextAlign[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$imageTextAlign[",
+        "body": [
+            "\\$imageTextAlign[Alignment]"
+        ],
+        "description": "specify the alignment of the text, effects the meaning of pos x and pos y for writing text positions"
+    },
+    "httpRequest": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$httpRequest",
+        "body": [
+            "\\$httpRequest"
+        ],
+        "description": "Perform an http request, with a content and headers and return the response content"
+    },
+    "httpRequest[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$httpRequest[",
+        "body": [
+            "\\$httpRequest[URL;Method;Content;Header 1;Header 2;...]"
+        ],
+        "description": "Perform an http request, with a content and headers and return the response content"
+    },
+    "httpRequestHeader": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$httpRequestHeader",
+        "body": [
+            "\\$httpRequestHeader"
+        ],
+        "description": "return the header values from the most recent request performed with $httpRequest"
+    },
+    "httpRequestHeader[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$httpRequestHeader[",
+        "body": [
+            "\\$httpRequestHeader[header name]"
+        ],
+        "description": "return the header values from the most recent request performed with $httpRequest"
+    },
+    "httpRequestStatus": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$httpRequestStatus",
+        "body": [
+            "\\$httpRequestStatus"
+        ],
+        "description": "return the request status from the most recent request performed with $httpRequest"
+    },
+    "httpRequestStatus[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$httpRequestStatus[",
+        "body": [
+            "\\$httpRequestStatus"
+        ],
+        "description": "return the request status from the most recent request performed with $httpRequest"
+    },
+    "ObjectMerge": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectMerge",
+        "body": [
+            "\\$ObjectMerge"
+        ],
+        "description": "Merge the current object with another object, it overwrites the conflicted keys"
+    },
+    "ObjectMerge[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$ObjectMerge[",
+        "body": [
+            "\\$ObjectMerge[object]"
+        ],
+        "description": "Merge the current object with another object, it overwrites the conflicted keys"
+    },
+    "addMenu": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addMenu",
+        "body": [
+            "\\$addMenu"
+        ],
+        "description": "Add a menu to existing message"
+    },
+    "addMenu[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$addMenu[",
+        "body": [
+            "\\$addMenu["
+        ],
+        "description": "Add a menu to existing message"
+    },
+    "displayName": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$displayName",
+        "body": [
+            "\\$displayName"
+        ],
+        "description": "get the display name of a user"
+    },
+    "displayName[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$displayName[",
+        "body": [
+            "\\$displayName[User ID]"
+        ],
+        "description": "get the display name of a user"
+    },
+    "arrayConcat": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayConcat",
+        "body": [
+            "\\$arrayConcat"
+        ],
+        "description": "Merge new array with the current array"
+    },
+    "arrayConcat[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$arrayConcat[",
+        "body": [
+            "\\$arrayConcat[List;separator;array name (optional)]"
+        ],
+        "description": "Merge new array with the current array"
+    },
+    "blackListChannelIDs": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$blackListChannelIDs",
+        "body": [
+            "\\$blackListChannelIDs"
+        ],
+        "description": "Blacklist channel/category/threads, and stop the execution with sending error message"
+    },
+    "blackListChannelIDs[": {
+        "scope": "ccbot,cb,customcommand,customcommandbot",
+        "prefix": "$blackListChannelIDs[",
+        "body": [
+            "\\$blackListChannelIDs[Channel 1;Channel 2;...;Error Message]"
+        ],
+        "description": "Blacklist channel/category/threads, and stop the execution with sending error message"
     }
 }
