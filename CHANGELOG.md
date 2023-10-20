@@ -13,3 +13,4 @@
 | Fixed snippets for functions with no arguments | `3.4.3` | `6/2/2023` |
 | Updated snippets | `3.4.4` | `10/9/2023` |
 | Added snippet parameters | `3.5.0` | `10/9/2023` |
+| Source code reorganization | `3.6.0` | `20/9/2023` |

@@ -24,4 +24,4 @@ changelog += "\n" + log
 fs.writeFileSync('./changelog.md', changelog)
 
 console.log('📋 Patchnote added successfully!')
-console.log(`You can now use the following command to proceed:\ngit add . && git commit -m "Release ${newVersion}: ${message}" && git push && vsce publish ${type}`)
+console.log(`You can now use the following command to proceed:\ngit add .; git commit -m "Release ${newVersion}: ${message}"; git push; vsce publish ${type}`)
