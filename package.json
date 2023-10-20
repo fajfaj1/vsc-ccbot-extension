@@ -2,7 +2,7 @@
   "name": "ccbot",
   "displayName": "Custom Command bot",
   "description": "Make Visual Studio help you with developing custom command bot commands!",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "publisher": "fajfaj",
   "icon": "extension.png",
   "repository": {
