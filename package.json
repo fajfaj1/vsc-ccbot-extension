@@ -42,24 +42,28 @@
           ".customcommand",
           ".customcommandbot"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language/configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "ccbot",
         "scopeName": "source.ccbot",
-        "path": "./syntaxes/ccbot.tmLanguage.json"
+        "path": "./language/grammars.json"
       }
     ],
     "snippets": [
       {
         "language": "ccbot",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./language/snippets.json"
       }
     ]
   },
   "dependencies": {
     "git": "^0.1.5"
+  },
+  "scripts": {
+    "snippets": "echo This script has not yet been created!",
+    "build": "node ./scripts/build.js"
   }
 }
