@@ -64,6 +64,6 @@
   },
   "scripts": {
     "snippets": "echo This script has not yet been created!",
-    "build": "node ./scripts/build.js"
+    "change": "node ./scripts/changelog.js"
   }
 }

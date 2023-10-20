@@ -1,8 +1,5 @@
 .vscode/**
 .vscode-test/**
 .gitignore
-vsc-extension-quickstart.md
-themes
-Snippets generator
-example.ccbot
-generator
+node_modules/**
+scripts/**
