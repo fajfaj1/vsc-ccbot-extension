@@ -51,26 +51,22 @@
         "scopeName": "source.ccbot",
         "path": "./language/grammars.json"
       }
-    ],
-    "snippets": [
-      {
-        "language": "ccbot",
-        "path": "./language/snippets.json"
-      }
-    ],
-    "productIconThemes": [
-      {
-        "id": "aliensAreBack",
-        "label": "Aliens Are Back",
-        "path": "./producticons/aliens-product-icon-theme.json"
-      }
     ]
   },
-  "dependencies": {
-    "git": "^0.1.5"
+  "capabilities": {
+    "completionProvider": {
+      "resolveProvider": "true",
+      "triggerCharacters": [
+        "."
+      ]
+    }
   },
-  "scripts": {
-    "snippets": "echo This script has not yet been created!",
-    "change": "node ./scripts/changelog.js"
+    "dependencies": {
+      "git": "^0.1.5"
+    },
+    "scripts": {
+      "snippets": "node ./scripts/parser.js",
+      "change": "node ./scripts/changelog.js"
+    },
+    "main": "./language/main.js"
   }
-}
