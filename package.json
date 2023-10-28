@@ -57,15 +57,18 @@
     "completionProvider": {
       "resolveProvider": "true",
       "triggerCharacters": [
-        "."
-      ]
+        "$"
+      ],
+      "signatureHelpProvider" : {
+        "triggerCharacters": [ "[" ]
+    }
     }
   },
     "dependencies": {
       "git": "^0.1.5"
     },
     "scripts": {
-      "snippets": "node ./scripts/parser.js",
+      "data": "node ./language/modules/parser.js",
       "change": "node ./scripts/changelog.js"
     },
     "main": "./language/main.js"

@@ -5,10 +5,10 @@ const args = process.argv.slice(2)
 
 const types = ['major', 'minor', 'patch']
 const type = args.shift()
-if (!types.includes(type)) throw Error(`Invalid update type, valid types: ${types.join('/')}\nPlease use: npm run build [type] [message]`)
+if (!types.includes(type)) throw Error(`Invalid update type, valid types: ${types.join('/')}\nPlease use: npm run change [type] [message]`)
 
 const message = args.join(' ')
-if (message.length === 0) throw Error('You have to provide a changelog message.\nPlease use: npm run build [type] [message]')
+if (message.length === 0) throw Error('You have to provide a changelog message.\nPlease use: npm run change [type] [message]')
 
 const version = require('../package.json').version || "0.0.0"
 const versionSplit = version.split('.').map(Number)

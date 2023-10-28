@@ -4,3 +4,4 @@ package-themed.json
 Snippets generator
 deployment.txt
 .vscode/*
+.vscode

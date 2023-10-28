@@ -1,47 +1,55 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
+const completionProvider = require('./modules/completionProvider.js')
+// const signatureProvider = require('./signatureProvider.js')
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
 
 /**
- * @param {vscode.ExtensionContext} context
+ * This function is called when the extension is activated.
+ *
+ * @param {vscode.ExtensionContext} context - The extension context.
  */
 async function activate(context) {
+    const start = Date.now()
+    const providers = []
+    try {
+        providers.push(vscode.languages.registerCompletionItemProvider(
+            'ccbot', 
+            completionProvider, 
+            ['$']
+        ))
+    } catch (e) {
+        console.error(`An error occured when registering the completion provider: ${e}`)
+    }
 
+    // const signatureProvited = vscode.languages.registerSignatureHelpProvider('ccbot', {
+    //     provideSignatureHelp(doc, pos) {
+    //         try {
+    //             console.log(params)
+    //             console.log('Signature help requested')
+    //             const signatureHelp = new vscode.SignatureHelp()
+    //             signatureHelp.activeSignature = 0
+    //             signatureHelp.activeParameter = 0
 
-    // const cultivator = webmodule
-    // let data; eval(`${cultivator}; data = Parser;`)
-    // console.log(data)
-    // vscode.window.showInformationMessage(data)
-    
-    // const provider = vscode.languages.registerCompletionItemProvider('ccbot', {
-    //     provideCompletionItems(document, position, token) {
-    //         const items = []
-            
-    //         Object.keys(data).forEach(key => {
-    //             console.log(key)
-    //             const funcInfo = data[key].split(';')
-    //             const item = new vscode.CompletionItem(key)
-    //             item.detail = funcInfo.shift()
-    //             item.insertText = key
-    //             items.push(item)
-    //         })
+    //             signatureHelp.signatures = params
+    //             return Object.values(signatureHelp)
+    //         } catch (e) {
+    //             console.error(e)
+    //         }
 
-    //         return items
     //     }
-    // })
-    // context.subscriptions.push(provider)
-    console.log(`Custom Command bot extension is active!`)
+    // }, ['[', ';'])
+
+    context.subscriptions.push(...providers)
+    const bootTime = Date.now() - start
+    console.log(`ccbot extension activated in ${bootTime}ms`)
 
 }
 
 // this method is called when your extension is deactivated
-function deactivate() { }
+// function deactivate() { }
 
 // eslint-disable-next-line no-undef
 module.exports = {
-    activate,
-    deactivate
+    activate
+    // deactivate
 }
