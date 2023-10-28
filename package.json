@@ -51,6 +51,14 @@
         "scopeName": "source.ccbot",
         "path": "./language/grammars.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "ccbot.reloadFunctions",
+        "title": "Reload CC functions",
+        "category": "CCBot",
+        "icon": "$(refresh)"
+      }
     ]
   },
   "capabilities": {
@@ -68,7 +76,7 @@
       "git": "^0.1.5"
     },
     "scripts": {
-      "data": "node ./language/modules/parser.js",
+      "data": "node -e \"require('./language/modules/parser.js').parse()\"",
       "change": "node ./scripts/changelog.js"
     },
     "main": "./language/main.js"

@@ -1,5 +1,11 @@
 const vscode = require('vscode');
-const data = require('../assets/data.json');
+let data = {}
+try {
+    data = require('../assets/data.json');
+} catch {
+    data = {count: 0, timestamp: 0, functions: {}}
+}
+
 const { loadVariablesFromDocument, fileVariables } = require('./variables.js');
 
 /**
