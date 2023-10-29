@@ -17,3 +17,4 @@
 | Language server introduced (completion only) | `3.6.1` | `28/9/2023` |
 | Language server Signature Helper | `3.7.1` | `29/9/2023` |
 | Readme links fix | `3.8.1` | `29/9/2023` |
+| Fix variable injections for spaced varnames | `3.8.2` | `29/9/2023` |
