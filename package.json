@@ -67,17 +67,22 @@
       "triggerCharacters": [
         "$"
       ],
-      "signatureHelpProvider" : {
-        "triggerCharacters": [ "[" ]
-    }
+      "signatureHelpProvider": {
+        "triggerCharacters": [
+          "["
+        ]
+      }
     }
   },
-    "dependencies": {
-      "git": "^0.1.5"
-    },
-    "scripts": {
-      "data": "node -e \"require('./language/modules/parser.js').parse()\"",
-      "change": "node ./scripts/changelog.js"
-    },
-    "main": "./language/main.js"
-  }
+  "dependencies": {
+    "git": "^0.1.5"
+  },
+  "scripts": {
+    "data": "node -e \"require('./language/modules/parser.js').parse()\"",
+    "change": "node ./scripts/changelog.js"
+  },
+  "main": "./language/main.js",
+  "activationEvents": [
+    "onLanguage:ccbot"
+  ]
+}
