@@ -1,11 +1,10 @@
 const vscode = require('vscode');
 let data = {}
 try {
-    data = require('../assets/data.json');
+    data = require(vscode.extensionContext.globalStorageUri.fsPath + '/data.json');
 } catch {
     data = {count: 0, timestamp: 0, functions: {}}
 }
-
 const { loadVariablesFromDocument, fileVariables } = require('./variables.js');
 
 /**

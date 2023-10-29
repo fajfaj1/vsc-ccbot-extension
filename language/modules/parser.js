@@ -75,7 +75,7 @@ module.exports = {
             if (paramsSpace !== null) {
                 const justParams = paramsSpace[0].replaceAll(/[[\]]/g, '')
                 justParams.split(';').forEach(param => {
-                    const label = param.replaceAll(/( \((yes\/no )?optional\))|( \(yes\/no\))/g, '')
+                    const label = param.replaceAll(/( ?\((yes\/no )?optional\))|( \(yes\/no\))/g, '')
                     // Check if the parameter has choices 
                     let choices = [];
                     if (/((^|(\/| or ))[a-zA-Z ]+){2,}/gm.test(label)) {
