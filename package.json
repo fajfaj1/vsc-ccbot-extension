@@ -58,7 +58,56 @@
         "title": "Reload CC functions",
         "category": "CCBot",
         "icon": "$(refresh)"
+      },
+      {
+        "command": "ccbot.login",
+        "title": "Login to the dashboard",
+        "category": "CCBot",
+        "icon": "$(key)"
+      },
+      {
+        "command": "ccbot.menu",
+        "title": "Open File sync menu",
+        "category": "CCBot",
+        "icon": "$(cloud)"
       }
+    ],
+    "walkthroughs": [
+      {
+        "id": "ccbot",
+        "title": "Start coding Custom Commands in Visual Studio Code",
+        "description": "Learn how to use Custom Command bot extension",
+        "steps": [
+          {
+            "id": "createFile",
+            "title": "1. Create a ccbot file",
+            "description": "Create or open an existing file with **.ccbot** extension",
+            "media": {
+              "image": "./language/assets/newFile.png",
+              "altText": "Create file"
+            }
+          },
+          {
+            "id": "writeCode",
+            "title": "2. Write your code",
+            "description": "Write your code in the opened file",
+            "media": {
+              "image": "./language/assets/writeCode.png",
+              "altText": "Write code"
+            }
+          },
+          {
+            "id": "saveCode",
+            "title": "3. Save your code",
+            "description": "Copy and paste your code to the dashboard",
+            "media": {
+              "image": "./language/assets/saveCode.png",
+              "altText": "Save code"
+            }
+          }
+        ]
+      }
+      
     ]
   },
   "capabilities": {
@@ -69,7 +118,7 @@
       ],
       "signatureHelpProvider": {
         "triggerCharacters": [
-          "["
+          "[", ";"
         ]
       }
     }

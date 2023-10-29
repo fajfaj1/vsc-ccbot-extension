@@ -25,4 +25,26 @@ commands.push(vscode.commands.registerCommand('ccbot.reloadFunctions', async () 
 
 }))
 
+// commands.push(vscode.commands.registerCommand('ccbot.login', async (context) => {
+//     const cookie = await vscode.window.showInputBox({
+//         prompt: "Enter your cookie",
+//         placeHolder: "Cookie"
+//     })
+//     vscode.window.withProgress({
+//         location: vscode.ProgressLocation.Notification,
+//         title: "Cookie validation",
+//         cancellable: false,
+//         message: "Validating..."
+//     }, async (progress) => {
+//         const response = await fetch('https://ccommandbot.com/dashboard', {
+//             headers: {
+//                 cookie: cookie
+//             }
+//         })
+//         progress.report(100)
+//         vscode.window.showInformationMessage(response.url)
+        
+//     })
+// }))
+
 module.exports = commands
