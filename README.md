@@ -15,11 +15,11 @@ Custom Command bot is a discord bot that lets you create custom commands with ov
 - ### Auto completion 
     Everytime you place a `$` you will receive a list of suggested completions.
     This also contains your previously assigned variables.
- > ![Auto completion visualization](./language/assets/completion.jpg "Completion visualization")
+ > ![Auto completion visualization](https://raw.githubusercontent.com/fajfaj1/vsc-ccbot-extension/main/language/assets/completion.jpg "Completion visualization")
 
 - ### Signature help
     When you open a bracket, or type a `;` you will get a quick reference of the parameters whih the function accepts.
-> ![Signature help visualization](./language/assets/signaturehelp.jpg "Signature help visualization")
+> ![Signature help visualization](https://raw.githubusercontent.com/fajfaj1/vsc-ccbot-extension/main/language/assets/signaturehelp.jpg "Signature help visualization")
 - ### Auto update
     The extension will automatically fetch the latest list of functions every week.
 
