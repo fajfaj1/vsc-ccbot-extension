@@ -22,9 +22,15 @@ const { loadVariablesFromDocument, fileVariables } = require('./variables.js');
 function completionItem(func) {
     const bareName = func.name.replace('$', '');
     const snippet = new vscode.MarkdownString(`\`\`\`ccbot\n${func.code}\n\`\`\``);
+    let insertText = '';
+    if(func.kind === 5) {
+        insertText = /^[a-zA-Z_][a-zA-Z0-9_]*$/.test(bareName) ? `${bareName}` : `get[${bareName}]`;
+    } else {
+        insertText = bareName;
+    }
     const item = new vscode.CompletionItem(func.name, func.kind)
         item.detail = func.description
-        item.insertText = bareName
+        item.insertText = insertText
         item.filterText = bareName
         item.sortText = bareName
         item.documentation = snippet
