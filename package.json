@@ -52,26 +52,6 @@
         "path": "./language/grammars.json"
       }
     ],
-    "commands": [
-      {
-        "command": "ccbot.reloadFunctions",
-        "title": "Reload CC functions",
-        "category": "CCBot",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "ccbot.login",
-        "title": "Login to the dashboard",
-        "category": "CCBot",
-        "icon": "$(key)"
-      },
-      {
-        "command": "ccbot.menu",
-        "title": "Open File sync menu",
-        "category": "CCBot",
-        "icon": "$(cloud)"
-      }
-    ],
     "walkthroughs": [
       {
         "id": "ccbot",

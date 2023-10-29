@@ -19,3 +19,4 @@
 | Readme links fix | `3.8.1` | `29/9/2023` |
 | Fix variable injections for spaced varnames | `3.8.2` | `29/9/2023` |
 | Added walkthrough | `3.8.3` | `29/9/2023` |
+| Remove unnecessary commands | `3.8.4` | `29/9/2023` |
