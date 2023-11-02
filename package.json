@@ -1,117 +1,141 @@
 {
-  "name": "ccbot",
-  "displayName": "Custom Command bot",
-  "description": "Make Visual Studio help you with developing custom command bot commands!",
-  "version": "3.8.4",
-  "publisher": "fajfaj",
-  "icon": "language/assets/extension.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fajfaj1/vsc-ccbot-extension"
-  },
-  "keywords": [
-    "custom command bot",
-    "syntaxes",
-    "Language",
-    "Grammars",
-    "custom command",
-    "discord",
-    "ccbot",
-    "custom commands"
-  ],
-  "engines": {
-    "vscode": "^1.70.0"
-  },
-  "categories": [
-    "Snippets",
-    "Programming Languages",
-    "Formatters",
-    "Other"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "ccbot",
-        "aliases": [
-          "Custom Command",
-          "ccbot"
-        ],
-        "extensions": [
-          ".ccbot",
-          ".cb",
-          ".customcommand",
-          ".customcommandbot"
-        ],
-        "configuration": "./language/configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "ccbot",
-        "scopeName": "source.ccbot",
-        "path": "./language/grammars.json"
-      }
-    ],
-    "walkthroughs": [
-      {
-        "id": "ccbot",
-        "title": "Start coding Custom Commands in Visual Studio Code",
-        "description": "Learn how to use Custom Command bot extension",
-        "steps": [
-          {
-            "id": "createFile",
-            "title": "1. Create a ccbot file",
-            "description": "Create or open an existing file with **.ccbot** extension",
-            "media": {
-              "image": "./language/assets/newFile.png",
-              "altText": "Create file"
-            }
-          },
-          {
-            "id": "writeCode",
-            "title": "2. Write your code",
-            "description": "Write your code in the opened file",
-            "media": {
-              "image": "./language/assets/writeCode.png",
-              "altText": "Write code"
-            }
-          },
-          {
-            "id": "saveCode",
-            "title": "3. Save your code",
-            "description": "Copy and paste your code to the dashboard",
-            "media": {
-              "image": "./language/assets/saveCode.png",
-              "altText": "Save code"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "capabilities": {
-    "completionProvider": {
-      "resolveProvider": "true",
-      "triggerCharacters": [
-        "$"
-      ],
-      "signatureHelpProvider": {
-        "triggerCharacters": [
-          "[",
-          ";"
-        ]
-      }
-    }
-  },
-  "dependencies": {
-    "git": "^0.1.5"
-  },
-  "scripts": {
-    "data": "node -e \"require('./language/modules/parser.js').parse()\"",
-    "change": "node ./scripts/changelog.js"
-  },
-  "main": "./language/main.js",
-  "activationEvents": [
-    "onLanguage:ccbot"
-  ]
+	"name": "ccbot",
+	"displayName": "Custom Command bot",
+	"description": "Make Visual Studio help you with developing custom command bot commands!",
+	"version": "3.8.4",
+	"publisher": "fajfaj",
+	"icon": "language/assets/extension.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fajfaj1/vsc-ccbot-extension"
+	},
+	"keywords": [
+		"custom command bot",
+		"syntaxes",
+		"Language",
+		"Grammars",
+		"custom command",
+		"discord",
+		"ccbot",
+		"custom commands"
+	],
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"categories": [
+		"Snippets",
+		"Programming Languages",
+		"Formatters",
+		"Other"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "ccbot",
+				"aliases": [
+					"Custom Command",
+					"ccbot"
+				],
+				"extensions": [
+					".ccbot",
+					".cb",
+					".customcommand",
+					".customcommandbot"
+				],
+				"configuration": "./language/configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ccbot",
+				"scopeName": "source.ccbot",
+				"path": "./language/grammars.json"
+			}
+		],
+		"walkthroughs": [
+			{
+				"id": "ccbot",
+				"title": "Custom Commands bot",
+				"description": "Learn how to use the Custom Command bot extension",
+				"steps": [
+					{
+						"id": "createFile",
+						"title": "1. Create a ccbot file",
+						"description": "Run a command to create a new file with **.ccbot** extension.",
+						"media": {
+							"image": "./language/assets/newFile.png",
+							"altText": "Create file"
+						},
+						"completionEvents": [
+							"onCommand:ccbot.createFile"
+						]
+					},
+					{
+						"id": "writeCode",
+						"title": "2. Write your code",
+						"description": "Write your code in the opened file",
+						"media": {
+							"image": "./language/assets/writeCode.png",
+							"altText": "Write code"
+						}
+					},
+					{
+						"id": "saveCode",
+						"title": "3. Save your code",
+						"description": "Copy and paste your code to the dashboard",
+						"media": {
+							"image": "./language/assets/saveCode.png",
+							"altText": "Save code"
+						}
+					}
+				]
+			}
+		],
+		"commands": [
+			{
+				"command": "ccbot.createFile",
+				"title": "Create a new Command file",
+				"category": "CCbot",
+				"icon": "$(new-file)"
+			},
+			{
+				"command": "ccbot.openDashboard",
+				"title": "Open the dashboard",
+				"category": "CCbot",
+				"icon": "$(terminal)"
+			},
+			{
+				"command": "ccbot.openDocs",
+				"title": "Open the documentation",
+				"category": "CCbot",
+				"icon": "$(files)"
+			}
+		]
+	},
+	"capabilities": {
+		"completionProvider": {
+			"resolveProvider": "true",
+			"triggerCharacters": [
+				"$"
+			],
+			"signatureHelpProvider": {
+				"triggerCharacters": [
+					"[",
+					";"
+				]
+			}
+		}
+	},
+	"dependencies": {
+		"git": "^0.1.5"
+	},
+	"scripts": {
+		"data": "node -e \"require('./language/modules/parser.js').parse()\"",
+		"change": "node ./scripts/changelog.js"
+	},
+	"main": "./language/main.js",
+	"activationEvents": [
+		"onLanguage:ccbot",
+		"onFileSystem:*.ccbot"
+	]
 }

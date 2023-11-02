@@ -5,3 +5,5 @@ Snippets generator
 deployment.txt
 .vscode/*
 .vscode
+backup.js
+backuper.js

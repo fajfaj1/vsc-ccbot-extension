@@ -20,3 +20,4 @@
 | Fix variable injections for spaced varnames | `3.8.2` | `29/9/2023` |
 | Added walkthrough | `3.8.3` | `29/9/2023` |
 | Remove unnecessary commands | `3.8.4` | `29/9/2023` |
+| Added 3 new commands: createFile, openDashboard and openDocs  | `3.8.5` | `2/10/2023` |
